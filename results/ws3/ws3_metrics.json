@@ -1,0 +1,4210 @@
+{
+  "workstream": "WS3_GPCRmd_Explicit_Solvent_and_PDB16_Benchmark",
+  "dataset_provenance": {
+    "total_gpcrmd_trajectories": 6,
+    "total_frames": 20501,
+    "actual_xtc_span_us": 8.8982,
+    "actual_frame_dt_sum_us": 8.9002,
+    "gpcrmd_nominal_catalog_us": 8.97,
+    "parquet_size_mb": 2.339
+  },
+  "pdb16_benchmark_summary": {
+    "n_structures": 16,
+    "dichotomy_groups": {
+      "Inactive_3": {
+        "pdb_ids": [
+          "5TGZ",
+          "5U09",
+          "9BA0"
+        ],
+        "R214_D338_range_A": [
+          6.75,
+          8.69
+        ],
+        "F155sc_N393CA_range_A": [
+          10.19,
+          10.91
+        ],
+        "Y294_Y397_OH_range_A": [
+          10.5,
+          11.61
+        ]
+      },
+      "Agonist_No_Transducer_3": {
+        "pdb_ids": [
+          "5XRA",
+          "5XR8",
+          "7V3Z"
+        ],
+        "R214_D338_range_A": [
+          14.18,
+          14.66
+        ],
+        "F155sc_N393CA_range_A": [
+          9.2,
+          12.29
+        ],
+        "F155_chi1_range_deg": [
+          59.0,
+          155.81
+        ],
+        "Y294_Y397_OH_range_A": [
+          5.1,
+          5.45
+        ]
+      },
+      "Active_Gi_6": {
+        "pdb_ids": [
+          "6N4B",
+          "6KPG",
+          "7WV9",
+          "8GHV",
+          "8IKG",
+          "9B54"
+        ],
+        "R214_D338_range_A": [
+          14.45,
+          15.53
+        ],
+        "F155sc_N393CA_range_A": [
+          14.67,
+          15.65
+        ],
+        "F155_chi1_range_deg": [
+          -86.8,
+          -57.32
+        ],
+        "Y294_Y397_OH_range_A": [
+          2.96,
+          4.17
+        ]
+      },
+      "Active_BetaArrestin1_2": {
+        "pdb_ids": [
+          "8WU1",
+          "8WRZ"
+        ],
+        "R214_D338_range_A": [
+          15.19,
+          17.13
+        ],
+        "Y294_Y397_OH_range_A": [
+          2.92,
+          3.83
+        ]
+      }
+    },
+    "matched_ligand_bifurcation": {
+      "FUB_Gi1_6N4B_vs_BetaArr1_8WU1": {
+        "R214_D338_CA_A": [
+          14.94,
+          15.19
+        ],
+        "W356_chi1_deg": [
+          -58.95,
+          -177.42
+        ],
+        "D163_W356_CA_A": [
+          15.29,
+          13.36
+        ],
+        "Y294_Y397_OH_A": [
+          3.52,
+          2.92
+        ]
+      },
+      "AM841_Gi1_6KPG_vs_BetaArr1_8WRZ": {
+        "R214_D338_CA_A": [
+          14.45,
+          17.13
+        ],
+        "R214_K300_CA_A": [
+          11.46,
+          14.57
+        ]
+      }
+    },
+    "NAM_ORG27569_decoupling_6KQI": {
+      "S173_F268_CA_A": 13.22,
+      "inactive_S173_F268_range_A": [
+        14.68,
+        15.18
+      ],
+      "R214_D338_CA_A": 7.2,
+      "F155_chi1_deg": 68.29,
+      "F237_chi1_deg": -84.79
+    }
+  },
+  "pillar_a_gi1_vs_gs_coupling": {
+    "cohort_summary": {
+      "Gi1_1201": {
+        "n_frames": 5001,
+        "total_duration_ns": 1000.0,
+        "n_50ns_blocks": 21,
+        "metrics": {
+          "R214_D338_CA_A": {
+            "mean": 16.1506,
+            "ci95_low": 15.5439,
+            "ci95_high": 16.9138,
+            "std": 1.5456,
+            "median": 15.531
+          },
+          "F155sc_N393CA_A": {
+            "mean": 14.991,
+            "ci95_low": 14.8282,
+            "ci95_high": 15.1855,
+            "std": 0.5577,
+            "median": 14.965
+          },
+          "F155_outward_gauche_minus": {
+            "mean": 0.9976,
+            "ci95_low": 0.9958,
+            "ci95_high": 0.999,
+            "std": 0.0489,
+            "median": 1.0
+          },
+          "F237_outward_trans": {
+            "mean": 0.9162,
+            "ci95_low": 0.8525,
+            "ci95_high": 0.9661,
+            "std": 0.2771,
+            "median": 1.0
+          },
+          "Y294_Y397_OH_A": {
+            "mean": 4.5869,
+            "ci95_low": 3.8288,
+            "ci95_high": 5.56,
+            "std": 1.9878,
+            "median": 3.936
+          },
+          "Y294_Y397_direct_hbond_3p5": {
+            "mean": 0.3629,
+            "ci95_low": 0.1908,
+            "ci95_high": 0.5325,
+            "std": 0.4808,
+            "median": 0.0
+          },
+          "Y294_Y397_polar_latch_4p2": {
+            "mean": 0.5947,
+            "ci95_low": 0.4171,
+            "ci95_high": 0.7471,
+            "std": 0.491,
+            "median": 1.0
+          },
+          "Y294_Y397_water_or_direct": {
+            "mean": 0.7391,
+            "ci95_low": 0.5489,
+            "ci95_high": 0.8908,
+            "std": 0.4392,
+            "median": 1.0
+          },
+          "D163_N393_polar_min_A": {
+            "mean": 2.9309,
+            "ci95_low": 2.8868,
+            "ci95_high": 2.9762,
+            "std": 0.321,
+            "median": 2.848
+          },
+          "F200_W356_ring_com_A": {
+            "mean": 6.7486,
+            "ci95_low": 6.4405,
+            "ci95_high": 7.104,
+            "std": 0.9247,
+            "median": 6.469
+          },
+          "W356_chi1_deg": {
+            "mean": -78.1669,
+            "ci95_low": -80.8301,
+            "ci95_high": -75.3407,
+            "std": 11.3809,
+            "median": -77.29
+          },
+          "n_wat_core_pore": {
+            "mean": 16.5475,
+            "ci95_low": 14.0589,
+            "ci95_high": 19.6497,
+            "std": 6.3442,
+            "median": 14.0
+          },
+          "wire_D163_N393Y397_cond": {
+            "mean": 0.9701,
+            "ci95_low": 0.9551,
+            "ci95_high": 0.9852,
+            "std": 0.1287,
+            "median": 1.0
+          },
+          "wire_D163_NY_percolated": {
+            "mean": 0.997,
+            "ci95_low": 0.9945,
+            "ci95_high": 0.9989,
+            "std": 0.0547,
+            "median": 1.0
+          },
+          "wire_D163_W356_cond": {
+            "mean": 0.2233,
+            "ci95_low": 0.1685,
+            "ci95_high": 0.2685,
+            "std": 0.1394,
+            "median": 0.25
+          },
+          "wire_D163_W356_percolated": {
+            "mean": 0.7363,
+            "ci95_low": 0.5589,
+            "ci95_high": 0.8828,
+            "std": 0.4407,
+            "median": 1.0
+          },
+          "Na_bound_D163": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "std": 0.0,
+            "median": 0.0
+          },
+          "K_bound_D163": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "std": 0.0,
+            "median": 0.0
+          },
+          "cation_bound_D163": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "std": 0.0,
+            "median": 0.0
+          },
+          "min_POPC_TM2_TM4_cleft_A": {
+            "mean": 3.4344,
+            "ci95_low": 3.4198,
+            "ci95_high": 3.4501,
+            "std": 0.1364,
+            "median": 3.436
+          },
+          "POPC_wedged_TM2_TM4_4p0": {
+            "mean": 1.0,
+            "ci95_low": 1.0,
+            "ci95_high": 1.0,
+            "std": 0.0,
+            "median": 1.0
+          },
+          "min_POPC_TM1_TM7_portal_A": {
+            "mean": 3.7094,
+            "ci95_low": 3.5921,
+            "ci95_high": 3.8267,
+            "std": 0.3714,
+            "median": 3.715
+          },
+          "min_K_D163_A": {
+            "mean": 27.959,
+            "ci95_low": 26.7293,
+            "ci95_high": 28.9922,
+            "min_observed": 10.804
+          }
+        }
+      },
+      "Gs_2067": {
+        "n_frames": 6000,
+        "total_duration_ns": 5999.0,
+        "n_50ns_blocks": 120,
+        "metrics": {
+          "R214_D338_CA_A": {
+            "mean": 16.766,
+            "ci95_low": 16.4609,
+            "ci95_high": 17.0599,
+            "std": 1.7086,
+            "median": 16.54
+          },
+          "F155sc_N393CA_A": {
+            "mean": 14.9065,
+            "ci95_low": 14.8001,
+            "ci95_high": 15.0109,
+            "std": 0.7157,
+            "median": 14.844
+          },
+          "F155_outward_gauche_minus": {
+            "mean": 0.9965,
+            "ci95_low": 0.9947,
+            "ci95_high": 0.998,
+            "std": 0.0591,
+            "median": 1.0
+          },
+          "F237_outward_trans": {
+            "mean": 0.8817,
+            "ci95_low": 0.8458,
+            "ci95_high": 0.914,
+            "std": 0.323,
+            "median": 1.0
+          },
+          "Y294_Y397_OH_A": {
+            "mean": 3.557,
+            "ci95_low": 3.3803,
+            "ci95_high": 3.7699,
+            "std": 1.1981,
+            "median": 3.099
+          },
+          "Y294_Y397_direct_hbond_3p5": {
+            "mean": 0.717,
+            "ci95_low": 0.6645,
+            "ci95_high": 0.764,
+            "std": 0.4505,
+            "median": 1.0
+          },
+          "Y294_Y397_polar_latch_4p2": {
+            "mean": 0.8367,
+            "ci95_low": 0.785,
+            "ci95_high": 0.8802,
+            "std": 0.3697,
+            "median": 1.0
+          },
+          "Y294_Y397_water_or_direct": {
+            "mean": 0.8183,
+            "ci95_low": 0.7725,
+            "ci95_high": 0.8614,
+            "std": 0.3856,
+            "median": 1.0
+          },
+          "D163_N393_polar_min_A": {
+            "mean": 4.0766,
+            "ci95_low": 3.8733,
+            "ci95_high": 4.2827,
+            "std": 1.3374,
+            "median": 3.533
+          },
+          "F200_W356_ring_com_A": {
+            "mean": 6.8791,
+            "ci95_low": 6.7503,
+            "ci95_high": 7.0375,
+            "std": 0.9372,
+            "median": 6.657
+          },
+          "W356_chi1_deg": {
+            "mean": -60.3687,
+            "ci95_low": -68.4895,
+            "ci95_high": -50.9431,
+            "std": 69.964,
+            "median": -66.575
+          },
+          "n_wat_core_pore": {
+            "mean": 12.3812,
+            "ci95_low": 11.7889,
+            "ci95_high": 12.9792,
+            "std": 3.9964,
+            "median": 12.0
+          },
+          "wire_D163_N393Y397_cond": {
+            "mean": 0.6333,
+            "ci95_low": 0.5827,
+            "ci95_high": 0.684,
+            "std": 0.3976,
+            "median": 0.5
+          },
+          "wire_D163_NY_percolated": {
+            "mean": 0.799,
+            "ci95_low": 0.7458,
+            "ci95_high": 0.8455,
+            "std": 0.4007,
+            "median": 1.0
+          },
+          "wire_D163_W356_cond": {
+            "mean": 0.09,
+            "ci95_low": 0.0743,
+            "ci95_high": 0.1066,
+            "std": 0.148,
+            "median": 0.0
+          },
+          "wire_D163_W356_percolated": {
+            "mean": 0.2903,
+            "ci95_low": 0.243,
+            "ci95_high": 0.3407,
+            "std": 0.4539,
+            "median": 0.0
+          },
+          "Na_bound_D163": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "std": 0.0,
+            "median": 0.0
+          },
+          "K_bound_D163": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "std": 0.0,
+            "median": 0.0
+          },
+          "cation_bound_D163": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "std": 0.0,
+            "median": 0.0
+          },
+          "min_POPC_TM2_TM4_cleft_A": {
+            "mean": 3.3164,
+            "ci95_low": 3.2673,
+            "ci95_high": 3.3597,
+            "std": 0.4717,
+            "median": 3.421
+          },
+          "POPC_wedged_TM2_TM4_4p0": {
+            "mean": 1.0,
+            "ci95_low": 1.0,
+            "ci95_high": 1.0,
+            "std": 0.0,
+            "median": 1.0
+          },
+          "min_POPC_TM1_TM7_portal_A": {
+            "mean": 3.8211,
+            "ci95_low": 3.7839,
+            "ci95_high": 3.8577,
+            "std": 0.4262,
+            "median": 3.792
+          },
+          "min_Na_D163_A": {
+            "mean": 26.0032,
+            "ci95_low": 25.7309,
+            "ci95_high": 26.272,
+            "min_observed": 17.643
+          }
+        }
+      },
+      "Inactive_4traj": {
+        "n_frames": 9500,
+        "total_duration_ns": 1899.2,
+        "n_50ns_blocks": 38,
+        "metrics": {
+          "R214_D338_CA_A": {
+            "mean": 10.2163,
+            "ci95_low": 9.992,
+            "ci95_high": 10.4614,
+            "std": 1.0988,
+            "median": 9.951
+          },
+          "F155sc_N393CA_A": {
+            "mean": 12.5285,
+            "ci95_low": 11.984,
+            "ci95_high": 13.0605,
+            "std": 1.8163,
+            "median": 11.655
+          },
+          "F155_outward_gauche_minus": {
+            "mean": 0.258,
+            "ci95_low": 0.1265,
+            "ci95_high": 0.3942,
+            "std": 0.4375,
+            "median": 0.0
+          },
+          "F237_outward_trans": {
+            "mean": 0.1458,
+            "ci95_low": 0.0697,
+            "ci95_high": 0.236,
+            "std": 0.3529,
+            "median": 0.0
+          },
+          "Y294_Y397_OH_A": {
+            "mean": 10.7088,
+            "ci95_low": 10.6176,
+            "ci95_high": 10.7948,
+            "std": 0.8323,
+            "median": 10.726
+          },
+          "Y294_Y397_direct_hbond_3p5": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "std": 0.0,
+            "median": 0.0
+          },
+          "Y294_Y397_polar_latch_4p2": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "std": 0.0,
+            "median": 0.0
+          },
+          "Y294_Y397_water_or_direct": {
+            "mean": 0.0006,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0018,
+            "std": 0.0251,
+            "median": 0.0
+          },
+          "D163_N393_polar_min_A": {
+            "mean": 3.2071,
+            "ci95_low": 3.0482,
+            "ci95_high": 3.3686,
+            "std": 0.7626,
+            "median": 2.906
+          },
+          "F200_W356_ring_com_A": {
+            "mean": 5.4284,
+            "ci95_low": 4.9434,
+            "ci95_high": 5.9369,
+            "std": 1.7523,
+            "median": 4.6845
+          },
+          "W356_chi1_deg": {
+            "mean": -33.3114,
+            "ci95_low": -56.5682,
+            "ci95_high": -6.9,
+            "std": 105.0975,
+            "median": -72.12
+          },
+          "n_wat_core_pore": {
+            "mean": 14.0545,
+            "ci95_low": 11.268,
+            "ci95_high": 16.7125,
+            "std": 9.2087,
+            "median": 9.0
+          },
+          "wire_D163_N393Y397_cond": {
+            "mean": 0.9096,
+            "ci95_low": 0.8695,
+            "ci95_high": 0.9506,
+            "std": 0.1972,
+            "median": 1.0
+          },
+          "wire_D163_NY_percolated": {
+            "mean": 1.0,
+            "ci95_low": 1.0,
+            "ci95_high": 1.0,
+            "std": 0.0,
+            "median": 1.0
+          },
+          "wire_D163_W356_cond": {
+            "mean": 0.198,
+            "ci95_low": 0.1563,
+            "ci95_high": 0.2376,
+            "std": 0.1804,
+            "median": 0.25
+          },
+          "wire_D163_W356_percolated": {
+            "mean": 0.5708,
+            "ci95_low": 0.4491,
+            "ci95_high": 0.6832,
+            "std": 0.495,
+            "median": 1.0
+          },
+          "Na_bound_D163": {
+            "mean": 0.648,
+            "ci95_low": 0.5074,
+            "ci95_high": 0.7952,
+            "std": 0.4776,
+            "median": 1.0
+          },
+          "K_bound_D163": {
+            "mean": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "std": 0.0,
+            "median": 0.0
+          },
+          "cation_bound_D163": {
+            "mean": 0.648,
+            "ci95_low": 0.5074,
+            "ci95_high": 0.7952,
+            "std": 0.4776,
+            "median": 1.0
+          },
+          "min_POPC_TM2_TM4_cleft_A": {
+            "mean": 3.3856,
+            "ci95_low": 3.3472,
+            "ci95_high": 3.418,
+            "std": 0.2393,
+            "median": 3.428
+          },
+          "POPC_wedged_TM2_TM4_4p0": {
+            "mean": 0.9996,
+            "ci95_low": 0.9992,
+            "ci95_high": 0.9999,
+            "std": 0.0205,
+            "median": 1.0
+          },
+          "min_POPC_TM1_TM7_portal_A": {
+            "mean": 3.8884,
+            "ci95_low": 3.8631,
+            "ci95_high": 3.92,
+            "std": 0.3506,
+            "median": 3.851
+          },
+          "min_Na_D163_A": {
+            "mean": 9.4552,
+            "ci95_low": 5.9609,
+            "ci95_high": 12.858,
+            "min_observed": 2.008
+          }
+        }
+      }
+    },
+    "per_trajectory": {
+      "22": {
+        "state_label": "Inactive_5U09_Taranabant_A",
+        "pdb_id": "5U09",
+        "transducer_type": "None",
+        "n_frames": 2500,
+        "dt_ns": 0.2,
+        "duration_ns": 499.8,
+        "R214_D338_CA_mean_A": 9.875,
+        "F155sc_N393CA_mean_A": 11.47,
+        "F155_outward_frac": 0.0,
+        "F237_outward_frac": 0.0,
+        "Y294_Y397_OH_mean_A": 10.672,
+        "Y294_Y397_latch4p2_frac": 0.0,
+        "Y294_Y397_latch4p2_mean_dwell_ns": 0.0,
+        "n_wat_core_pore_mean": 7.684,
+        "wire_D163_NY_cond_mean": 0.9946,
+        "wire_D163_NY_percolated_frac": 1.0,
+        "Na_bound_D163_frac": 0.9968,
+        "K_bound_D163_frac": null,
+        "min_POPC_TM2_TM4_mean_A": 3.458
+      },
+      "164": {
+        "state_label": "Inactive_5U09_Taranabant_B",
+        "pdb_id": "5U09",
+        "transducer_type": "None",
+        "n_frames": 2500,
+        "dt_ns": 0.2,
+        "duration_ns": 499.8,
+        "R214_D338_CA_mean_A": 9.881,
+        "F155sc_N393CA_mean_A": 11.475,
+        "F155_outward_frac": 0.0,
+        "F237_outward_frac": 0.222,
+        "Y294_Y397_OH_mean_A": 10.769,
+        "Y294_Y397_latch4p2_frac": 0.0,
+        "Y294_Y397_latch4p2_mean_dwell_ns": 0.0,
+        "n_wat_core_pore_mean": 9.536,
+        "wire_D163_NY_cond_mean": 0.9718,
+        "wire_D163_NY_percolated_frac": 1.0,
+        "Na_bound_D163_frac": 0.8892,
+        "K_bound_D163_frac": null,
+        "min_POPC_TM2_TM4_mean_A": 3.351
+      },
+      "162": {
+        "state_label": "Inactive_5TGZ_Apo",
+        "pdb_id": "5TGZ",
+        "transducer_type": "None",
+        "n_frames": 2000,
+        "dt_ns": 0.2,
+        "duration_ns": 399.8,
+        "R214_D338_CA_mean_A": 9.714,
+        "F155sc_N393CA_mean_A": 11.564,
+        "F155_outward_frac": 0.0,
+        "F237_outward_frac": 0.0475,
+        "Y294_Y397_OH_mean_A": 10.839,
+        "Y294_Y397_latch4p2_frac": 0.0,
+        "Y294_Y397_latch4p2_mean_dwell_ns": 0.0,
+        "n_wat_core_pore_mean": 10.456,
+        "wire_D163_NY_cond_mean": 0.9737,
+        "wire_D163_NY_percolated_frac": 1.0,
+        "Na_bound_D163_frac": 0.7205,
+        "K_bound_D163_frac": null,
+        "min_POPC_TM2_TM4_mean_A": 3.32
+      },
+      "163": {
+        "state_label": "Inactive_5U09_Apo",
+        "pdb_id": "5U09",
+        "transducer_type": "None",
+        "n_frames": 2500,
+        "dt_ns": 0.2,
+        "duration_ns": 499.8,
+        "R214_D338_CA_mean_A": 11.294,
+        "F155sc_N393CA_mean_A": 15.412,
+        "F155_outward_frac": 0.9804,
+        "F237_outward_frac": 0.294,
+        "Y294_Y397_OH_mean_A": 10.581,
+        "Y294_Y397_latch4p2_frac": 0.0,
+        "Y294_Y397_latch4p2_mean_dwell_ns": 0.0,
+        "n_wat_core_pore_mean": 27.823,
+        "wire_D163_NY_cond_mean": 0.7112,
+        "wire_D163_NY_percolated_frac": 1.0,
+        "Na_bound_D163_frac": 0.0,
+        "K_bound_D163_frac": null,
+        "min_POPC_TM2_TM4_mean_A": 3.4
+      },
+      "2067": {
+        "state_label": "Active_Gs_Apo",
+        "pdb_id": "6N4B",
+        "transducer_type": "Gs",
+        "n_frames": 6000,
+        "dt_ns": 1.0,
+        "duration_ns": 5999.0,
+        "R214_D338_CA_mean_A": 16.766,
+        "F155sc_N393CA_mean_A": 14.906,
+        "F155_outward_frac": 0.9965,
+        "F237_outward_frac": 0.8817,
+        "Y294_Y397_OH_mean_A": 3.557,
+        "Y294_Y397_latch4p2_frac": 0.8367,
+        "Y294_Y397_latch4p2_mean_dwell_ns": 14.808,
+        "n_wat_core_pore_mean": 12.381,
+        "wire_D163_NY_cond_mean": 0.6333,
+        "wire_D163_NY_percolated_frac": 0.799,
+        "Na_bound_D163_frac": 0.0,
+        "K_bound_D163_frac": null,
+        "min_POPC_TM2_TM4_mean_A": 3.316
+      },
+      "1201": {
+        "state_label": "Active_Gi1_FUB",
+        "pdb_id": "6N4B",
+        "transducer_type": "Gi1",
+        "n_frames": 5001,
+        "dt_ns": 0.2,
+        "duration_ns": 1000.0,
+        "R214_D338_CA_mean_A": 16.151,
+        "F155sc_N393CA_mean_A": 14.991,
+        "F155_outward_frac": 0.9976,
+        "F237_outward_frac": 0.9162,
+        "Y294_Y397_OH_mean_A": 4.587,
+        "Y294_Y397_latch4p2_frac": 0.5947,
+        "Y294_Y397_latch4p2_mean_dwell_ns": 1.38,
+        "n_wat_core_pore_mean": 16.547,
+        "wire_D163_NY_cond_mean": 0.9701,
+        "wire_D163_NY_percolated_frac": 0.997,
+        "Na_bound_D163_frac": null,
+        "K_bound_D163_frac": 0.0,
+        "min_POPC_TM2_TM4_mean_A": 3.434
+      }
+    },
+    "matched_open_tm6_Gi1_vs_Gs": {
+      "slice_range_A": [
+        13.5,
+        16.5
+      ],
+      "n_frames_Gi1_1201": 3746,
+      "n_frames_Gs_2067": 2893,
+      "comparisons": {
+        "R214_D338_CA_A": {
+          "Gi1_mean": 15.3473,
+          "Gs_mean": 15.5011,
+          "diff_Gi1_minus_Gs": -0.1538,
+          "ks_distance": 0.2537
+        },
+        "F155sc_N393CA_A": {
+          "Gi1_mean": 15.0192,
+          "Gs_mean": 14.953,
+          "diff_Gi1_minus_Gs": 0.0662,
+          "ks_distance": 0.0788
+        },
+        "F155_outward_gauche_minus": {
+          "Gi1_mean": 0.9989,
+          "Gs_mean": 0.9965,
+          "diff_Gi1_minus_Gs": 0.0024,
+          "ks_distance": 0.0024
+        },
+        "F237_outward_trans": {
+          "Gi1_mean": 0.893,
+          "Gs_mean": 0.8313,
+          "diff_Gi1_minus_Gs": 0.0616,
+          "ks_distance": 0.0616
+        },
+        "Y294_Y397_OH_A": {
+          "Gi1_mean": 4.4635,
+          "Gs_mean": 3.772,
+          "diff_Gi1_minus_Gs": 0.6916,
+          "ks_distance": 0.2217
+        },
+        "Y294_Y397_polar_latch_4p2": {
+          "Gi1_mean": 0.638,
+          "Gs_mean": 0.7974,
+          "diff_Gi1_minus_Gs": -0.1594,
+          "ks_distance": 0.1594
+        },
+        "D163_N393_polar_min_A": {
+          "Gi1_mean": 2.9598,
+          "Gs_mean": 4.1353,
+          "diff_Gi1_minus_Gs": -1.1755,
+          "ks_distance": 0.5038
+        },
+        "n_wat_core_pore": {
+          "Gi1_mean": 17.4447,
+          "Gs_mean": 11.2489,
+          "diff_Gi1_minus_Gs": 6.1959,
+          "ks_distance": 0.5765
+        },
+        "wire_D163_N393Y397_cond": {
+          "Gi1_mean": 0.9606,
+          "Gs_mean": 0.6377,
+          "diff_Gi1_minus_Gs": 0.3229,
+          "ks_distance": 0.4714
+        },
+        "min_POPC_TM2_TM4_cleft_A": {
+          "Gi1_mean": 3.4369,
+          "Gs_mean": 3.3326,
+          "diff_Gi1_minus_Gs": 0.1043,
+          "ks_distance": 0.0895
+        }
+      }
+    },
+    "early_vs_late_relaxation": {
+      "Gi1_1201": {
+        "early_window_ns": [
+          0.0,
+          250.0
+        ],
+        "late_window_ns": [
+          750.0,
+          1000.0
+        ],
+        "metrics": {
+          "R214_D338_CA_A": {
+            "early_mean": 15.4497,
+            "late_mean": 16.2267,
+            "delta_late_minus_early": 0.7769
+          },
+          "F155sc_N393CA_A": {
+            "early_mean": 15.0115,
+            "late_mean": 14.6114,
+            "delta_late_minus_early": -0.4002
+          },
+          "F237_outward_trans": {
+            "early_mean": 0.8377,
+            "late_mean": 0.9361,
+            "delta_late_minus_early": 0.0983
+          },
+          "Y294_Y397_OH_A": {
+            "early_mean": 4.4096,
+            "late_mean": 3.1516,
+            "delta_late_minus_early": -1.258
+          },
+          "n_wat_core_pore": {
+            "early_mean": 16.705,
+            "late_mean": 12.6187,
+            "delta_late_minus_early": -4.0863
+          },
+          "wire_D163_N393Y397_cond": {
+            "early_mean": 0.9789,
+            "late_mean": 0.9253,
+            "delta_late_minus_early": -0.0536
+          },
+          "Na_bound_D163": {
+            "early_mean": 0.0,
+            "late_mean": 0.0,
+            "delta_late_minus_early": 0.0
+          }
+        }
+      },
+      "Gs_2067": {
+        "early_window_ns": [
+          0.0,
+          1000.0
+        ],
+        "late_window_ns": [
+          4500.0,
+          5999.0
+        ],
+        "metrics": {
+          "R214_D338_CA_A": {
+            "early_mean": 16.5245,
+            "late_mean": 16.5995,
+            "delta_late_minus_early": 0.075
+          },
+          "F155sc_N393CA_A": {
+            "early_mean": 15.278,
+            "late_mean": 14.6426,
+            "delta_late_minus_early": -0.6354
+          },
+          "F237_outward_trans": {
+            "early_mean": 0.8671,
+            "late_mean": 0.9333,
+            "delta_late_minus_early": 0.0662
+          },
+          "Y294_Y397_OH_A": {
+            "early_mean": 3.4016,
+            "late_mean": 3.2313,
+            "delta_late_minus_early": -0.1703
+          },
+          "n_wat_core_pore": {
+            "early_mean": 13.7133,
+            "late_mean": 14.582,
+            "delta_late_minus_early": 0.8687
+          },
+          "wire_D163_N393Y397_cond": {
+            "early_mean": 0.8716,
+            "late_mean": 0.34,
+            "delta_late_minus_early": -0.5317
+          },
+          "Na_bound_D163": {
+            "early_mean": 0.0,
+            "late_mean": 0.0,
+            "delta_late_minus_early": 0.0
+          }
+        }
+      }
+    }
+  },
+  "pillar_b_explicit_solvent_memory_closure": {
+    "primary_cohort_key": "Fine_0p2ns_5traj",
+    "local_transition_audits": {
+      "Fine_0p2ns_5traj": [
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 3.5,
+          "r_high": 4.8,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 1089,
+          "n_uncensored": 1089,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.6832,
+          "mean_commit_time_ns": 1.06,
+          "median_commit_time_ns": 0.6,
+          "n_basin_switches": 90,
+          "n_active_macro_groups": 8,
+          "n_active_trajectories": 1,
+          "effective_binomial_information": 235.7,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 3.6,
+          "r_high": 4.6,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 926,
+          "n_uncensored": 926,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.6188,
+          "mean_commit_time_ns": 0.679,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 145,
+          "n_active_macro_groups": 8,
+          "n_active_trajectories": 1,
+          "effective_binomial_information": 218.43,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 3.8,
+          "r_high": 5.0,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 872,
+          "n_uncensored": 872,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.828,
+          "mean_commit_time_ns": 0.822,
+          "median_commit_time_ns": 0.6,
+          "n_basin_switches": 71,
+          "n_active_macro_groups": 8,
+          "n_active_trajectories": 1,
+          "effective_binomial_information": 124.2,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 4.0,
+          "r_high": 5.5,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 732,
+          "n_uncensored": 732,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.9044,
+          "mean_commit_time_ns": 0.679,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 17,
+          "n_active_macro_groups": 8,
+          "n_active_trajectories": 2,
+          "effective_binomial_information": 63.31,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 3.6,
+          "r_high": 5.2,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 714,
+          "n_uncensored": 714,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.6737,
+          "mean_commit_time_ns": 0.382,
+          "median_commit_time_ns": 0.2,
+          "n_basin_switches": 206,
+          "n_active_macro_groups": 23,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 156.96,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 3.8,
+          "r_high": 5.4,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 725,
+          "n_uncensored": 725,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.6897,
+          "mean_commit_time_ns": 0.461,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 142,
+          "n_active_macro_groups": 20,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 155.17,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 4.0,
+          "r_high": 5.6,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 701,
+          "n_uncensored": 701,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.766,
+          "mean_commit_time_ns": 0.53,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 99,
+          "n_active_macro_groups": 19,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 125.63,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 4.2,
+          "r_high": 5.8,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 657,
+          "n_uncensored": 657,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.8721,
+          "mean_commit_time_ns": 0.549,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 55,
+          "n_active_macro_groups": 18,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 73.26,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 4.5,
+          "r_high": 6.2,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 565,
+          "n_uncensored": 565,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.9381,
+          "mean_commit_time_ns": 0.515,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 24,
+          "n_active_macro_groups": 15,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 32.83,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.5,
+          "r_high": 4.5,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 4051,
+          "n_uncensored": 4051,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.2195,
+          "mean_commit_time_ns": 0.666,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 194,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 693.91,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.6,
+          "r_high": 4.6,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 3150,
+          "n_uncensored": 3150,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.2568,
+          "mean_commit_time_ns": 0.452,
+          "median_commit_time_ns": 0.2,
+          "n_basin_switches": 210,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 601.23,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.7,
+          "r_high": 4.8,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 2569,
+          "n_uncensored": 2569,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.3433,
+          "mean_commit_time_ns": 0.438,
+          "median_commit_time_ns": 0.2,
+          "n_basin_switches": 215,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 579.19,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.8,
+          "r_high": 5.0,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 2218,
+          "n_uncensored": 2218,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.4472,
+          "mean_commit_time_ns": 0.48,
+          "median_commit_time_ns": 0.2,
+          "n_basin_switches": 211,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 548.33,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 3.8,
+          "r_high": 5.2,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 3775,
+          "n_uncensored": 3775,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.8379,
+          "mean_commit_time_ns": 0.698,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 136,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 512.78,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.0,
+          "r_high": 5.5,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 4744,
+          "n_uncensored": 4744,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.8191,
+          "mean_commit_time_ns": 1.441,
+          "median_commit_time_ns": 0.8,
+          "n_basin_switches": 204,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 702.82,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.2,
+          "r_high": 5.8,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 5318,
+          "n_uncensored": 5145,
+          "n_censored": 173,
+          "censoring_rate": 0.03253,
+          "mean_y_uncensored": 0.627,
+          "mean_commit_time_ns": 2.642,
+          "median_commit_time_ns": 1.4,
+          "n_basin_switches": 229,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 1203.24,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.5,
+          "r_high": 6.2,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 5463,
+          "n_uncensored": 5383,
+          "n_censored": 80,
+          "censoring_rate": 0.01464,
+          "mean_y_uncensored": 0.2933,
+          "mean_commit_time_ns": 2.375,
+          "median_commit_time_ns": 1.2,
+          "n_basin_switches": 164,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 1115.83,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 3.5,
+          "r_high": 5.5,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 2769,
+          "n_uncensored": 2769,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.6779,
+          "mean_commit_time_ns": 0.951,
+          "median_commit_time_ns": 0.6,
+          "n_basin_switches": 216,
+          "n_active_macro_groups": 19,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 604.65,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 4.0,
+          "r_high": 6.0,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 2869,
+          "n_uncensored": 2869,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.4573,
+          "mean_commit_time_ns": 0.84,
+          "median_commit_time_ns": 0.6,
+          "n_basin_switches": 326,
+          "n_active_macro_groups": 19,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 712.02,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 5.0,
+          "r_high": 7.5,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 2289,
+          "n_uncensored": 2289,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.3748,
+          "mean_commit_time_ns": 0.484,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 245,
+          "n_active_macro_groups": 19,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 536.39,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 6.0,
+          "r_high": 8.5,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 1699,
+          "n_uncensored": 1699,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.4108,
+          "mean_commit_time_ns": 0.754,
+          "median_commit_time_ns": 0.4,
+          "n_basin_switches": 169,
+          "n_active_macro_groups": 19,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 411.24,
+          "passes_validity_gate": true
+        }
+      ],
+      "NaCl5_1p0ns_ExplicitNa": [
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 3.5,
+          "r_high": 4.8,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 618,
+          "n_uncensored": 618,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.7994,
+          "mean_commit_time_ns": 1.738,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 180,
+          "n_active_macro_groups": 31,
+          "n_active_trajectories": 1,
+          "effective_binomial_information": 99.12,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 3.6,
+          "r_high": 4.6,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 461,
+          "n_uncensored": 461,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.7505,
+          "mean_commit_time_ns": 1.49,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 266,
+          "n_active_macro_groups": 30,
+          "n_active_trajectories": 1,
+          "effective_binomial_information": 86.31,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 3.8,
+          "r_high": 5.0,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 458,
+          "n_uncensored": 458,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.7598,
+          "mean_commit_time_ns": 1.782,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 141,
+          "n_active_macro_groups": 31,
+          "n_active_trajectories": 1,
+          "effective_binomial_information": 83.58,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 4.0,
+          "r_high": 5.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 444,
+          "n_uncensored": 444,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.8266,
+          "mean_commit_time_ns": 2.385,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 67,
+          "n_active_macro_groups": 31,
+          "n_active_trajectories": 1,
+          "effective_binomial_information": 63.65,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 3.6,
+          "r_high": 5.2,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1188,
+          "n_uncensored": 1188,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.6313,
+          "mean_commit_time_ns": 3.011,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 225,
+          "n_active_macro_groups": 37,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 276.52,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 3.8,
+          "r_high": 5.4,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1084,
+          "n_uncensored": 1078,
+          "n_censored": 6,
+          "censoring_rate": 0.00554,
+          "mean_y_uncensored": 0.6308,
+          "mean_commit_time_ns": 3.502,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 184,
+          "n_active_macro_groups": 37,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 251.06,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 4.0,
+          "r_high": 5.6,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1044,
+          "n_uncensored": 1038,
+          "n_censored": 6,
+          "censoring_rate": 0.00575,
+          "mean_y_uncensored": 0.6773,
+          "mean_commit_time_ns": 3.742,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 128,
+          "n_active_macro_groups": 36,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 226.88,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 4.2,
+          "r_high": 5.8,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1003,
+          "n_uncensored": 1003,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.6999,
+          "mean_commit_time_ns": 3.676,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 95,
+          "n_active_macro_groups": 35,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 210.67,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 4.5,
+          "r_high": 6.2,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 938,
+          "n_uncensored": 926,
+          "n_censored": 12,
+          "censoring_rate": 0.01279,
+          "mean_y_uncensored": 0.7138,
+          "mean_commit_time_ns": 3.4,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 60,
+          "n_active_macro_groups": 32,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 189.16,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.5,
+          "r_high": 4.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 3185,
+          "n_uncensored": 2962,
+          "n_censored": 223,
+          "censoring_rate": 0.07002,
+          "mean_y_uncensored": 0.5307,
+          "mean_commit_time_ns": 5.957,
+          "median_commit_time_ns": 4.0,
+          "n_basin_switches": 153,
+          "n_active_macro_groups": 42,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 737.7,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.6,
+          "r_high": 4.6,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 2901,
+          "n_uncensored": 2825,
+          "n_censored": 76,
+          "censoring_rate": 0.0262,
+          "mean_y_uncensored": 0.332,
+          "mean_commit_time_ns": 5.108,
+          "median_commit_time_ns": 3.0,
+          "n_basin_switches": 212,
+          "n_active_macro_groups": 42,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 626.55,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.7,
+          "r_high": 4.8,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 2555,
+          "n_uncensored": 2533,
+          "n_censored": 22,
+          "censoring_rate": 0.00861,
+          "mean_y_uncensored": 0.1591,
+          "mean_commit_time_ns": 4.169,
+          "median_commit_time_ns": 3.0,
+          "n_basin_switches": 203,
+          "n_active_macro_groups": 42,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 338.88,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.8,
+          "r_high": 5.0,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 2212,
+          "n_uncensored": 2212,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.1343,
+          "mean_commit_time_ns": 3.356,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 162,
+          "n_active_macro_groups": 42,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 257.12,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 3.8,
+          "r_high": 5.2,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1415,
+          "n_uncensored": 1415,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.9413,
+          "mean_commit_time_ns": 2.13,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 33,
+          "n_active_macro_groups": 42,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 78.13,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.0,
+          "r_high": 5.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 2308,
+          "n_uncensored": 2262,
+          "n_censored": 46,
+          "censoring_rate": 0.01993,
+          "mean_y_uncensored": 0.9372,
+          "mean_commit_time_ns": 3.584,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 79,
+          "n_active_macro_groups": 42,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 133.09,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.2,
+          "r_high": 5.8,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 3077,
+          "n_uncensored": 2910,
+          "n_censored": 167,
+          "censoring_rate": 0.05427,
+          "mean_y_uncensored": 0.8687,
+          "mean_commit_time_ns": 4.855,
+          "median_commit_time_ns": 3.0,
+          "n_basin_switches": 104,
+          "n_active_macro_groups": 42,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 331.85,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.5,
+          "r_high": 6.2,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 3757,
+          "n_uncensored": 3392,
+          "n_censored": 365,
+          "censoring_rate": 0.09715,
+          "mean_y_uncensored": 0.6719,
+          "mean_commit_time_ns": 7.393,
+          "median_commit_time_ns": 5.0,
+          "n_basin_switches": 146,
+          "n_active_macro_groups": 42,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 747.8,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 3.5,
+          "r_high": 5.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 615,
+          "n_uncensored": 615,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.5854,
+          "mean_commit_time_ns": 4.42,
+          "median_commit_time_ns": 3.0,
+          "n_basin_switches": 55,
+          "n_active_macro_groups": 11,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 149.27,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 4.0,
+          "r_high": 6.0,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 627,
+          "n_uncensored": 627,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.4179,
+          "mean_commit_time_ns": 3.329,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 70,
+          "n_active_macro_groups": 11,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 152.52,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 5.0,
+          "r_high": 7.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 475,
+          "n_uncensored": 475,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.3642,
+          "mean_commit_time_ns": 2.122,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 68,
+          "n_active_macro_groups": 11,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 109.99,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 6.0,
+          "r_high": 8.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 314,
+          "n_uncensored": 314,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.4618,
+          "mean_commit_time_ns": 2.589,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 56,
+          "n_active_macro_groups": 11,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 78.04,
+          "passes_validity_gate": true
+        }
+      ],
+      "Open6_1p0ns_AllTraj": [
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 3.5,
+          "r_high": 4.8,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 837,
+          "n_uncensored": 837,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.7061,
+          "mean_commit_time_ns": 2.318,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 196,
+          "n_active_macro_groups": 36,
+          "n_active_trajectories": 2,
+          "effective_binomial_information": 173.7,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 3.6,
+          "r_high": 4.6,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 640,
+          "n_uncensored": 640,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.6813,
+          "mean_commit_time_ns": 1.831,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 288,
+          "n_active_macro_groups": 35,
+          "n_active_trajectories": 2,
+          "effective_binomial_information": 138.97,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 3.8,
+          "r_high": 5.0,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 637,
+          "n_uncensored": 635,
+          "n_censored": 2,
+          "censoring_rate": 0.00314,
+          "mean_y_uncensored": 0.7386,
+          "mean_commit_time_ns": 2.504,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 156,
+          "n_active_macro_groups": 36,
+          "n_active_trajectories": 2,
+          "effective_binomial_information": 122.6,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "Y294_Y397_polar_latch",
+          "col": "Y294_Y397_OH_A",
+          "description": "Intracellular TM5-TM7 Tyr polar latch d(Y294^5.58 - Y397^7.53 OH)",
+          "B_below": true,
+          "r_low": 4.0,
+          "r_high": 5.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 603,
+          "n_uncensored": 603,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.8391,
+          "mean_commit_time_ns": 2.589,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 75,
+          "n_active_macro_groups": 36,
+          "n_active_trajectories": 2,
+          "effective_binomial_information": 81.4,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 3.6,
+          "r_high": 5.2,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1209,
+          "n_uncensored": 1209,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.6377,
+          "mean_commit_time_ns": 2.981,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 227,
+          "n_active_macro_groups": 40,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 279.32,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 3.8,
+          "r_high": 5.4,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1096,
+          "n_uncensored": 1090,
+          "n_censored": 6,
+          "censoring_rate": 0.00547,
+          "mean_y_uncensored": 0.6349,
+          "mean_commit_time_ns": 3.478,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 186,
+          "n_active_macro_groups": 40,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 252.68,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 4.0,
+          "r_high": 5.6,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1055,
+          "n_uncensored": 1049,
+          "n_censored": 6,
+          "censoring_rate": 0.00569,
+          "mean_y_uncensored": 0.6806,
+          "mean_commit_time_ns": 3.716,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 130,
+          "n_active_macro_groups": 39,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 228.02,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 4.2,
+          "r_high": 5.8,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1013,
+          "n_uncensored": 1013,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.7029,
+          "mean_commit_time_ns": 3.653,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 95,
+          "n_active_macro_groups": 38,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 211.56,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "D163_N393_polar_aperture",
+          "col": "D163_N393_polar_min_A",
+          "description": "Allosteric Na+/NPxxY polar pocket aperture d_min(D163^2.50 - N393^7.49)",
+          "B_below": true,
+          "r_low": 4.5,
+          "r_high": 6.2,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 940,
+          "n_uncensored": 928,
+          "n_censored": 12,
+          "censoring_rate": 0.01277,
+          "mean_y_uncensored": 0.7144,
+          "mean_commit_time_ns": 3.395,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 60,
+          "n_active_macro_groups": 33,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 189.33,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.5,
+          "r_high": 4.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 3487,
+          "n_uncensored": 3253,
+          "n_censored": 234,
+          "censoring_rate": 0.06711,
+          "mean_y_uncensored": 0.5174,
+          "mean_commit_time_ns": 5.778,
+          "median_commit_time_ns": 4.0,
+          "n_basin_switches": 182,
+          "n_active_macro_groups": 47,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 812.27,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.6,
+          "r_high": 4.6,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 3151,
+          "n_uncensored": 3075,
+          "n_censored": 76,
+          "censoring_rate": 0.02412,
+          "mean_y_uncensored": 0.3298,
+          "mean_commit_time_ns": 4.929,
+          "median_commit_time_ns": 3.0,
+          "n_basin_switches": 247,
+          "n_active_macro_groups": 47,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 679.63,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.7,
+          "r_high": 4.8,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 2776,
+          "n_uncensored": 2754,
+          "n_censored": 22,
+          "censoring_rate": 0.00793,
+          "mean_y_uncensored": 0.1728,
+          "mean_commit_time_ns": 3.996,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 240,
+          "n_active_macro_groups": 47,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 393.73,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.8,
+          "r_high": 5.0,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 2418,
+          "n_uncensored": 2418,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.1563,
+          "mean_commit_time_ns": 3.227,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 199,
+          "n_active_macro_groups": 47,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 318.91,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 3.8,
+          "r_high": 5.2,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 1600,
+          "n_uncensored": 1600,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.9156,
+          "mean_commit_time_ns": 2.211,
+          "median_commit_time_ns": 1.0,
+          "n_basin_switches": 43,
+          "n_active_macro_groups": 47,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 123.61,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.0,
+          "r_high": 5.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 2542,
+          "n_uncensored": 2496,
+          "n_censored": 46,
+          "censoring_rate": 0.0181,
+          "mean_y_uncensored": 0.9223,
+          "mean_commit_time_ns": 3.579,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 92,
+          "n_active_macro_groups": 47,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 178.92,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.2,
+          "r_high": 5.8,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 3365,
+          "n_uncensored": 3194,
+          "n_censored": 171,
+          "censoring_rate": 0.05082,
+          "mean_y_uncensored": 0.8629,
+          "mean_commit_time_ns": 4.829,
+          "median_commit_time_ns": 3.0,
+          "n_basin_switches": 115,
+          "n_active_macro_groups": 47,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 377.94,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.5,
+          "r_high": 6.2,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 4097,
+          "n_uncensored": 3710,
+          "n_censored": 387,
+          "censoring_rate": 0.09446,
+          "mean_y_uncensored": 0.6717,
+          "mean_commit_time_ns": 7.189,
+          "median_commit_time_ns": 5.0,
+          "n_basin_switches": 164,
+          "n_active_macro_groups": 47,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 818.13,
+          "passes_validity_gate": false
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 3.5,
+          "r_high": 5.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 615,
+          "n_uncensored": 615,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.5854,
+          "mean_commit_time_ns": 4.42,
+          "median_commit_time_ns": 3.0,
+          "n_basin_switches": 55,
+          "n_active_macro_groups": 11,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 149.27,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 4.0,
+          "r_high": 6.0,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 627,
+          "n_uncensored": 627,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.4179,
+          "mean_commit_time_ns": 3.329,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 70,
+          "n_active_macro_groups": 11,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 152.52,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 5.0,
+          "r_high": 7.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 475,
+          "n_uncensored": 475,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.3642,
+          "mean_commit_time_ns": 2.122,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 68,
+          "n_active_macro_groups": 11,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 109.99,
+          "passes_validity_gate": true
+        },
+        {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 6.0,
+          "r_high": 8.5,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 314,
+          "n_uncensored": 314,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.4618,
+          "mean_commit_time_ns": 2.589,
+          "median_commit_time_ns": 2.0,
+          "n_basin_switches": 56,
+          "n_active_macro_groups": 11,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 78.04,
+          "passes_validity_gate": true
+        }
+      ]
+    },
+    "cohorts": {
+      "Fine_0p2ns_5traj": {
+        "target_metadata": {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.2,
+          "r_high": 5.8,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 5318,
+          "n_uncensored": 5145,
+          "n_censored": 173,
+          "censoring_rate": 0.03253,
+          "mean_y_uncensored": 0.627,
+          "mean_commit_time_ns": 2.642,
+          "median_commit_time_ns": 1.4,
+          "n_basin_switches": 229,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 1203.24,
+          "passes_validity_gate": true
+        },
+        "n_cv_splits": 5,
+        "n_unique_groups": 28,
+        "feature_names_prot": [
+          "F155_F237_ring_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1"
+        ],
+        "feature_names_prot_env": [
+          "F155_F237_ring_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1",
+          "n_wat_core_pore",
+          "wire_D163_W356_cond",
+          "wire_D163_N393Y397_cond",
+          "wire_Y294_Y397_cond",
+          "min_cation_D163_A",
+          "coord_cation_D163_3p2",
+          "min_POPC_TM2_TM4_cleft_A",
+          "min_POPC_TM1_TM7_portal_A"
+        ],
+        "static_committor_evaluation": {
+          "log_likelihood_nats": {
+            "B0": -0.6687,
+            "B1": -0.62415,
+            "prot": -0.64085,
+            "prot_water": -0.6479,
+            "prot_ion": -0.63811,
+            "prot_popc": -0.6534,
+            "prot_env_all": -0.64331,
+            "oracle_prot": -0.76137,
+            "oracle_prot_env": -0.7584
+          },
+          "prot_vs_B1": {
+            "bss": {
+              "point": -0.03572295917037427,
+              "ci_low": -0.07026415612622952,
+              "ci_high": 0.00026567359350069045,
+              "std_err": 0.0173715201887411,
+              "n_groups": 28
+            },
+            "delta_ell": {
+              "point": -0.01670458586390617,
+              "ci_low": -0.0362561641085306,
+              "ci_high": 0.000771565136802721,
+              "std_err": 0.009543221542210838,
+              "n_groups": 28
+            }
+          },
+          "prot_env_vs_B1": {
+            "bss": {
+              "point": -0.0379666455801686,
+              "ci_low": -0.08968850747781772,
+              "ci_high": 0.015503111108765311,
+              "std_err": 0.027627129385077963,
+              "n_groups": 28
+            },
+            "delta_ell": {
+              "point": -0.019156888738375708,
+              "ci_low": -0.05124871375641212,
+              "ci_high": 0.00981678892387731,
+              "std_err": 0.015360773881376315,
+              "n_groups": 28
+            }
+          },
+          "prot_env_vs_prot": {
+            "bss": {
+              "point": -0.002166299771506175,
+              "ci_low": -0.031220797246283107,
+              "ci_high": 0.027429290017332675,
+              "std_err": 0.01514561890941769,
+              "n_groups": 28
+            },
+            "delta_ell": {
+              "point": -0.0024523028744695215,
+              "ci_low": -0.018254202042334775,
+              "ci_high": 0.014635512410659541,
+              "std_err": 0.008561311904565213,
+              "n_groups": 28
+            }
+          },
+          "prot_water_vs_prot": {
+            "bss": {
+              "point": -0.01376449903993815,
+              "ci_low": -0.03819093708334202,
+              "ci_high": 0.009639438430745672,
+              "std_err": 0.012101065817599035,
+              "n_groups": 28
+            },
+            "delta_ell": {
+              "point": -0.007045392601369433,
+              "ci_low": -0.02055310778232431,
+              "ci_high": 0.0054519683289248845,
+              "std_err": 0.006763158205030807,
+              "n_groups": 28
+            }
+          },
+          "prot_ion_vs_prot": {
+            "bss": {
+              "point": 0.006596079641354002,
+              "ci_low": -0.00912604314407373,
+              "ci_high": 0.026049257161694116,
+              "std_err": 0.009140517433215336,
+              "n_groups": 28
+            },
+            "delta_ell": {
+              "point": 0.0027439526302613943,
+              "ci_low": -0.00513365147867929,
+              "ci_high": 0.012478351830532204,
+              "std_err": 0.004488736964962062,
+              "n_groups": 28
+            }
+          },
+          "prot_popc_vs_prot": {
+            "bss": {
+              "point": -0.022079385243048533,
+              "ci_low": -0.0421998335414842,
+              "ci_high": -0.004505029405598584,
+              "std_err": 0.009583636596836835,
+              "n_groups": 28
+            },
+            "delta_ell": {
+              "point": -0.01254989702538962,
+              "ci_low": -0.0246544960703725,
+              "ci_high": -0.0023517202062298672,
+              "std_err": 0.005564529705677213,
+              "n_groups": 28
+            }
+          },
+          "oracle_gap_prot_env": -0.11509,
+          "n1_env_block_permutation": {
+            "n_progress_strata": 3,
+            "obs_delta_ell_env_vs_prot": -0.00245,
+            "null_mean": -0.02083,
+            "null_q95": 0.01273,
+            "p_value": 0.1584
+          },
+          "standardized_weights_prot_env": {
+            "F155_F237_ring_min_A": 0.5924,
+            "R214_D338_CA_A": 0.2076,
+            "D163_N393_CA_A": -0.22,
+            "F200_W356_ring_com_A": 0.3594,
+            "F155sc_N393CA_A": 0.4644,
+            "Y294_Y397_OH_A": -0.136,
+            "D163_N393_polar_min_A": -0.1351,
+            "sin_W356_chi1": -0.4109,
+            "cos_W356_chi1": 0.0987,
+            "sin_F155_chi1": 0.4291,
+            "n_wat_core_pore": 0.4368,
+            "wire_D163_W356_cond": -0.1386,
+            "wire_D163_N393Y397_cond": -0.0447,
+            "wire_Y294_Y397_cond": -0.3543,
+            "min_cation_D163_A": -0.1635,
+            "coord_cation_D163_3p2": 0.4523,
+            "min_POPC_TM2_TM4_cleft_A": 0.0784,
+            "min_POPC_TM1_TM7_portal_A": 0.109
+          },
+          "manski_censoring_bounds": {
+            "all_censored_to_0": {
+              "delta_ell_env_vs_prot": 0.01373,
+              "bss_env_vs_prot": 0.02301
+            },
+            "all_censored_to_1": {
+              "delta_ell_env_vs_prot": 0.00945,
+              "bss_env_vs_prot": 0.01745
+            }
+          }
+        },
+        "mori_zwanzig_memory_profile": [
+          {
+            "lag_steps": 1,
+            "lag_ns": 0.2,
+            "n_eval_frames": 5126,
+            "loc1d": {
+              "delta_ell_mem": 0.031162,
+              "ci95_low": 0.018074,
+              "ci95_high": 0.047616,
+              "n2a_q95": 0.000441,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.029696,
+              "bss_mem": 0.05568,
+              "ci95_low": 0.015788,
+              "ci95_high": 0.045799,
+              "n2a_null_mean": 0.000305,
+              "n2a_q95": 0.002223,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.022911,
+              "bss_mem": 0.04286,
+              "ci95_low": 0.007906,
+              "ci95_high": 0.03995,
+              "n2a_null_mean": -0.001462,
+              "n2a_q95": 0.000229,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.2285,
+            "rho_mem_collapse_1d_to_env": 0.2648
+          },
+          {
+            "lag_steps": 2,
+            "lag_ns": 0.4,
+            "n_eval_frames": 5108,
+            "loc1d": {
+              "delta_ell_mem": 0.032725,
+              "ci95_low": 0.020151,
+              "ci95_high": 0.049935,
+              "n2a_q95": 0.000377,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.029406,
+              "bss_mem": 0.0552,
+              "ci95_low": 0.016858,
+              "ci95_high": 0.044878,
+              "n2a_null_mean": 9.6e-05,
+              "n2a_q95": 0.001746,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.024622,
+              "bss_mem": 0.04528,
+              "ci95_low": 0.010531,
+              "ci95_high": 0.043144,
+              "n2a_null_mean": -0.001158,
+              "n2a_q95": 0.000756,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.1627,
+            "rho_mem_collapse_1d_to_env": 0.2476
+          },
+          {
+            "lag_steps": 5,
+            "lag_ns": 1.0,
+            "n_eval_frames": 5055,
+            "loc1d": {
+              "delta_ell_mem": 0.027547,
+              "ci95_low": 0.014343,
+              "ci95_high": 0.04706,
+              "n2a_q95": 0.000397,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.024433,
+              "bss_mem": 0.04567,
+              "ci95_low": 0.010192,
+              "ci95_high": 0.04215,
+              "n2a_null_mean": 0.00024,
+              "n2a_q95": 0.00179,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.022251,
+              "bss_mem": 0.04038,
+              "ci95_low": 0.007548,
+              "ci95_high": 0.041715,
+              "n2a_null_mean": -0.000973,
+              "n2a_q95": 0.001112,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.0893,
+            "rho_mem_collapse_1d_to_env": 0.1923
+          },
+          {
+            "lag_steps": 10,
+            "lag_ns": 2.0,
+            "n_eval_frames": 4963,
+            "loc1d": {
+              "delta_ell_mem": 0.022625,
+              "ci95_low": 0.007804,
+              "ci95_high": 0.043376,
+              "n2a_q95": 0.00041,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.018649,
+              "bss_mem": 0.03388,
+              "ci95_low": 0.003066,
+              "ci95_high": 0.038149,
+              "n2a_null_mean": -0.00017,
+              "n2a_q95": 0.001594,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.017236,
+              "bss_mem": 0.03226,
+              "ci95_low": 0.000798,
+              "ci95_high": 0.038138,
+              "n2a_null_mean": -0.001346,
+              "n2a_q95": 0.001137,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.0758,
+            "rho_mem_collapse_1d_to_env": 0.2382
+          },
+          {
+            "lag_steps": 25,
+            "lag_ns": 5.0,
+            "n_eval_frames": 4721,
+            "loc1d": {
+              "delta_ell_mem": 0.018076,
+              "ci95_low": 0.006356,
+              "ci95_high": 0.033949,
+              "n2a_q95": 0.000612,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.012539,
+              "bss_mem": 0.02219,
+              "ci95_low": -0.001345,
+              "ci95_high": 0.028709,
+              "n2a_null_mean": -0.001103,
+              "n2a_q95": 0.001068,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.01053,
+              "bss_mem": 0.01918,
+              "ci95_low": -0.004075,
+              "ci95_high": 0.028197,
+              "n2a_null_mean": -0.002525,
+              "n2a_q95": 0.000362,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.1602,
+            "rho_mem_collapse_1d_to_env": 0.4175
+          },
+          {
+            "lag_steps": 50,
+            "lag_ns": 10.0,
+            "n_eval_frames": 4307,
+            "loc1d": {
+              "delta_ell_mem": 0.01495,
+              "ci95_low": -0.001856,
+              "ci95_high": 0.032646,
+              "n2a_q95": 0.00038,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.007483,
+              "bss_mem": 0.0148,
+              "ci95_low": -0.016563,
+              "ci95_high": 0.031646,
+              "n2a_null_mean": -0.001462,
+              "n2a_q95": 0.000932,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": -0.023718,
+              "bss_mem": -0.03471,
+              "ci95_low": -0.058678,
+              "ci95_high": 0.007669,
+              "n2a_null_mean": -0.002881,
+              "n2a_q95": 0.00137,
+              "p_value_vs_n2a": 1.0
+            },
+            "rho_mem_collapse_prot_to_env": 1.0,
+            "rho_mem_collapse_1d_to_env": 1.0
+          }
+        ],
+        "stopped_dga_diagnostics": {
+          "dga_lag_ns": 2.0,
+          "shared_witness_pca_dim": 8,
+          "mean_oof_pbr_shared_witness": {
+            "B1": 0.15221,
+            "PT_prot": 0.15071,
+            "PT_prot_env": 0.14988,
+            "StoppedDGA_prot": 0.13224,
+            "StoppedDGA_prot_env": 0.12404
+          },
+          "n2b_reversibility_prot": {
+            "n_eval": 5145,
+            "l2_reversibility_error": 0.1088,
+            "mae_reversibility_error": 0.08791,
+            "spearman_qplus_vs_1minus_qminus": 0.83047,
+            "passes_threshold": false,
+            "threshold": 0.1
+          },
+          "n2b_reversibility_prot_env": {
+            "n_eval": 5145,
+            "l2_reversibility_error": 0.31875,
+            "mae_reversibility_error": 0.25618,
+            "spearman_qplus_vs_1minus_qminus": 0.50134,
+            "passes_threshold": false,
+            "threshold": 0.1
+          }
+        }
+      },
+      "Fine_0p2ns_SecondarySwitch": {
+        "target_metadata": {
+          "target_name": "R214_D338_ionic_gate",
+          "col": "R214_D338_ionic_min_A",
+          "description": "Cytoplasmic DRY-TM6 ionic minimum distance d_min(R214^3.50 - D338^6.30)",
+          "B_below": false,
+          "r_low": 4.0,
+          "r_high": 6.0,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 2869,
+          "n_uncensored": 2869,
+          "n_censored": 0,
+          "censoring_rate": 0.0,
+          "mean_y_uncensored": 0.4573,
+          "mean_commit_time_ns": 0.84,
+          "median_commit_time_ns": 0.6,
+          "n_basin_switches": 326,
+          "n_active_macro_groups": 19,
+          "n_active_trajectories": 4,
+          "effective_binomial_information": 712.02,
+          "passes_validity_gate": true
+        },
+        "n_cv_splits": 5,
+        "n_unique_groups": 19,
+        "feature_names_prot": [
+          "R214_D338_ionic_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1"
+        ],
+        "feature_names_prot_env": [
+          "R214_D338_ionic_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1",
+          "n_wat_core_pore",
+          "wire_D163_W356_cond",
+          "wire_D163_N393Y397_cond",
+          "wire_Y294_Y397_cond",
+          "min_cation_D163_A",
+          "coord_cation_D163_3p2",
+          "min_POPC_TM2_TM4_cleft_A",
+          "min_POPC_TM1_TM7_portal_A"
+        ],
+        "static_committor_evaluation": {
+          "log_likelihood_nats": {
+            "B0": -0.69518,
+            "B1": -0.66419,
+            "prot": -0.64911,
+            "prot_water": -0.66975,
+            "prot_ion": -0.67898,
+            "prot_popc": -0.65094,
+            "prot_env_all": -0.68578,
+            "oracle_prot": -0.74179,
+            "oracle_prot_env": -0.80356
+          },
+          "prot_vs_B1": {
+            "bss": {
+              "point": 0.028917921298904026,
+              "ci_low": -0.016969541393262774,
+              "ci_high": 0.09031241719483762,
+              "std_err": 0.02860525675814009,
+              "n_groups": 19
+            },
+            "delta_ell": {
+              "point": 0.015085928209807926,
+              "ci_low": -0.010069246340547355,
+              "ci_high": 0.04450007062277003,
+              "std_err": 0.014373402174469982,
+              "n_groups": 19
+            }
+          },
+          "prot_env_vs_B1": {
+            "bss": {
+              "point": -0.04233380335894976,
+              "ci_low": -0.15060806351355685,
+              "ci_high": 0.038693144969228904,
+              "std_err": 0.04975837797519679,
+              "n_groups": 19
+            },
+            "delta_ell": {
+              "point": -0.02158431049072837,
+              "ci_low": -0.07200915834919672,
+              "ci_high": 0.01952842589968514,
+              "std_err": 0.02383127520639357,
+              "n_groups": 19
+            }
+          },
+          "prot_env_vs_prot": {
+            "bss": {
+              "point": -0.07337353476150943,
+              "ci_low": -0.20479390334685807,
+              "ci_high": -0.0024453220934125444,
+              "std_err": 0.0568035670682614,
+              "n_groups": 19
+            },
+            "delta_ell": {
+              "point": -0.03667023870053628,
+              "ci_low": -0.09829661319809702,
+              "ci_high": -0.0006849542608480455,
+              "std_err": 0.025292287975287178,
+              "n_groups": 19
+            }
+          },
+          "prot_water_vs_prot": {
+            "bss": {
+              "point": -0.04143426731758404,
+              "ci_low": -0.10862853128026052,
+              "ci_high": -0.005352192195778101,
+              "std_err": 0.027570418976396036,
+              "n_groups": 19
+            },
+            "delta_ell": {
+              "point": -0.020640681428474687,
+              "ci_low": -0.04974051209511349,
+              "ci_high": -0.0032417004776917955,
+              "std_err": 0.011884269600593427,
+              "n_groups": 19
+            }
+          },
+          "prot_ion_vs_prot": {
+            "bss": {
+              "point": -0.060992369544392355,
+              "ci_low": -0.19733751962344562,
+              "ci_high": 0.004411236536457052,
+              "std_err": 0.05676617341688747,
+              "n_groups": 19
+            },
+            "delta_ell": {
+              "point": -0.029871535655282833,
+              "ci_low": -0.09089201504831612,
+              "ci_high": 0.0032699627205186174,
+              "std_err": 0.025076745135829918,
+              "n_groups": 19
+            }
+          },
+          "prot_popc_vs_prot": {
+            "bss": {
+              "point": -0.0036979967280927895,
+              "ci_low": -0.012246255819876822,
+              "ci_high": 0.0046711309357242645,
+              "std_err": 0.004270172169096189,
+              "n_groups": 19
+            },
+            "delta_ell": {
+              "point": -0.0018379815016074008,
+              "ci_low": -0.0061201689201723156,
+              "ci_high": 0.0020911091472495366,
+              "std_err": 0.002155034180016048,
+              "n_groups": 19
+            }
+          },
+          "oracle_gap_prot_env": -0.11779,
+          "n1_env_block_permutation": {
+            "n_progress_strata": 3,
+            "obs_delta_ell_env_vs_prot": -0.03667,
+            "null_mean": -0.01298,
+            "null_q95": 0.00694,
+            "p_value": 0.9307
+          },
+          "standardized_weights_prot_env": {
+            "R214_D338_ionic_min_A": 0.3573,
+            "R214_D338_CA_A": 0.1346,
+            "D163_N393_CA_A": -0.0116,
+            "F200_W356_ring_com_A": 0.0112,
+            "F155sc_N393CA_A": 0.4962,
+            "Y294_Y397_OH_A": -0.1018,
+            "D163_N393_polar_min_A": 0.1192,
+            "sin_W356_chi1": 0.1611,
+            "cos_W356_chi1": -0.137,
+            "sin_F155_chi1": -0.1877,
+            "n_wat_core_pore": 0.254,
+            "wire_D163_W356_cond": -0.0229,
+            "wire_D163_N393Y397_cond": 0.0502,
+            "wire_Y294_Y397_cond": 0.0553,
+            "min_cation_D163_A": -0.5398,
+            "coord_cation_D163_3p2": 0.0979,
+            "min_POPC_TM2_TM4_cleft_A": -0.041,
+            "min_POPC_TM1_TM7_portal_A": -0.0419
+          },
+          "manski_censoring_bounds": {
+            "all_censored_to_0": {
+              "delta_ell_env_vs_prot": -0.03667,
+              "bss_env_vs_prot": -0.07337
+            },
+            "all_censored_to_1": {
+              "delta_ell_env_vs_prot": -0.03667,
+              "bss_env_vs_prot": -0.07337
+            }
+          }
+        },
+        "mori_zwanzig_memory_profile": [
+          {
+            "lag_steps": 1,
+            "lag_ns": 0.2,
+            "n_eval_frames": 2857,
+            "loc1d": {
+              "delta_ell_mem": 0.036224,
+              "ci95_low": 0.018905,
+              "ci95_high": 0.057915,
+              "n2a_q95": 0.000335,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.025578,
+              "bss_mem": 0.05259,
+              "ci95_low": 0.012126,
+              "ci95_high": 0.039781,
+              "n2a_null_mean": -0.001661,
+              "n2a_q95": 0.000784,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.022931,
+              "bss_mem": 0.04579,
+              "ci95_low": 0.008672,
+              "ci95_high": 0.037858,
+              "n2a_null_mean": -0.006377,
+              "n2a_q95": 0.000119,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.1035,
+            "rho_mem_collapse_1d_to_env": 0.367
+          },
+          {
+            "lag_steps": 5,
+            "lag_ns": 1.0,
+            "n_eval_frames": 2811,
+            "loc1d": {
+              "delta_ell_mem": 0.037524,
+              "ci95_low": 0.015653,
+              "ci95_high": 0.066119,
+              "n2a_q95": 0.000588,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.026247,
+              "bss_mem": 0.05395,
+              "ci95_low": 0.013039,
+              "ci95_high": 0.042725,
+              "n2a_null_mean": -0.002118,
+              "n2a_q95": 0.000169,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.015803,
+              "bss_mem": 0.0434,
+              "ci95_low": 0.000828,
+              "ci95_high": 0.031367,
+              "n2a_null_mean": -0.008672,
+              "n2a_q95": -0.002138,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.3979,
+            "rho_mem_collapse_1d_to_env": 0.5789
+          },
+          {
+            "lag_steps": 10,
+            "lag_ns": 2.0,
+            "n_eval_frames": 2759,
+            "loc1d": {
+              "delta_ell_mem": 0.03253,
+              "ci95_low": 0.014814,
+              "ci95_high": 0.056191,
+              "n2a_q95": 0.000677,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.018764,
+              "bss_mem": 0.0402,
+              "ci95_low": 0.007564,
+              "ci95_high": 0.02992,
+              "n2a_null_mean": -0.001953,
+              "n2a_q95": 0.000407,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": -0.008967,
+              "bss_mem": 0.00091,
+              "ci95_low": -0.038385,
+              "ci95_high": 0.011169,
+              "n2a_null_mean": -0.010416,
+              "n2a_q95": -0.001749,
+              "p_value_vs_n2a": 0.4653
+            },
+            "rho_mem_collapse_prot_to_env": 1.0,
+            "rho_mem_collapse_1d_to_env": 1.0
+          },
+          {
+            "lag_steps": 25,
+            "lag_ns": 5.0,
+            "n_eval_frames": 2601,
+            "loc1d": {
+              "delta_ell_mem": 0.03288,
+              "ci95_low": 0.010686,
+              "ci95_high": 0.061843,
+              "n2a_q95": 0.000544,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.02035,
+              "bss_mem": 0.03977,
+              "ci95_low": 0.00122,
+              "ci95_high": 0.03827,
+              "n2a_null_mean": -0.001993,
+              "n2a_q95": 0.000591,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.001389,
+              "bss_mem": 0.0089,
+              "ci95_low": -0.025619,
+              "ci95_high": 0.02222,
+              "n2a_null_mean": -0.008038,
+              "n2a_q95": 0.000447,
+              "p_value_vs_n2a": 0.0396
+            },
+            "rho_mem_collapse_prot_to_env": 0.9317,
+            "rho_mem_collapse_1d_to_env": 0.9578
+          }
+        ],
+        "stopped_dga_diagnostics": {
+          "dga_lag_ns": 2.0,
+          "shared_witness_pca_dim": 8,
+          "mean_oof_pbr_shared_witness": {
+            "B1": 0.19123,
+            "PT_prot": 0.16541,
+            "PT_prot_env": 0.19297,
+            "StoppedDGA_prot": 0.17996,
+            "StoppedDGA_prot_env": 0.18848
+          },
+          "n2b_reversibility_prot": {
+            "n_eval": 2869,
+            "l2_reversibility_error": 0.13196,
+            "mae_reversibility_error": 0.09999,
+            "spearman_qplus_vs_1minus_qminus": 0.7977,
+            "passes_threshold": false,
+            "threshold": 0.1
+          },
+          "n2b_reversibility_prot_env": {
+            "n_eval": 2869,
+            "l2_reversibility_error": 0.05705,
+            "mae_reversibility_error": 0.04502,
+            "spearman_qplus_vs_1minus_qminus": 0.95443,
+            "passes_threshold": true,
+            "threshold": 0.1
+          }
+        }
+      },
+      "Fine_0p2ns_WholeTraj_CV": {
+        "target_metadata": {
+          "target_name": "F155_F237_aromatic_cleft",
+          "col": "F155_F237_ring_min_A",
+          "description": "CB1-selective TM2-TM4 aromatic cleft contact d_min(F155^2.42 - F237^4.46 rings)",
+          "B_below": false,
+          "r_low": 4.2,
+          "r_high": 5.8,
+          "tau_max_ns": 15.0,
+          "horizon_steps": 75,
+          "n_int_total": 5318,
+          "n_uncensored": 5145,
+          "n_censored": 173,
+          "censoring_rate": 0.03253,
+          "mean_y_uncensored": 0.627,
+          "mean_commit_time_ns": 2.642,
+          "median_commit_time_ns": 1.4,
+          "n_basin_switches": 229,
+          "n_active_macro_groups": 28,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 1203.24,
+          "passes_validity_gate": true
+        },
+        "n_cv_splits": 5,
+        "n_unique_groups": 5,
+        "feature_names_prot": [
+          "F155_F237_ring_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1"
+        ],
+        "feature_names_prot_env": [
+          "F155_F237_ring_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1",
+          "n_wat_core_pore",
+          "wire_D163_W356_cond",
+          "wire_D163_N393Y397_cond",
+          "wire_Y294_Y397_cond",
+          "min_cation_D163_A",
+          "coord_cation_D163_3p2",
+          "min_POPC_TM2_TM4_cleft_A",
+          "min_POPC_TM1_TM7_portal_A"
+        ],
+        "static_committor_evaluation": {
+          "log_likelihood_nats": {
+            "B0": -0.66433,
+            "B1": -0.62638,
+            "prot": -0.66177,
+            "prot_water": -0.71914,
+            "prot_ion": -0.72143,
+            "prot_popc": -0.67645,
+            "prot_env_all": -0.93594,
+            "oracle_prot": -0.75868,
+            "oracle_prot_env": -0.91312
+          },
+          "prot_vs_B1": {
+            "bss": {
+              "point": -0.06602888714328059,
+              "ci_low": -0.17255484232385787,
+              "ci_high": -0.015020887281351092,
+              "std_err": 0.041399360460111244,
+              "n_groups": 5
+            },
+            "delta_ell": {
+              "point": -0.03539234231832997,
+              "ci_low": -0.10854270135751473,
+              "ci_high": -0.006764373871322173,
+              "std_err": 0.025446697263077463,
+              "n_groups": 5
+            }
+          },
+          "prot_env_vs_B1": {
+            "bss": {
+              "point": -0.4507785710915493,
+              "ci_low": -1.036649007599928,
+              "ci_high": -0.027358947552573724,
+              "std_err": 0.29411633237238594,
+              "n_groups": 5
+            },
+            "delta_ell": {
+              "point": -0.3095626045784682,
+              "ci_low": -0.6980148257073169,
+              "ci_high": -0.016517988033032373,
+              "std_err": 0.19012380289432326,
+              "n_groups": 5
+            }
+          },
+          "prot_env_vs_prot": {
+            "bss": {
+              "point": -0.36091862855547197,
+              "ci_low": -0.8554821319673092,
+              "ci_high": -0.009718976090477893,
+              "std_err": 0.25597002951458114,
+              "n_groups": 5
+            },
+            "delta_ell": {
+              "point": -0.2741702622601381,
+              "ci_low": -0.6493811619070883,
+              "ci_high": -0.010490024897615621,
+              "std_err": 0.18182586809999401,
+              "n_groups": 5
+            }
+          },
+          "prot_water_vs_prot": {
+            "bss": {
+              "point": -0.10759693027080774,
+              "ci_low": -0.2372434594029451,
+              "ci_high": -0.0052233887176178495,
+              "std_err": 0.07239776946761846,
+              "n_groups": 5
+            },
+            "delta_ell": {
+              "point": -0.05736463338155836,
+              "ci_low": -0.13282441637118422,
+              "ci_high": -0.004227978867418254,
+              "std_err": 0.03685790565262024,
+              "n_groups": 5
+            }
+          },
+          "prot_ion_vs_prot": {
+            "bss": {
+              "point": -0.11156318381595942,
+              "ci_low": -0.3036252189943105,
+              "ci_high": 0.023482919681288735,
+              "std_err": 0.10088732851129109,
+              "n_groups": 5
+            },
+            "delta_ell": {
+              "point": -0.05965627586190198,
+              "ci_low": -0.16385178440224962,
+              "ci_high": 0.011125053438099794,
+              "std_err": 0.05022438142912043,
+              "n_groups": 5
+            }
+          },
+          "prot_popc_vs_prot": {
+            "bss": {
+              "point": -0.025654689381766183,
+              "ci_low": -0.0566042835769065,
+              "ci_high": -0.005865175812570289,
+              "std_err": 0.01432301569234262,
+              "n_groups": 5
+            },
+            "delta_ell": {
+              "point": -0.014682098635726145,
+              "ci_low": -0.0348087564059721,
+              "ci_high": -0.003167359824175045,
+              "std_err": 0.008365064413964968,
+              "n_groups": 5
+            }
+          },
+          "oracle_gap_prot_env": 0.02283,
+          "n1_env_block_permutation": {
+            "n_progress_strata": 1,
+            "obs_delta_ell_env_vs_prot": -0.27417,
+            "null_mean": -0.05876,
+            "null_q95": -0.01132,
+            "p_value": 1.0
+          },
+          "standardized_weights_prot_env": {
+            "F155_F237_ring_min_A": 0.5924,
+            "R214_D338_CA_A": 0.2076,
+            "D163_N393_CA_A": -0.22,
+            "F200_W356_ring_com_A": 0.3594,
+            "F155sc_N393CA_A": 0.4644,
+            "Y294_Y397_OH_A": -0.136,
+            "D163_N393_polar_min_A": -0.1351,
+            "sin_W356_chi1": -0.4109,
+            "cos_W356_chi1": 0.0987,
+            "sin_F155_chi1": 0.4291,
+            "n_wat_core_pore": 0.4368,
+            "wire_D163_W356_cond": -0.1386,
+            "wire_D163_N393Y397_cond": -0.0447,
+            "wire_Y294_Y397_cond": -0.3543,
+            "min_cation_D163_A": -0.1635,
+            "coord_cation_D163_3p2": 0.4523,
+            "min_POPC_TM2_TM4_cleft_A": 0.0784,
+            "min_POPC_TM1_TM7_portal_A": 0.109
+          },
+          "manski_censoring_bounds": {
+            "all_censored_to_0": {
+              "delta_ell_env_vs_prot": -0.24389,
+              "bss_env_vs_prot": -0.32133
+            },
+            "all_censored_to_1": {
+              "delta_ell_env_vs_prot": -0.28915,
+              "bss_env_vs_prot": -0.37806
+            }
+          }
+        },
+        "mori_zwanzig_memory_profile": [
+          {
+            "lag_steps": 1,
+            "lag_ns": 0.2,
+            "n_eval_frames": 5126,
+            "loc1d": {
+              "delta_ell_mem": 0.029013,
+              "ci95_low": 0.006992,
+              "ci95_high": 0.048557,
+              "n2a_q95": 0.000673,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.041421,
+              "bss_mem": 0.07959,
+              "ci95_low": 0.019419,
+              "ci95_high": 0.0682,
+              "n2a_null_mean": -0.001567,
+              "n2a_q95": 0.003369,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.029603,
+              "bss_mem": 0.03761,
+              "ci95_low": 0.012389,
+              "ci95_high": 0.050777,
+              "n2a_null_mean": -0.012697,
+              "n2a_q95": 0.073009,
+              "p_value_vs_n2a": 0.2475
+            },
+            "rho_mem_collapse_prot_to_env": 0.2853,
+            "rho_mem_collapse_1d_to_env": -0.0203
+          },
+          {
+            "lag_steps": 5,
+            "lag_ns": 1.0,
+            "n_eval_frames": 5055,
+            "loc1d": {
+              "delta_ell_mem": 0.024051,
+              "ci95_low": 0.000659,
+              "ci95_high": 0.043807,
+              "n2a_q95": 0.00056,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.032765,
+              "bss_mem": 0.06314,
+              "ci95_low": 0.015452,
+              "ci95_high": 0.053995,
+              "n2a_null_mean": -0.001682,
+              "n2a_q95": 0.003062,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.130237,
+              "bss_mem": 0.10577,
+              "ci95_low": -0.00126,
+              "ci95_high": 0.295956,
+              "n2a_null_mean": -0.02668,
+              "n2a_q95": 0.052943,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": -2.9749,
+            "rho_mem_collapse_1d_to_env": -4.4149
+          },
+          {
+            "lag_steps": 10,
+            "lag_ns": 2.0,
+            "n_eval_frames": 4963,
+            "loc1d": {
+              "delta_ell_mem": 0.016487,
+              "ci95_low": -0.012562,
+              "ci95_high": 0.037247,
+              "n2a_q95": 0.000821,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.014908,
+              "bss_mem": 0.03073,
+              "ci95_low": 0.0088,
+              "ci95_high": 0.024666,
+              "n2a_null_mean": -0.001705,
+              "n2a_q95": 0.003507,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": -0.150095,
+              "bss_mem": -0.05368,
+              "ci95_low": -0.360565,
+              "ci95_high": 0.009255,
+              "n2a_null_mean": 0.005152,
+              "n2a_q95": 0.092127,
+              "p_value_vs_n2a": 1.0
+            },
+            "rho_mem_collapse_prot_to_env": 1.0,
+            "rho_mem_collapse_1d_to_env": 1.0
+          },
+          {
+            "lag_steps": 25,
+            "lag_ns": 5.0,
+            "n_eval_frames": 4721,
+            "loc1d": {
+              "delta_ell_mem": 0.016606,
+              "ci95_low": 0.002041,
+              "ci95_high": 0.029652,
+              "n2a_q95": 0.00046,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.001318,
+              "bss_mem": -0.00139,
+              "ci95_low": -0.025833,
+              "ci95_high": 0.048838,
+              "n2a_null_mean": -0.002259,
+              "n2a_q95": 0.001466,
+              "p_value_vs_n2a": 0.0792
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": -0.257385,
+              "bss_mem": -0.0795,
+              "ci95_low": -0.615512,
+              "ci95_high": 0.027108,
+              "n2a_null_mean": -0.032582,
+              "n2a_q95": 0.067424,
+              "p_value_vs_n2a": 1.0
+            },
+            "rho_mem_collapse_prot_to_env": 1.0,
+            "rho_mem_collapse_1d_to_env": 1.0
+          }
+        ],
+        "stopped_dga_diagnostics": {
+          "dga_lag_ns": 2.0,
+          "shared_witness_pca_dim": 8,
+          "mean_oof_pbr_shared_witness": {
+            "B1": 0.14143,
+            "PT_prot": 0.18968,
+            "PT_prot_env": 0.26854,
+            "StoppedDGA_prot": 0.23392,
+            "StoppedDGA_prot_env": 0.26436
+          },
+          "n2b_reversibility_prot": {
+            "n_eval": 5145,
+            "l2_reversibility_error": 0.1088,
+            "mae_reversibility_error": 0.08791,
+            "spearman_qplus_vs_1minus_qminus": 0.83047,
+            "passes_threshold": false,
+            "threshold": 0.1
+          },
+          "n2b_reversibility_prot_env": {
+            "n_eval": 5145,
+            "l2_reversibility_error": 0.31875,
+            "mae_reversibility_error": 0.25618,
+            "spearman_qplus_vs_1minus_qminus": 0.50134,
+            "passes_threshold": false,
+            "threshold": 0.1
+          }
+        }
+      },
+      "NaCl5_1p0ns_ExplicitNa": {
+        "target_metadata": {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.6,
+          "r_high": 4.6,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 2901,
+          "n_uncensored": 2825,
+          "n_censored": 76,
+          "censoring_rate": 0.0262,
+          "mean_y_uncensored": 0.332,
+          "mean_commit_time_ns": 5.108,
+          "median_commit_time_ns": 3.0,
+          "n_basin_switches": 212,
+          "n_active_macro_groups": 42,
+          "n_active_trajectories": 5,
+          "effective_binomial_information": 626.55,
+          "passes_validity_gate": true
+        },
+        "n_cv_splits": 5,
+        "n_unique_groups": 42,
+        "feature_names_prot": [
+          "F200_W356_ring_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1"
+        ],
+        "feature_names_prot_env": [
+          "F200_W356_ring_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1",
+          "n_wat_core_pore",
+          "wire_D163_W356_cond",
+          "wire_D163_N393Y397_cond",
+          "wire_Y294_Y397_cond",
+          "prox_Na_D163",
+          "coord_Na_D163_3p2",
+          "min_POPC_TM2_TM4_cleft_A",
+          "min_POPC_TM1_TM7_portal_A"
+        ],
+        "static_committor_evaluation": {
+          "log_likelihood_nats": {
+            "B0": -0.63701,
+            "B1": -0.6111,
+            "prot": -0.54797,
+            "prot_water": -0.54311,
+            "prot_ion": -0.5486,
+            "prot_popc": -0.54567,
+            "prot_env_all": -0.54305,
+            "oracle_prot": -0.73754,
+            "oracle_prot_env": -0.70936
+          },
+          "prot_vs_B1": {
+            "bss": {
+              "point": 0.12251926086332521,
+              "ci_low": 0.03496722288627318,
+              "ci_high": 0.21217922058070202,
+              "std_err": 0.04603960188300405,
+              "n_groups": 42
+            },
+            "delta_ell": {
+              "point": 0.06313730865950687,
+              "ci_low": 0.01764920711369613,
+              "ci_high": 0.11382004332026857,
+              "std_err": 0.0242751623557857,
+              "n_groups": 42
+            }
+          },
+          "prot_env_vs_B1": {
+            "bss": {
+              "point": 0.13409155020037955,
+              "ci_low": 0.04462580409362872,
+              "ci_high": 0.22349916454269253,
+              "std_err": 0.045780235353194886,
+              "n_groups": 42
+            },
+            "delta_ell": {
+              "point": 0.06805477163108968,
+              "ci_low": 0.022684523229619127,
+              "ci_high": 0.11882837204943458,
+              "std_err": 0.024645288514429136,
+              "n_groups": 42
+            }
+          },
+          "prot_env_vs_prot": {
+            "bss": {
+              "point": 0.013188083590803257,
+              "ci_low": -0.018029337345903267,
+              "ci_high": 0.04480310446974029,
+              "std_err": 0.0161407726565881,
+              "n_groups": 42
+            },
+            "delta_ell": {
+              "point": 0.0049174629715828064,
+              "ci_low": -0.010087004966400042,
+              "ci_high": 0.02000536885621295,
+              "std_err": 0.007693869578246079,
+              "n_groups": 42
+            }
+          },
+          "prot_water_vs_prot": {
+            "bss": {
+              "point": 0.014011341626662954,
+              "ci_low": -0.014988089199809367,
+              "ci_high": 0.04439637398856477,
+              "std_err": 0.014686978546156809,
+              "n_groups": 42
+            },
+            "delta_ell": {
+              "point": 0.004855882712142098,
+              "ci_low": -0.00776035057427038,
+              "ci_high": 0.01817952583466864,
+              "std_err": 0.006781114066297662,
+              "n_groups": 42
+            }
+          },
+          "prot_ion_vs_prot": {
+            "bss": {
+              "point": -0.00241056058054423,
+              "ci_low": -0.005865841004371647,
+              "ci_high": 0.0003424240929645348,
+              "std_err": 0.0015727611820004533,
+              "n_groups": 42
+            },
+            "delta_ell": {
+              "point": -0.000630391471652271,
+              "ci_low": -0.0022931597404915335,
+              "ci_high": 0.0009689003971580877,
+              "std_err": 0.0008685463112264751,
+              "n_groups": 42
+            }
+          },
+          "prot_popc_vs_prot": {
+            "bss": {
+              "point": 0.004750825688479177,
+              "ci_low": -0.008561143564529415,
+              "ci_high": 0.019670655958645585,
+              "std_err": 0.007250771421169544,
+              "n_groups": 42
+            },
+            "delta_ell": {
+              "point": 0.0022974059198161093,
+              "ci_low": -0.003981753623470132,
+              "ci_high": 0.009057570254978154,
+              "std_err": 0.00332372206914761,
+              "n_groups": 42
+            }
+          },
+          "oracle_gap_prot_env": -0.16631,
+          "n1_env_block_permutation": {
+            "n_progress_strata": 3,
+            "obs_delta_ell_env_vs_prot": 0.00492,
+            "null_mean": -0.00482,
+            "null_q95": 0.0152,
+            "p_value": 0.2475
+          },
+          "standardized_weights_prot_env": {
+            "F200_W356_ring_min_A": 0.0686,
+            "R214_D338_CA_A": 0.8286,
+            "D163_N393_CA_A": -0.0308,
+            "F200_W356_ring_com_A": 0.6504,
+            "F155sc_N393CA_A": -0.0677,
+            "Y294_Y397_OH_A": 0.4135,
+            "D163_N393_polar_min_A": 0.4265,
+            "sin_W356_chi1": 0.3446,
+            "cos_W356_chi1": 0.0795,
+            "sin_F155_chi1": 0.2454,
+            "n_wat_core_pore": 0.0431,
+            "wire_D163_W356_cond": -0.3755,
+            "wire_D163_N393Y397_cond": 0.0151,
+            "wire_Y294_Y397_cond": -0.1462,
+            "prox_Na_D163": -0.0863,
+            "coord_Na_D163_3p2": -0.0759,
+            "min_POPC_TM2_TM4_cleft_A": -0.1048,
+            "min_POPC_TM1_TM7_portal_A": -0.0967
+          },
+          "manski_censoring_bounds": {
+            "all_censored_to_0": {
+              "delta_ell_env_vs_prot": 0.00378,
+              "bss_env_vs_prot": 0.01214
+            },
+            "all_censored_to_1": {
+              "delta_ell_env_vs_prot": 0.00422,
+              "bss_env_vs_prot": 0.00995
+            }
+          }
+        },
+        "mori_zwanzig_memory_profile": [
+          {
+            "lag_steps": 1,
+            "lag_ns": 1.0,
+            "n_eval_frames": 2802,
+            "loc1d": {
+              "delta_ell_mem": 0.03772,
+              "ci95_low": 0.019757,
+              "ci95_high": 0.058972,
+              "n2a_q95": 0.000425,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.021479,
+              "bss_mem": 0.04556,
+              "ci95_low": 0.009711,
+              "ci95_high": 0.035561,
+              "n2a_null_mean": -0.001712,
+              "n2a_q95": 0.000638,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.01887,
+              "bss_mem": 0.04252,
+              "ci95_low": 0.006607,
+              "ci95_high": 0.033772,
+              "n2a_null_mean": -0.003745,
+              "n2a_q95": -0.000256,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.1215,
+            "rho_mem_collapse_1d_to_env": 0.4997
+          },
+          {
+            "lag_steps": 2,
+            "lag_ns": 2.0,
+            "n_eval_frames": 2776,
+            "loc1d": {
+              "delta_ell_mem": 0.032586,
+              "ci95_low": 0.017593,
+              "ci95_high": 0.051141,
+              "n2a_q95": 0.000572,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.017928,
+              "bss_mem": 0.04088,
+              "ci95_low": 0.007553,
+              "ci95_high": 0.029788,
+              "n2a_null_mean": -0.001763,
+              "n2a_q95": 0.000626,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.018071,
+              "bss_mem": 0.04175,
+              "ci95_low": 0.007146,
+              "ci95_high": 0.031188,
+              "n2a_null_mean": -0.003878,
+              "n2a_q95": 7.2e-05,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": -0.008,
+            "rho_mem_collapse_1d_to_env": 0.4455
+          },
+          {
+            "lag_steps": 5,
+            "lag_ns": 5.0,
+            "n_eval_frames": 2688,
+            "loc1d": {
+              "delta_ell_mem": 0.028996,
+              "ci95_low": 0.013095,
+              "ci95_high": 0.046346,
+              "n2a_q95": 0.000343,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.016899,
+              "bss_mem": 0.03557,
+              "ci95_low": 0.006997,
+              "ci95_high": 0.027452,
+              "n2a_null_mean": -0.001595,
+              "n2a_q95": 0.000739,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.014141,
+              "bss_mem": 0.03257,
+              "ci95_low": 0.001297,
+              "ci95_high": 0.02792,
+              "n2a_null_mean": -0.003271,
+              "n2a_q95": 2e-05,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.1632,
+            "rho_mem_collapse_1d_to_env": 0.5123
+          },
+          {
+            "lag_steps": 10,
+            "lag_ns": 10.0,
+            "n_eval_frames": 2556,
+            "loc1d": {
+              "delta_ell_mem": 0.019401,
+              "ci95_low": 0.001641,
+              "ci95_high": 0.036153,
+              "n2a_q95": 0.000389,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.005203,
+              "bss_mem": 0.01502,
+              "ci95_low": -0.006894,
+              "ci95_high": 0.017695,
+              "n2a_null_mean": -0.002262,
+              "n2a_q95": 0.000563,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.00488,
+              "bss_mem": 0.01441,
+              "ci95_low": -0.007886,
+              "ci95_high": 0.019707,
+              "n2a_null_mean": -0.003727,
+              "n2a_q95": 0.001274,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.062,
+            "rho_mem_collapse_1d_to_env": 0.7485
+          }
+        ],
+        "stopped_dga_diagnostics": {
+          "dga_lag_ns": 2.0,
+          "shared_witness_pca_dim": 8,
+          "mean_oof_pbr_shared_witness": {
+            "B1": 0.14937,
+            "PT_prot": 0.08847,
+            "PT_prot_env": 0.08491,
+            "StoppedDGA_prot": 0.08462,
+            "StoppedDGA_prot_env": 0.07174
+          },
+          "n2b_reversibility_prot": {
+            "n_eval": 2825,
+            "l2_reversibility_error": 0.0324,
+            "mae_reversibility_error": 0.0221,
+            "spearman_qplus_vs_1minus_qminus": 0.99264,
+            "passes_threshold": true,
+            "threshold": 0.1
+          },
+          "n2b_reversibility_prot_env": {
+            "n_eval": 2825,
+            "l2_reversibility_error": 0.03743,
+            "mae_reversibility_error": 0.02792,
+            "spearman_qplus_vs_1minus_qminus": 0.98904,
+            "passes_threshold": true,
+            "threshold": 0.1
+          }
+        }
+      },
+      "Open6_1p0ns_AllTraj": {
+        "target_metadata": {
+          "target_name": "F200_W356_toggle_contact",
+          "col": "F200_W356_ring_min_A",
+          "description": "Twin toggle aromatic minimum contact d_min(F200^3.36 - W356^6.48 rings)",
+          "B_below": false,
+          "r_low": 3.6,
+          "r_high": 4.6,
+          "tau_max_ns": 25.0,
+          "horizon_steps": 25,
+          "n_int_total": 3151,
+          "n_uncensored": 3075,
+          "n_censored": 76,
+          "censoring_rate": 0.02412,
+          "mean_y_uncensored": 0.3298,
+          "mean_commit_time_ns": 4.929,
+          "median_commit_time_ns": 3.0,
+          "n_basin_switches": 247,
+          "n_active_macro_groups": 47,
+          "n_active_trajectories": 6,
+          "effective_binomial_information": 679.63,
+          "passes_validity_gate": true
+        },
+        "n_cv_splits": 5,
+        "n_unique_groups": 47,
+        "feature_names_prot": [
+          "F200_W356_ring_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1"
+        ],
+        "feature_names_prot_env": [
+          "F200_W356_ring_min_A",
+          "R214_D338_CA_A",
+          "D163_N393_CA_A",
+          "F200_W356_ring_com_A",
+          "F155sc_N393CA_A",
+          "Y294_Y397_OH_A",
+          "D163_N393_polar_min_A",
+          "sin_W356_chi1",
+          "cos_W356_chi1",
+          "sin_F155_chi1",
+          "n_wat_core_pore",
+          "wire_D163_W356_cond",
+          "wire_D163_N393Y397_cond",
+          "wire_Y294_Y397_cond",
+          "min_cation_D163_A",
+          "coord_cation_D163_3p2",
+          "min_POPC_TM2_TM4_cleft_A",
+          "min_POPC_TM1_TM7_portal_A"
+        ],
+        "static_committor_evaluation": {
+          "log_likelihood_nats": {
+            "B0": -0.63572,
+            "B1": -0.60589,
+            "prot": -0.54311,
+            "prot_water": -0.54028,
+            "prot_ion": -0.5427,
+            "prot_popc": -0.54484,
+            "prot_env_all": -0.54241,
+            "oracle_prot": -0.71203,
+            "oracle_prot_env": -0.7186
+          },
+          "prot_vs_B1": {
+            "bss": {
+              "point": 0.12108896427728266,
+              "ci_low": 0.051706918697362346,
+              "ci_high": 0.1951102792288628,
+              "std_err": 0.03758746804808079,
+              "n_groups": 47
+            },
+            "delta_ell": {
+              "point": 0.06277922313735963,
+              "ci_low": 0.025325137563693825,
+              "ci_high": 0.10376793654654251,
+              "std_err": 0.020294990992620505,
+              "n_groups": 47
+            }
+          },
+          "prot_env_vs_B1": {
+            "bss": {
+              "point": 0.12478496320489052,
+              "ci_low": 0.04732620191702298,
+              "ci_high": 0.21360824632320216,
+              "std_err": 0.040932371435082306,
+              "n_groups": 47
+            },
+            "delta_ell": {
+              "point": 0.06347861421350845,
+              "ci_low": 0.023210854873096834,
+              "ci_high": 0.10733937994908752,
+              "std_err": 0.022059362660554256,
+              "n_groups": 47
+            }
+          },
+          "prot_env_vs_prot": {
+            "bss": {
+              "point": 0.00420520254882073,
+              "ci_low": -0.028774789114318886,
+              "ci_high": 0.038885377226126235,
+              "std_err": 0.016701729259679193,
+              "n_groups": 47
+            },
+            "delta_ell": {
+              "point": 0.0006993910761488184,
+              "ci_low": -0.015190747553690936,
+              "ci_high": 0.015996790582608906,
+              "std_err": 0.007762317530293235,
+              "n_groups": 47
+            }
+          },
+          "prot_water_vs_prot": {
+            "bss": {
+              "point": 0.011073624095357615,
+              "ci_low": -0.018026689595608505,
+              "ci_high": 0.03905056619655933,
+              "std_err": 0.013865156526749684,
+              "n_groups": 47
+            },
+            "delta_ell": {
+              "point": 0.002829500538996247,
+              "ci_low": -0.010090361296845748,
+              "ci_high": 0.014047230771797623,
+              "std_err": 0.006266916515551173,
+              "n_groups": 47
+            }
+          },
+          "prot_ion_vs_prot": {
+            "bss": {
+              "point": -0.0006155262795397576,
+              "ci_low": -0.013040164066443849,
+              "ci_high": 0.010756518252482233,
+              "std_err": 0.006073052009248743,
+              "n_groups": 47
+            },
+            "delta_ell": {
+              "point": 0.00041768465853361195,
+              "ci_low": -0.005519904083783632,
+              "ci_high": 0.005229214242416949,
+              "std_err": 0.002905309833687549,
+              "n_groups": 47
+            }
+          },
+          "prot_popc_vs_prot": {
+            "bss": {
+              "point": -0.0034426055944229983,
+              "ci_low": -0.012967121284176913,
+              "ci_high": 0.007910950330413934,
+              "std_err": 0.005425302969216127,
+              "n_groups": 47
+            },
+            "delta_ell": {
+              "point": -0.0017238707474954765,
+              "ci_low": -0.006835434723429503,
+              "ci_high": 0.0035743529507755796,
+              "std_err": 0.0026823911638161496,
+              "n_groups": 47
+            }
+          },
+          "oracle_gap_prot_env": -0.17619,
+          "n1_env_block_permutation": {
+            "n_progress_strata": 3,
+            "obs_delta_ell_env_vs_prot": 0.0007,
+            "null_mean": -0.00315,
+            "null_q95": 0.01794,
+            "p_value": 0.3762
+          },
+          "standardized_weights_prot_env": {
+            "F200_W356_ring_min_A": 0.0876,
+            "R214_D338_CA_A": 0.673,
+            "D163_N393_CA_A": -0.1222,
+            "F200_W356_ring_com_A": 0.7077,
+            "F155sc_N393CA_A": -0.1051,
+            "Y294_Y397_OH_A": 0.1767,
+            "D163_N393_polar_min_A": 0.4739,
+            "sin_W356_chi1": 0.2742,
+            "cos_W356_chi1": -0.0089,
+            "sin_F155_chi1": 0.3017,
+            "n_wat_core_pore": -0.0864,
+            "wire_D163_W356_cond": -0.3179,
+            "wire_D163_N393Y397_cond": 0.0189,
+            "wire_Y294_Y397_cond": -0.2162,
+            "min_cation_D163_A": 0.3149,
+            "coord_cation_D163_3p2": 0.0322,
+            "min_POPC_TM2_TM4_cleft_A": -0.1026,
+            "min_POPC_TM1_TM7_portal_A": 0.0061
+          },
+          "manski_censoring_bounds": {
+            "all_censored_to_0": {
+              "delta_ell_env_vs_prot": -0.00036,
+              "bss_env_vs_prot": 0.00617
+            },
+            "all_censored_to_1": {
+              "delta_ell_env_vs_prot": 0.00418,
+              "bss_env_vs_prot": 0.01218
+            }
+          }
+        },
+        "mori_zwanzig_memory_profile": [
+          {
+            "lag_steps": 1,
+            "lag_ns": 1.0,
+            "n_eval_frames": 3049,
+            "loc1d": {
+              "delta_ell_mem": 0.043364,
+              "ci95_low": 0.025034,
+              "ci95_high": 0.064822,
+              "n2a_q95": 0.000412,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.024802,
+              "bss_mem": 0.05528,
+              "ci95_low": 0.0121,
+              "ci95_high": 0.03996,
+              "n2a_null_mean": -0.001521,
+              "n2a_q95": 0.000653,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.019181,
+              "bss_mem": 0.04295,
+              "ci95_low": 0.007164,
+              "ci95_high": 0.034484,
+              "n2a_null_mean": -0.003368,
+              "n2a_q95": -0.000446,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.2266,
+            "rho_mem_collapse_1d_to_env": 0.5577
+          },
+          {
+            "lag_steps": 2,
+            "lag_ns": 2.0,
+            "n_eval_frames": 3021,
+            "loc1d": {
+              "delta_ell_mem": 0.038713,
+              "ci95_low": 0.021985,
+              "ci95_high": 0.058175,
+              "n2a_q95": 0.000274,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.022145,
+              "bss_mem": 0.05222,
+              "ci95_low": 0.010447,
+              "ci95_high": 0.035776,
+              "n2a_null_mean": -0.001743,
+              "n2a_q95": 0.000956,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.0172,
+              "bss_mem": 0.04107,
+              "ci95_low": 0.005682,
+              "ci95_high": 0.030178,
+              "n2a_null_mean": -0.002623,
+              "n2a_q95": 0.000479,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.2233,
+            "rho_mem_collapse_1d_to_env": 0.5557
+          },
+          {
+            "lag_steps": 5,
+            "lag_ns": 5.0,
+            "n_eval_frames": 2928,
+            "loc1d": {
+              "delta_ell_mem": 0.036175,
+              "ci95_low": 0.018621,
+              "ci95_high": 0.055361,
+              "n2a_q95": 0.000438,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.020754,
+              "bss_mem": 0.04797,
+              "ci95_low": 0.008264,
+              "ci95_high": 0.034155,
+              "n2a_null_mean": -0.001472,
+              "n2a_q95": 0.000744,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.009531,
+              "bss_mem": 0.02609,
+              "ci95_low": -0.002994,
+              "ci95_high": 0.022749,
+              "n2a_null_mean": -0.003278,
+              "n2a_q95": -3.4e-05,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.5408,
+            "rho_mem_collapse_1d_to_env": 0.7365
+          },
+          {
+            "lag_steps": 10,
+            "lag_ns": 10.0,
+            "n_eval_frames": 2785,
+            "loc1d": {
+              "delta_ell_mem": 0.025945,
+              "ci95_low": 0.007323,
+              "ci95_high": 0.043407,
+              "n2a_q95": 0.000334,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_only": {
+              "delta_ell_mem": 0.012112,
+              "bss_mem": 0.03252,
+              "ci95_low": 0.000269,
+              "ci95_high": 0.025045,
+              "n2a_null_mean": -0.001925,
+              "n2a_q95": 0.00132,
+              "p_value_vs_n2a": 0.0099
+            },
+            "prot_plus_env": {
+              "delta_ell_mem": 0.005379,
+              "bss_mem": 0.01522,
+              "ci95_low": -0.006197,
+              "ci95_high": 0.018995,
+              "n2a_null_mean": -0.003598,
+              "n2a_q95": 3.8e-05,
+              "p_value_vs_n2a": 0.0099
+            },
+            "rho_mem_collapse_prot_to_env": 0.5559,
+            "rho_mem_collapse_1d_to_env": 0.7927
+          }
+        ],
+        "stopped_dga_diagnostics": {
+          "dga_lag_ns": 2.0,
+          "shared_witness_pca_dim": 8,
+          "mean_oof_pbr_shared_witness": {
+            "B1": 0.14124,
+            "PT_prot": 0.08363,
+            "PT_prot_env": 0.08147,
+            "StoppedDGA_prot": 0.08172,
+            "StoppedDGA_prot_env": 0.0724
+          },
+          "n2b_reversibility_prot": {
+            "n_eval": 3075,
+            "l2_reversibility_error": 0.02969,
+            "mae_reversibility_error": 0.02027,
+            "spearman_qplus_vs_1minus_qminus": 0.9931,
+            "passes_threshold": true,
+            "threshold": 0.1
+          },
+          "n2b_reversibility_prot_env": {
+            "n_eval": 3075,
+            "l2_reversibility_error": 0.03365,
+            "mae_reversibility_error": 0.025,
+            "spearman_qplus_vs_1minus_qminus": 0.9917,
+            "passes_threshold": true,
+            "threshold": 0.1
+          }
+        }
+      }
+    }
+  }
+}

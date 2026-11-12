@@ -1,0 +1,1987 @@
+{
+  "metadata_version": "1.0.0",
+  "generated_date": "2026-11-12",
+  "data_sources_and_licenses": {
+    "uniprot": "UniProtKB P21554 (CNR1_HUMAN), release 2026, https://www.uniprot.org/help/license (CC BY 4.0)",
+    "rcsb_pdb": "RCSB Protein Data Bank GraphQL & mmCIF archive, https://www.rcsb.org/pages/usage-policy (CC0 1.0)",
+    "literature": "NCBI PubMed, Europe PMC, and OpenAlex primary-source records verified by PMID and DOI"
+  },
+  "target_protein": {
+    "gene_symbol": "CNR1",
+    "protein_name": "Cannabinoid receptor 1 (CB1)",
+    "organism": "Homo sapiens",
+    "ncbi_taxid": 9606,
+    "uniprot_accession": "P21554",
+    "uniprot_id": "CNR1_HUMAN",
+    "sequence_length": 472,
+    "canonical_sequence": "MKSILDGLADTTFRTITTDLLYVGSNDIQYEDIKGDMASKLGYFPQKFPLTSFRGSPFQEKMTAGDNPQLVPADQVNITEFYNKSLSSFKENEENIQCGENFMDIECFMVLNPSQQLAIAVLSLTLGTFTVLENLLVLCVILHSRSLRCRPSYHFIGSLAVADLLGSVIFVYSFIDFHVFHRKDSRNVFLFKLGGVTASFTASVGSLFLTAIDRYISIHRPLAYKRIVTRPKAVVAFCLMWTIAIVIAVLPLLGWNCEKLQSVCSDIFPHIDETYLMFWIGVTSVLLLFIVYAYMYILWKAHSHAVRMIQRGTQKSIIIHTSEDGKVQVTRPDQARMDIRLAKTLVLILVVLIICWGPLLAIMVYDVFGKMNKLIKTVFAFCSMLCLLNSTVNPIIYALRSKDLRHAFRSMFPSCEGTAQPLDNSMGDSDCLHKHANNAASVHRAAESCIKSTVKIAKVTMSVSTDTSAEAL",
+    "species_numbering_offset_warning": "CRITICAL: Rat (P20272) and Mouse (P47746) CB1 have 473 amino acids due to a 1-residue insertion in the N-terminus, shifting ALL transmembrane residue numbers by +1 relative to human P21554 (e.g., human F200^3.36 = rat/mouse F201^3.36; human F237^4.46 = rat/mouse F238^4.46; human W356^6.48 = rat/mouse W357^6.48). Always verify species before comparing literature numbers!",
+    "topological_segments_uniprot": [
+      {
+        "segment": "N-terminus (extracellular)",
+        "start": 1,
+        "end": 116
+      },
+      {
+        "segment": "TM1",
+        "start": 117,
+        "end": 142,
+        "bw_x50": "N134^1.50"
+      },
+      {
+        "segment": "ICL1",
+        "start": 143,
+        "end": 154
+      },
+      {
+        "segment": "TM2",
+        "start": 155,
+        "end": 175,
+        "bw_x50": "D163^2.50"
+      },
+      {
+        "segment": "ECL1",
+        "start": 176,
+        "end": 187
+      },
+      {
+        "segment": "TM3",
+        "start": 188,
+        "end": 212,
+        "bw_x50": "R214^3.50 (at cytoplasmic TM3 end 213-215 DRY)"
+      },
+      {
+        "segment": "ICL2",
+        "start": 213,
+        "end": 232
+      },
+      {
+        "segment": "TM4",
+        "start": 233,
+        "end": 255,
+        "bw_x50": "W241^4.50"
+      },
+      {
+        "segment": "ECL2",
+        "start": 256,
+        "end": 273,
+        "disulfide": "C257-C264"
+      },
+      {
+        "segment": "TM5",
+        "start": 274,
+        "end": 299,
+        "bw_x50": "L286^5.50 (non-proline)"
+      },
+      {
+        "segment": "ICL3",
+        "start": 300,
+        "end": 344,
+        "note": "Long flexible loop; TM6 cytoplasmic helical extension begins around D338^6.30 in 3D structures."
+      },
+      {
+        "segment": "TM6",
+        "start": 345,
+        "end": 365,
+        "bw_x50": "P358^6.50"
+      },
+      {
+        "segment": "ECL3",
+        "start": 366,
+        "end": 377
+      },
+      {
+        "segment": "TM7",
+        "start": 378,
+        "end": 399,
+        "bw_x50": "P394^7.50"
+      },
+      {
+        "segment": "Helix 8 & C-terminus",
+        "start": 400,
+        "end": 472,
+        "bw_x50": "L404^8.50 (Helix 8 spans ~400-414, palmitoylated at C415)"
+      }
+    ],
+    "ballesteros_weinstein_anchors": {
+      "TM1": {
+        "residue_number": 134,
+        "amino_acid": "N",
+        "bw": "1.50"
+      },
+      "TM2": {
+        "residue_number": 163,
+        "amino_acid": "D",
+        "bw": "2.50"
+      },
+      "TM3": {
+        "residue_number": 214,
+        "amino_acid": "R",
+        "bw": "3.50"
+      },
+      "TM4": {
+        "residue_number": 241,
+        "amino_acid": "W",
+        "bw": "4.50"
+      },
+      "TM5": {
+        "residue_number": 286,
+        "amino_acid": "L",
+        "bw": "5.50"
+      },
+      "TM6": {
+        "residue_number": 358,
+        "amino_acid": "P",
+        "bw": "6.50"
+      },
+      "TM7": {
+        "residue_number": 394,
+        "amino_acid": "P",
+        "bw": "7.50"
+      },
+      "H8": {
+        "residue_number": 404,
+        "amino_acid": "L",
+        "bw": "8.50"
+      }
+    }
+  },
+  "key_residues_and_microswitches": [
+    {
+      "residue_number": 102,
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "label": "F102",
+      "ballesteros_weinstein": "N-term",
+      "region": "N-terminus (V-loop)",
+      "motif_or_switch": "N-terminal V-loop orthosteric plug",
+      "functional_role": "Dips deeply into orthosteric pocket in antagonist-bound inactive CB1 (5TGZ, 5U09) and lifts upward out of the pocket upon agonist binding and activation.",
+      "literature_notes": "Hua et al. 2016 Cell (5TGZ); Shao et al. 2016 Nature (5U09); Dutta & Shukla 2023 Commun Biol showed N-terminus upward movement is slow and allosterically gates apo CB1 activation.",
+      "verified_pmids": [
+        "27768894",
+        "27851727",
+        "37147497"
+      ]
+    },
+    {
+      "residue_number": 103,
+      "one_letter": "M",
+      "three_letter": "MET",
+      "label": "M103",
+      "ballesteros_weinstein": "N-term",
+      "region": "N-terminus (V-loop)",
+      "motif_or_switch": "N-terminal V-loop orthosteric plug",
+      "functional_role": "Membrane-proximal N-terminal plug residue; M103-D163(2.50) distance distinguishes inactive (plugged) from agonist-bound/active (lifted) states except in ORG27569-trapped 6KQI.",
+      "literature_notes": "Used as N-terminus feature reference in Dutta & Shukla 2023 Commun Biol; Fay & Farrens 2013 Biochemistry.",
+      "verified_pmids": [
+        "24206272",
+        "27768894",
+        "37147497"
+      ]
+    },
+    {
+      "residue_number": 108,
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "label": "F108",
+      "ballesteros_weinstein": "N-term",
+      "region": "N-terminus (V-loop)",
+      "motif_or_switch": "N-terminal V-loop orthosteric plug",
+      "functional_role": "Aromatic plug contact in antagonist-bound orthosteric cavity and endocannabinoid/inverse-agonist interface.",
+      "literature_notes": "Contacts AM6538/taranabant in 5TGZ/5U09 and AMG315 in 8GHV.",
+      "verified_pmids": [
+        "27768894",
+        "27851727",
+        "37160876"
+      ]
+    },
+    {
+      "residue_number": 134,
+      "one_letter": "N",
+      "three_letter": "ASN",
+      "label": "N134",
+      "ballesteros_weinstein": "1.50",
+      "region": "TM1 (117-142)",
+      "motif_or_switch": "TM1 BW anchor",
+      "functional_role": "Conserved Class A GPCR N1.50 H-bonding anchor connecting TM1, TM2 (D163^2.50), and TM7 (NPxxY).",
+      "literature_notes": "Canonical Class A BW anchor.",
+      "verified_pmids": [
+        "27768894"
+      ]
+    },
+    {
+      "residue_number": 154,
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "label": "H154",
+      "ballesteros_weinstein": "2.41",
+      "region": "TM2 (155-175 border)",
+      "motif_or_switch": "TM2-TM4 F155-F237 intracellular switch",
+      "functional_role": "Intracellular TM2 histidine that shifts outward ~4 A alongside F155^2.42 rotation in active Gi-coupled CB1; directly contacts cholesterol in 5XRA and NAM ORG27569 in 6KQI; H154A reduces CP55940 G-protein efficacy.",
+      "literature_notes": "Krishna Kumar et al. 2023 Nat Commun; Shao et al. 2019 Nat Chem Biol; Green et al. 2024 Pharmaceuticals.",
+      "verified_pmids": [
+        "37160876",
+        "31659318",
+        "38399369"
+      ]
+    },
+    {
+      "residue_number": 155,
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "label": "F155",
+      "ballesteros_weinstein": "2.42",
+      "region": "TM2 (155-175)",
+      "motif_or_switch": "TM2-TM4 F155-F237 activation switch",
+      "functional_role": "Core-facing in inactive (5TGZ, 5U09), NAM-locked (6KQI), and transducer-free agonist crystal structures (5XRA, 5XR8: chi1 ~ +156/+68 deg, ~9.2-11.3 A to N393^7.49 CA), interacting with TM3, TM6, and NPxxY; flips outward to gauche- (chi1 ~ -57 to -87 deg, ~14.7-16.7 A to N393^7.49 CA) in ALL Gi- and beta-arrestin-coupled structures.",
+      "literature_notes": "Yang et al. 2022 Nat Chem Biol showed F155W decreases efficacy, F155I increases efficacy, and metadynamics identifies F155^2.42 outward reorientation prior to full TM6 opening as the highest activation barrier; Krishna Kumar et al. 2023 Nat Commun defined the concerted F155^2.42-F237^4.46 activation switch. NOT analyzed in Shukla Group MSM papers.",
+      "verified_pmids": [
+        "35637350",
+        "37160876",
+        "31659318"
+      ]
+    },
+    {
+      "residue_number": 158,
+      "one_letter": "S",
+      "three_letter": "SER",
+      "label": "S158",
+      "ballesteros_weinstein": "2.45",
+      "region": "TM2 (155-175)",
+      "motif_or_switch": "Extrahelical NAM / cholesterol pocket",
+      "functional_role": "Contacts ORG27569 in 6KQI and crystallographic cholesterol in 5XRA; stabilizes TM2-TM3-TM4 interface.",
+      "literature_notes": "Shao et al. 2019 Nat Chem Biol; Obi & Natesan 2022 J Med Chem.",
+      "verified_pmids": [
+        "31659318",
+        "36066412"
+      ]
+    },
+    {
+      "residue_number": 163,
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "label": "D163",
+      "ballesteros_weinstein": "2.50",
+      "region": "TM2 (155-175)",
+      "motif_or_switch": "Allosteric Na+ binding pocket",
+      "functional_role": "Conserved Asp2.50 coordinating allosteric Na+ and internal water wire with S167^2.54, S203^3.39, W356^6.48, S390^7.46, and N393^7.49; targeted via a cryptic pocket by G-protein-biased peripheral agonist VIP36 (9B54).",
+      "literature_notes": "Dutta, Selvam & Shukla 2022 ACS Chem Neurosci; Katritch et al. 2014 TiBS; Rangari et al. 2025 Nature.",
+      "verified_pmids": [
+        "35019279",
+        "24767681",
+        "40044849"
+      ]
+    },
+    {
+      "residue_number": 167,
+      "one_letter": "S",
+      "three_letter": "SER",
+      "label": "S167",
+      "ballesteros_weinstein": "2.54",
+      "region": "TM2 (155-175)",
+      "motif_or_switch": "Allosteric Na+ binding pocket",
+      "functional_role": "Polar residue lining the CB1 Na+ / internal water cavity adjacent to D163^2.50.",
+      "literature_notes": "Dutta, Selvam & Shukla 2022 ACS Chem Neurosci.",
+      "verified_pmids": [
+        "35019279"
+      ]
+    },
+    {
+      "residue_number": 169,
+      "one_letter": "I",
+      "three_letter": "ILE",
+      "label": "I169",
+      "ballesteros_weinstein": "2.56",
+      "region": "TM2 (155-175)",
+      "motif_or_switch": "Extrahelical PAM pocket (ZCZ011 / GAT229)",
+      "functional_role": "Crucial hydrophobic anchor for PAMs ZCZ011 (7FEE, 7WV9), GAT229, and biased ago-PAMs (8IKG/8IKH); I169A abolishes ZCZ011/GAT229 PAM activity.",
+      "literature_notes": "Yang et al. 2022 Nat Chem Biol; Green et al. 2024 Pharmaceuticals; Shen et al. 2024 PNAS.",
+      "verified_pmids": [
+        "35637350",
+        "38399369",
+        "38830102"
+      ]
+    },
+    {
+      "residue_number": 173,
+      "one_letter": "S",
+      "three_letter": "SER",
+      "label": "S173",
+      "ballesteros_weinstein": "2.60",
+      "region": "TM2 (155-175)",
+      "motif_or_switch": "Extracellular TM2 orthosteric / efficacy sensor",
+      "functional_role": "Extracellular TM2 residue whose agonist interactions transmit efficacy signals to intracellular TM2 (F155^2.42-F237^4.46).",
+      "literature_notes": "Krishna Kumar et al. 2023 Nat Commun; Green et al. 2024 Pharmaceuticals.",
+      "verified_pmids": [
+        "37160876",
+        "38399369"
+      ]
+    },
+    {
+      "residue_number": 178,
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "label": "H178",
+      "ballesteros_weinstein": "2.65",
+      "region": "ECL1/TM2 ext",
+      "motif_or_switch": "Extracellular TM2 polar efficacy sensor",
+      "functional_role": "Polar contact hub for high-efficacy agonists such as AMG315 in MD simulations.",
+      "literature_notes": "Krishna Kumar et al. 2023 Nat Commun.",
+      "verified_pmids": [
+        "37160876"
+      ]
+    },
+    {
+      "residue_number": 189,
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "label": "F189",
+      "ballesteros_weinstein": "3.25",
+      "region": "TM3 (188-212)",
+      "motif_or_switch": "Non-canonical TM3 extracellular position (Phe instead of Cys)",
+      "functional_role": "Human CB1 has F189^3.25 instead of the canonical Class A C3.25 disulfide partner, giving CB1 unusual N-terminal/ECL2 plasticity; ECL2 instead forms an internal C257-C264 disulfide.",
+      "literature_notes": "Hua et al. 2016 Cell; Shao et al. 2016 Nature.",
+      "verified_pmids": [
+        "27768894",
+        "27851727"
+      ]
+    },
+    {
+      "residue_number": 191,
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "label": "F191",
+      "ballesteros_weinstein": "3.27",
+      "region": "TM3 (188-212)",
+      "motif_or_switch": "Extrahelical PAM pocket (ZCZ011)",
+      "functional_role": "Forms pi-pi / H-bond interactions with ZCZ011 thiophene ring to stabilize upward TM3 shift; F191A abolishes allosteric agonism.",
+      "literature_notes": "Yang et al. 2022 Nat Chem Biol; Green et al. 2024 Pharmaceuticals.",
+      "verified_pmids": [
+        "35637350",
+        "38399369"
+      ]
+    },
+    {
+      "residue_number": 200,
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "label": "F200",
+      "ballesteros_weinstein": "3.36",
+      "region": "TM3 (188-212)",
+      "motif_or_switch": "Twin toggle switch (F200^3.36 / W356^6.48)",
+      "functional_role": "Aromatic partner of W356^6.48 at base of orthosteric pocket. Adopts trans (chi1 ~ +/-175 deg) stacking against W356^6.48 in inactive CB1 (5TGZ, 5U09), NAM-bound 6KQI, and ZCZ011 crystal 7FEE; flips to gauche- (chi1 ~ -64 to -92 deg) toward TM2 in agonist-bound active-like (5XRA, 5XR8, 7V3Z) and all Gi/arrestin-coupled structures.",
+      "literature_notes": "McAllister et al. 2004 JBC (mutagenesis); Hua et al. 2017/2025 Nature; Shao et al. 2019 Nat Chem Biol; Dutta & Shukla 2023 Commun Biol.",
+      "verified_pmids": [
+        "15326174",
+        "40866700",
+        "31659318",
+        "37147497"
+      ]
+    },
+    {
+      "residue_number": 203,
+      "one_letter": "S",
+      "three_letter": "SER",
+      "label": "S203",
+      "ballesteros_weinstein": "3.39",
+      "region": "TM3 (188-212)",
+      "motif_or_switch": "Allosteric Na+ binding pocket",
+      "functional_role": "Coordinates Na+ ion/water network near D163^2.50; engineered S203K mutation acts as a synthetic Na+ mimic stabilizing inactive CB1 in 6KQI, 7FEE, and 9BA0.",
+      "literature_notes": "Shao et al. 2019 Nat Chem Biol; Yang et al. 2022 Nat Chem Biol; Kumari et al. 2024 Nat Commun.",
+      "verified_pmids": [
+        "31659318",
+        "35637350",
+        "39695122"
+      ]
+    },
+    {
+      "residue_number": 204,
+      "one_letter": "V",
+      "three_letter": "VAL",
+      "label": "V204",
+      "ballesteros_weinstein": "3.40",
+      "region": "TM3 (188-212)",
+      "motif_or_switch": "Non-canonical PIF-like transmission triad (V204^3.40 - L286^5.50 - L352^6.44)",
+      "functional_role": "CB1 replaces canonical Class A I3.40 with V204^3.40 (paired with L286^5.50 and L352^6.44), yielding a looser hydrophobic core triad than beta2AR/muOR.",
+      "literature_notes": "Hua et al. 2016 Cell; Zhou et al. 2019 eLife.",
+      "verified_pmids": [
+        "27768894",
+        "31855179"
+      ]
+    },
+    {
+      "residue_number": 210,
+      "one_letter": "T",
+      "three_letter": "THR",
+      "label": "T210",
+      "ballesteros_weinstein": "3.46",
+      "region": "TM3 (188-212)",
+      "motif_or_switch": "Constitutive activity rheostat",
+      "functional_role": "Critical allosteric packing residue above DRY: T210A thermostabilizes inactive states (used in 5TGZ, 5U09, 5XRA, 6KQI, 7FEE, 9BA0), whereas T210I enhances constitutive activity and active-state stability (used in 8WRZ).",
+      "literature_notes": "Hua et al. 2016 Cell; Wang et al. 2024 Protein & Cell.",
+      "verified_pmids": [
+        "27768894",
+        "38102480"
+      ]
+    },
+    {
+      "residue_number": 213,
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "label": "D213",
+      "ballesteros_weinstein": "3.49",
+      "region": "TM3/ICL2 border",
+      "motif_or_switch": "DRY motif (D213^3.49 - R214^3.50 - Y215^3.51)",
+      "functional_role": "Forms intra-DRY salt bridge with R214^3.50 in inactive CB1; protonation/disruption releases R214^3.50 to engage Galpha_i C-terminal alpha5 helix or beta-arrestin finger loop.",
+      "literature_notes": "Hua et al. 2016 Cell; Krishna Kumar et al. 2019 Cell.",
+      "verified_pmids": [
+        "27768894",
+        "30639101"
+      ]
+    },
+    {
+      "residue_number": 214,
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "label": "R214",
+      "ballesteros_weinstein": "3.50",
+      "region": "TM3/ICL2 border",
+      "motif_or_switch": "DRY motif & ionic lock anchor",
+      "functional_role": "Conserved Arg3.50 forming the intracellular ionic lock with D338^6.30 in inactive CB1 (CA-CA 6.75-9.22 A); extends to contact Y294^5.58/Y397^7.53 and Galpha_i C-terminus (C351/D350) upon activation (R214-D338 CA-CA 14.18-17.13 A).",
+      "literature_notes": "Hua et al. 2016 Cell; Shao et al. 2016 Nature; Krishna Kumar et al. 2019 Cell.",
+      "verified_pmids": [
+        "27768894",
+        "27851727",
+        "30639101"
+      ]
+    },
+    {
+      "residue_number": 215,
+      "one_letter": "Y",
+      "three_letter": "TYR",
+      "label": "Y215",
+      "ballesteros_weinstein": "3.51",
+      "region": "TM3/ICL2 border",
+      "motif_or_switch": "DRY motif",
+      "functional_role": "Stabilizes ICL2 conformation for G-protein and beta-arrestin coupling.",
+      "literature_notes": "Krishna Kumar et al. 2019 Cell; Wang et al. 2024 Protein & Cell.",
+      "verified_pmids": [
+        "30639101",
+        "38102480"
+      ]
+    },
+    {
+      "residue_number": 237,
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "label": "F237",
+      "ballesteros_weinstein": "4.46",
+      "region": "TM4 (233-255)",
+      "motif_or_switch": "TM2-TM4 F155-F237 activation switch & NAM/cholesterol pocket",
+      "functional_role": "Bulky aromatic unique to CB1 (Leu in CB2, small aliphatic in beta2AR/muOR/M2R). Points inward toward TM2-TM3 in inactive (5TGZ, 5U09), ORG27569-bound (6KQI), ZCZ011 crystal (7FEE), and transducer-free agonist crystal structures (5XRA, 5XR8, 7V3Z: chi1 ~ -72 to -88 deg), where cholesterol (5XRA) or ORG27569 (6KQI) wedges against it; flips to trans (chi1 ~ +154 to -170 deg) rotating outward in ALL Gi- and arrestin-coupled active complexes to avoid steric clash with outward-moving F155^2.42.",
+      "literature_notes": "Shao et al. 2016 Nature; Wickert et al. 2018 Front Mol Neurosci (rat F238L = human F237L increases basal endocytosis/activity); Shao et al. 2019 Nat Chem Biol (6KQI); Krishna Kumar et al. 2023 Nat Commun (8GHV). NOT analyzed in Shukla Group MSM papers.",
+      "verified_pmids": [
+        "27851727",
+        "30026687",
+        "31659318",
+        "37160876"
+      ]
+    },
+    {
+      "residue_number": 238,
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "label": "C238",
+      "ballesteros_weinstein": "4.47",
+      "region": "TM4 (233-255)",
+      "motif_or_switch": "Extrahelical NAM / cholesterol pocket",
+      "functional_role": "Directly contacts ORG27569 in 6KQI and cholesterol in 5XRA.",
+      "literature_notes": "Shao et al. 2019 Nat Chem Biol; Obi & Natesan 2022 J Med Chem.",
+      "verified_pmids": [
+        "31659318",
+        "36066412"
+      ]
+    },
+    {
+      "residue_number": 241,
+      "one_letter": "W",
+      "three_letter": "TRP",
+      "label": "W241",
+      "ballesteros_weinstein": "4.50",
+      "region": "TM4 (233-255)",
+      "motif_or_switch": "TM4 BW anchor & NAM/cholesterol site",
+      "functional_role": "Conserved Trp4.50 forming the floor/wall of the extrahelical ORG27569 and cholesterol pocket.",
+      "literature_notes": "Shao et al. 2019 Nat Chem Biol.",
+      "verified_pmids": [
+        "31659318"
+      ]
+    },
+    {
+      "residue_number": 257,
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "label": "C257",
+      "ballesteros_weinstein": "ECL2",
+      "region": "ECL2 (256-273)",
+      "motif_or_switch": "Intra-ECL2 disulfide bond (C257-C264)",
+      "functional_role": "Forms 2.03-2.04 A disulfide bridge with C264 within ECL2 (replacing the absent TM3-ECL2 disulfide).",
+      "literature_notes": "Hua et al. 2016 Cell; Shao et al. 2016 Nature.",
+      "verified_pmids": [
+        "27768894",
+        "27851727"
+      ]
+    },
+    {
+      "residue_number": 264,
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "label": "C264",
+      "ballesteros_weinstein": "ECL2",
+      "region": "ECL2 (256-273)",
+      "motif_or_switch": "Intra-ECL2 disulfide bond (C257-C264)",
+      "functional_role": "Disulfide partner of C257 stabilizing the ECL2 lid over the hydrophobic orthosteric pocket.",
+      "literature_notes": "Hua et al. 2016 Cell; Shao et al. 2016 Nature.",
+      "verified_pmids": [
+        "27768894",
+        "27851727"
+      ]
+    },
+    {
+      "residue_number": 268,
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "label": "F268",
+      "ballesteros_weinstein": "ECL2",
+      "region": "ECL2 (256-273)",
+      "motif_or_switch": "ECL2 orthosteric lid aromatic contact",
+      "functional_role": "Projects deeply into the orthosteric pocket to contact cannabinoid cores in agonist-bound CB1.",
+      "literature_notes": "Hua et al. 2017/2025 Nature; Krishna Kumar et al. 2019 Cell.",
+      "verified_pmids": [
+        "40866700",
+        "30639101"
+      ]
+    },
+    {
+      "residue_number": 279,
+      "one_letter": "W",
+      "three_letter": "TRP",
+      "label": "W279",
+      "ballesteros_weinstein": "5.43",
+      "region": "TM5 (274-299)",
+      "motif_or_switch": "TM5 orthosteric & active-state contact",
+      "functional_role": "Forms deep active-state agonist contacts in CB1.",
+      "literature_notes": "Dutta & Shukla 2023 Commun Biol.",
+      "verified_pmids": [
+        "37147497"
+      ]
+    },
+    {
+      "residue_number": 286,
+      "one_letter": "L",
+      "three_letter": "LEU",
+      "label": "L286",
+      "ballesteros_weinstein": "5.50",
+      "region": "TM5 (274-299)",
+      "motif_or_switch": "Non-canonical PIF-like triad (L286^5.50)",
+      "functional_role": "CB1 lacks conserved Class A Pro5.50, carrying Leu286^5.50 instead, yielding a straighter TM5 helix.",
+      "literature_notes": "Hua et al. 2016 Cell.",
+      "verified_pmids": [
+        "27768894"
+      ]
+    },
+    {
+      "residue_number": 294,
+      "one_letter": "Y",
+      "three_letter": "TYR",
+      "label": "Y294",
+      "ballesteros_weinstein": "5.58",
+      "region": "TM5 (274-299)",
+      "motif_or_switch": "Intracellular Y5.58 tyrosine lock microswitch",
+      "functional_role": "Remains oriented inside the helical bundle in both inactive and active CB1 (unlike CB2 where Y5.58 flips from membrane-facing to bundle-facing), but forms a tight 2.9-4.2 A phenolic OH H-bond with Y397^7.53 ONLY in transducer-coupled active states (vs 5.1-5.5 A in 5XRA/5XR8/7V3Z and 10.5-11.8 A in inactive states).",
+      "literature_notes": "Dutta & Shukla 2023 Commun Biol; Krishna Kumar et al. 2019 Cell; Hua et al. 2020 Cell.",
+      "verified_pmids": [
+        "37147497",
+        "30639101",
+        "32004463"
+      ]
+    },
+    {
+      "residue_number": 338,
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "label": "D338",
+      "ballesteros_weinstein": "6.30",
+      "region": "TM6 cytoplasmic start",
+      "motif_or_switch": "Ionic lock partner (D338^6.30)",
+      "functional_role": "Forms salt bridge with R214^3.50 in inactive CB1 (R214-D338 CA-CA 6.75 A in 5U09, 7.20 A in 6KQI, 8.69 A in 5TGZ); swings outward upon TM6 opening (14.18-17.13 A).",
+      "literature_notes": "Shao et al. 2016 Nature; Hua et al. 2016 Cell; Krishna Kumar et al. 2019 Cell.",
+      "verified_pmids": [
+        "27851727",
+        "27768894",
+        "30639101"
+      ]
+    },
+    {
+      "residue_number": 352,
+      "one_letter": "L",
+      "three_letter": "LEU",
+      "label": "L352",
+      "ballesteros_weinstein": "6.44",
+      "region": "TM6 (345-365)",
+      "motif_or_switch": "Non-canonical PIF-like triad (L352^6.44)",
+      "functional_role": "Replaces canonical Phe6.44 of Class A PIF motif with Leu352^6.44 below the CWxP hinge.",
+      "literature_notes": "Hua et al. 2016 Cell; Zhou et al. 2019 eLife.",
+      "verified_pmids": [
+        "27768894",
+        "31855179"
+      ]
+    },
+    {
+      "residue_number": 355,
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "label": "C355",
+      "ballesteros_weinstein": "6.47",
+      "region": "TM6 (345-365)",
+      "motif_or_switch": "CWxP motif (C355^6.47)",
+      "functional_role": "Part of the conserved C355-W356-G357-P358 hinge on TM6.",
+      "literature_notes": "Hua et al. 2016 Cell.",
+      "verified_pmids": [
+        "27768894"
+      ]
+    },
+    {
+      "residue_number": 356,
+      "one_letter": "W",
+      "three_letter": "TRP",
+      "label": "W356",
+      "ballesteros_weinstein": "6.48",
+      "region": "TM6 (345-365)",
+      "motif_or_switch": "CWxP / Twin toggle switch (W356^6.48)",
+      "functional_role": "Aromatic toggle partner of F200^3.36. Undergoes upward/TM5-directed translational shift upon agonist activation as F200^3.36 flips toward TM2; remains locked in inactive pose in ORG27569-bound 6KQI despite CP55940 pocket contraction; adopts distinct trans chi1 (-177.4 deg) in FUB-bound CB1-beta-arrestin-1 (8WU1) vs gauche- (-59 to -87 deg) in Gi complexes.",
+      "literature_notes": "McAllister et al. 2004 JBC; Shao et al. 2019 Nat Chem Biol; Dutta et al. 2022 JBC; Dutta & Shukla 2023 Commun Biol; Liao et al. 2023 Cell.",
+      "verified_pmids": [
+        "15326174",
+        "31659318",
+        "35227761",
+        "37147497",
+        "38101408"
+      ]
+    },
+    {
+      "residue_number": 357,
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "label": "G357",
+      "ballesteros_weinstein": "6.49",
+      "region": "TM6 (345-365)",
+      "motif_or_switch": "CWxP motif (G357^6.49)",
+      "functional_role": "Flexible glycine in CWGP motif facilitating TM6 kink/hinge motion.",
+      "literature_notes": "Hua et al. 2016 Cell.",
+      "verified_pmids": [
+        "27768894"
+      ]
+    },
+    {
+      "residue_number": 358,
+      "one_letter": "P",
+      "three_letter": "PRO",
+      "label": "P358",
+      "ballesteros_weinstein": "6.50",
+      "region": "TM6 (345-365)",
+      "motif_or_switch": "CWxP motif & TM6 BW anchor (P358^6.50)",
+      "functional_role": "Conserved Pro6.50 kink pivot enabling intracellular TM6 outward displacement.",
+      "literature_notes": "Hua et al. 2016 Cell.",
+      "verified_pmids": [
+        "27768894"
+      ]
+    },
+    {
+      "residue_number": 383,
+      "one_letter": "S",
+      "three_letter": "SER",
+      "label": "S383",
+      "ballesteros_weinstein": "7.39",
+      "region": "TM7 (378-399)",
+      "motif_or_switch": "Orthosteric polar H-bond anchor (S383^7.39)",
+      "functional_role": "Forms key hydrogen bond with phenolic hydroxyl of classical/non-classical cannabinoids (AM11542, AM841, CP55940, THC).",
+      "literature_notes": "Hua et al. 2017/2025 Nature; Shao et al. 2019 Nat Chem Biol.",
+      "verified_pmids": [
+        "40866700",
+        "31659318"
+      ]
+    },
+    {
+      "residue_number": 390,
+      "one_letter": "S",
+      "three_letter": "SER",
+      "label": "S390",
+      "ballesteros_weinstein": "7.46",
+      "region": "TM7 (378-399)",
+      "motif_or_switch": "Allosteric Na+ pocket (S390^7.46)",
+      "functional_role": "Coordinates Na+ / internal water network with D163^2.50 and N393^7.49.",
+      "literature_notes": "Dutta, Selvam & Shukla 2022 ACS Chem Neurosci.",
+      "verified_pmids": [
+        "35019279"
+      ]
+    },
+    {
+      "residue_number": 393,
+      "one_letter": "N",
+      "three_letter": "ASN",
+      "label": "N393",
+      "ballesteros_weinstein": "7.49",
+      "region": "TM7 (378-399)",
+      "motif_or_switch": "NPxxY motif (N393^7.49)",
+      "functional_role": "Couples the D163^2.50 Na+/water network to intracellular TM7 inward movement; N393D stabilizes inactive state in 7FEE.",
+      "literature_notes": "Yang et al. 2022 Nat Chem Biol; Katritch et al. 2014 TiBS.",
+      "verified_pmids": [
+        "35637350",
+        "24767681"
+      ]
+    },
+    {
+      "residue_number": 394,
+      "one_letter": "P",
+      "three_letter": "PRO",
+      "label": "P394",
+      "ballesteros_weinstein": "7.50",
+      "region": "TM7 (378-399)",
+      "motif_or_switch": "NPxxY motif & TM7 BW anchor (P394^7.50)",
+      "functional_role": "Conserved Pro7.50 of NPIIY motif enabling TM7 inward bending upon activation.",
+      "literature_notes": "Hua et al. 2016 Cell.",
+      "verified_pmids": [
+        "27768894"
+      ]
+    },
+    {
+      "residue_number": 395,
+      "one_letter": "I",
+      "three_letter": "ILE",
+      "label": "I395",
+      "ballesteros_weinstein": "7.51",
+      "region": "TM7 (378-399)",
+      "motif_or_switch": "NPxxY motif (I395^7.51)",
+      "functional_role": "First isoleucine of human CB1 NPIIY motif.",
+      "literature_notes": "Hua et al. 2016 Cell.",
+      "verified_pmids": [
+        "27768894"
+      ]
+    },
+    {
+      "residue_number": 396,
+      "one_letter": "I",
+      "three_letter": "ILE",
+      "label": "I396",
+      "ballesteros_weinstein": "7.52",
+      "region": "TM7 (378-399)",
+      "motif_or_switch": "NPxxY motif (I396^7.52)",
+      "functional_role": "Second isoleucine of human CB1 NPIIY motif.",
+      "literature_notes": "Hua et al. 2016 Cell.",
+      "verified_pmids": [
+        "27768894"
+      ]
+    },
+    {
+      "residue_number": 397,
+      "one_letter": "Y",
+      "three_letter": "TYR",
+      "label": "Y397",
+      "ballesteros_weinstein": "7.53",
+      "region": "TM7 (378-399)",
+      "motif_or_switch": "NPxxY motif (Y397^7.53) & CRAC central Tyr",
+      "functional_role": "Swings inward upon activation (R214-Y397 CA distance drops from 16.4-18.1 A in inactive to 12.1-12.8 A in active) to H-bond with Y294^5.58 (OH-OH 2.9-4.2 A in Gi/arrestin complexes); also serves as central Tyr of the TM7/H8 CRAC motif (V392-Y397-K402).",
+      "literature_notes": "Krishna Kumar et al. 2019 Cell; Oddi et al. 2011 J Neurochem; Dutta et al. 2022 JBC.",
+      "verified_pmids": [
+        "30639101",
+        "21214565",
+        "35227761"
+      ]
+    },
+    {
+      "residue_number": 402,
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "label": "K402",
+      "ballesteros_weinstein": "8.48",
+      "region": "Helix 8 (400-414)",
+      "motif_or_switch": "Helix 8 / CRAC motif basic residue (K402^8.48)",
+      "functional_role": "C-terminal basic residue of the CB1 cholesterol-recognition (CRAC) motif (V392-X4-Y397-X4-K402) and direct interface residue for beta-arrestin-1 (K402A reduces arrestin recruitment).",
+      "literature_notes": "Oddi et al. 2011 J Neurochem; Wang et al. 2024 Protein & Cell.",
+      "verified_pmids": [
+        "21214565",
+        "38102480"
+      ]
+    },
+    {
+      "residue_number": 404,
+      "one_letter": "L",
+      "three_letter": "LEU",
+      "label": "L404",
+      "ballesteros_weinstein": "8.50",
+      "region": "Helix 8 (400-414)",
+      "motif_or_switch": "Helix 8 BW anchor (L404^8.50)",
+      "functional_role": "Hydrophobic anchor of amphipathic Helix 8 parallel to inner membrane leaflet; L404A reduces CP55940 G-protein dissociation efficacy.",
+      "literature_notes": "Green et al. 2024 Pharmaceuticals.",
+      "verified_pmids": [
+        "38399369"
+      ]
+    },
+    {
+      "residue_number": 408,
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "label": "F408",
+      "ballesteros_weinstein": "8.54",
+      "region": "Helix 8 (400-414)",
+      "motif_or_switch": "Helix 8 membrane/allosteric anchor (F408^8.54)",
+      "functional_role": "Aromatic anchor on Helix 8 (putative pregnenolone/allosteric site 8); F408A reduces CP55940 efficacy.",
+      "literature_notes": "Green et al. 2024 Pharmaceuticals.",
+      "verified_pmids": [
+        "38399369"
+      ]
+    },
+    {
+      "residue_number": 415,
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "label": "C415",
+      "ballesteros_weinstein": "C-term",
+      "region": "C-terminus (415-472)",
+      "motif_or_switch": "Helix 8 C-terminal S-palmitoylation anchor (C415)",
+      "functional_role": "S-palmitoylated cysteine anchoring the end of Helix 8 into the inner membrane leaflet and lipid rafts, regulating G-protein coupling and membrane microdomain partitioning.",
+      "literature_notes": "Oddi et al. 2017 BBA Mol Cell Biol Lipids; UniProt P21554.",
+      "verified_pmids": [
+        "28215712"
+      ]
+    }
+  ],
+  "recommended_order_parameters_for_md": [
+    {
+      "name": "TM6_outward_opening_CA",
+      "atoms": [
+        "R214:CA",
+        "D338:CA"
+      ],
+      "fallback_atoms_if_ICL3_truncated": [
+        "R214:CA",
+        "A342:CA"
+      ],
+      "inactive_range_A": [
+        6.7,
+        9.2
+      ],
+      "active_like_crystal_range_A": [
+        14.1,
+        14.7
+      ],
+      "transducer_coupled_active_range_A": [
+        14.4,
+        17.2
+      ],
+      "physical_meaning": "Canonical intracellular TM3-TM6 opening; necessary for transducer binding but DOES NOT distinguish uncoupled active-like crystals (5XRA/5XR8/7V3Z) from fully coupled active states."
+    },
+    {
+      "name": "F155_F237_TM2_TM4_switch",
+      "dihedrals": [
+        "F155:chi1",
+        "F237:chi1"
+      ],
+      "distance_proxy": [
+        "F155:sidechain_COM",
+        "N393:CA"
+      ],
+      "inactive_and_5XRA_state": "F155 chi1 trans/gauche+ (+59 to +167 deg, COM-N393 ~9.2-11.3 A inward); F237 chi1 gauche- (~ -85 deg inward)",
+      "transducer_active_state": "F155 chi1 gauche- (-57 to -87 deg, COM-N393 ~14.7-16.7 A outward); F237 chi1 trans (+154 to -170 deg outward)",
+      "physical_meaning": "CB1-specific intracellular aromatic gate coupled to extrahelical cholesterol/ORG27569 pocket; orthogonal to TM6 opening across 5XRA vs 6N4B/8GHV!"
+    },
+    {
+      "name": "Twin_toggle_switch_F200_W356",
+      "dihedrals": [
+        "F200:chi1",
+        "W356:chi1",
+        "W356:chi2"
+      ],
+      "distance_proxy": [
+        "F200:sidechain_COM_z - W356:sidechain_COM_z"
+      ],
+      "inactive_state": "F200 chi1 trans (~ +/-175 deg); W356 stacked over F200",
+      "active_Gi_state": "F200 chi1 gauche- (~ -64 to -82 deg toward TM2); W356 shifts toward TM5 (chi1 ~ -59 to -87 deg)",
+      "active_arrestin_8WU1_state": "F200 chi1 -92 deg; W356 flips to trans (chi1 = -177.4 deg) under deeper FUB insertion",
+      "physical_meaning": "Orthosteric-to-core aromatic transmission switch."
+    },
+    {
+      "name": "NPxxY_tyrosine_lock",
+      "atoms": [
+        "Y294:OH",
+        "Y397:OH"
+      ],
+      "backbone_collapse": [
+        "R214:CA",
+        "Y397:CA"
+      ],
+      "inactive_range_A": [
+        10.5,
+        11.8
+      ],
+      "active_like_crystal_range_A": [
+        5.1,
+        5.5
+      ],
+      "transducer_coupled_active_range_A": [
+        2.9,
+        4.2
+      ],
+      "physical_meaning": "Direct/water-mediated H-bond locking TM5 and TM7 inward around the collapsed Na+ pocket; incomplete in 5XRA/5XR8/7V3Z despite outward TM6."
+    },
+    {
+      "name": "Na_pocket_hydration_and_collapse",
+      "atoms": [
+        "D163:CG",
+        "N393:ND2",
+        "S390:OG",
+        "S203:OG"
+      ],
+      "physical_meaning": "Collapse of the allosteric Na+ cavity and reorganization of the internal water wire connecting D163^2.50, W356^6.48, and N393^7.49/Y397^7.53."
+    },
+    {
+      "name": "N_terminal_V_loop_plug",
+      "atoms": [
+        "M103:CA",
+        "D163:CA"
+      ],
+      "alternate_atoms": [
+        "F108:CA",
+        "D163:CA"
+      ],
+      "physical_meaning": "Extracellular N-terminal V-loop insertion into vs lifting out of the orthosteric pocket."
+    }
+  ],
+  "experimental_7tm_structures": [
+    {
+      "pdb_id": "5TGZ",
+      "method": "X-RAY DIFFRACTION",
+      "resolution_angstrom": 2.8,
+      "release_or_pub_year": 2016,
+      "functional_state": "Inactive (antagonist-bound)",
+      "bound_ligands_summary": "AM6538 (ZDG)",
+      "pdb_chem_components": [
+        {
+          "id": "PEG",
+          "name": "DI(HYDROXYETHYL)ETHER"
+        },
+        {
+          "id": "OLA",
+          "name": "OLEIC ACID"
+        },
+        {
+          "id": "OLC",
+          "name": "(2R)-2,3-dihydroxypropyl (9Z)-octadec-9-enoate"
+        },
+        {
+          "id": "FMN",
+          "name": "FLAVIN MONONUCLEOTIDE"
+        },
+        {
+          "id": "ZDG",
+          "name": "4-[4-[2-(2,4-dichlorophenyl)-4-methyl-5-(piperidin-1-ylcarbamoyl)pyrazol-3-yl]phenyl]but-3-ynyl nitrate"
+        }
+      ],
+      "transducer_or_binder": null,
+      "construct_modifications": "ICL3 Flavodoxin + T210A,E273K,T283V,R340E",
+      "pmid": "27768894",
+      "doi": "10.1016/j.cell.2016.10.004",
+      "title": "Crystal Structure of the Human Cannabinoid Receptor CB1",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "A",
+        "mutations_90_430": "T210A,E273K,T283V,R340E",
+        "R214_D338_CA": 8.69,
+        "R214_A342_CA": 8.21,
+        "R214_K343_CA": 11.95,
+        "R214_Y397_CA": 18.14,
+        "Y294_Y397_OH": 10.5,
+        "I218_I297_CA_TM5": 7.69,
+        "F200_chi1": -177.8,
+        "W356_chi1": -85.4,
+        "W356_chi2": 89.3,
+        "F200_G166_sc_CA": 10.65,
+        "F155_chi1": 167.4,
+        "F237_chi1": -85.0,
+        "F155sc_N393CA": 10.91,
+        "F237sc_V204CA": 10.76,
+        "H154_R214_CA": 14.19,
+        "S173_S383_CA_pocket": 13.74,
+        "F108_D163_CA_Nterm": 28.26
+      }
+    },
+    {
+      "pdb_id": "5U09",
+      "method": "X-RAY DIFFRACTION",
+      "resolution_angstrom": 2.6,
+      "release_or_pub_year": 2016,
+      "functional_state": "Inactive (inverse agonist-bound)",
+      "bound_ligands_summary": "Taranabant (7DY)",
+      "pdb_chem_components": [
+        {
+          "id": "7DY",
+          "name": "N-[(2S,3S)-4-(4-chlorophenyl)-3-(3-cyanophenyl)butan-2-yl]-2-methyl-2-{[5-(trifluoromethyl)pyridin-2-yl]oxy}propanamide"
+        },
+        {
+          "id": "SO4",
+          "name": "SULFATE ION"
+        },
+        {
+          "id": "PEG",
+          "name": "DI(HYDROXYETHYL)ETHER"
+        }
+      ],
+      "transducer_or_binder": null,
+      "construct_modifications": "ICL3 PGS (GlgA) + T210A",
+      "pmid": "27851727",
+      "doi": "10.1038/nature20613",
+      "title": "High-resolution crystal structure of the human CB1 cannabinoid receptor",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "A",
+        "mutations_90_430": "T210A",
+        "R214_D338_CA": 6.75,
+        "R214_A342_CA": 6.3,
+        "R214_K343_CA": 10.05,
+        "R214_Y397_CA": 16.72,
+        "Y294_Y397_OH": 11.61,
+        "I218_I297_CA_TM5": 8.44,
+        "F200_chi1": 178.0,
+        "W356_chi1": -64.8,
+        "W356_chi2": 82.3,
+        "F200_G166_sc_CA": 11.06,
+        "F155_chi1": 72.2,
+        "F237_chi1": -86.6,
+        "F155sc_N393CA": 10.19,
+        "F237sc_V204CA": 10.53,
+        "H154_R214_CA": 11.95,
+        "S173_S383_CA_pocket": 14.08,
+        "F108_D163_CA_Nterm": 23.92
+      }
+    },
+    {
+      "pdb_id": "5XR8",
+      "method": "X-RAY DIFFRACTION",
+      "resolution_angstrom": 2.95,
+      "release_or_pub_year": 2017,
+      "functional_state": "Active-like transducer-free crystal (TM6 outward & F200 flipped, BUT F155/F237 unflipped inward & Y294-Y397 incomplete)",
+      "bound_ligands_summary": "AM841 (8D0, full agonist) + CLR",
+      "pdb_chem_components": [
+        {
+          "id": "PEG",
+          "name": "DI(HYDROXYETHYL)ETHER"
+        },
+        {
+          "id": "CLR",
+          "name": "CHOLESTEROL"
+        },
+        {
+          "id": "8D0",
+          "name": "(6~{a}~{R},9~{R},10~{a}~{R})-9-(hydroxymethyl)-3-(8-isothiocyanato-2-methyl-octan-2-yl)-6,6-dimethyl-6~{a},7,8,9,10,10~{a}-hexahydrobenzo[c]chromen-1-ol"
+        },
+        {
+          "id": "FMN",
+          "name": "FLAVIN MONONUCLEOTIDE"
+        }
+      ],
+      "transducer_or_binder": null,
+      "construct_modifications": "ICL3 Flavodoxin + T210A,E273K,T283V,R340E",
+      "pmid": "28678776",
+      "doi": "10.1038/nature23272",
+      "title": "Crystal structure of the human CB1 in complex with agonist AM841",
+      "caution_note": "Original 2017 Nature paper (PMID 28678776) replaced in Oct 2025 (PMID 40866700, DOI 10.1038/s41586-025-09454-5).",
+      "measured_structural_metrics": {
+        "chain": "A",
+        "mutations_90_430": "T210A,E273K,T283V,R340E",
+        "R214_D338_CA": 14.43,
+        "R214_A342_CA": 12.64,
+        "R214_K343_CA": 15.22,
+        "R214_Y397_CA": 13.22,
+        "Y294_Y397_OH": 5.24,
+        "I218_I297_CA_TM5": 7.39,
+        "F200_chi1": -76.6,
+        "W356_chi1": -64.1,
+        "W356_chi2": 102.7,
+        "F200_G166_sc_CA": 4.93,
+        "F155_chi1": 155.7,
+        "F237_chi1": -88.2,
+        "F155sc_N393CA": 9.43,
+        "F237sc_V204CA": 10.73,
+        "H154_R214_CA": 13.73,
+        "S173_S383_CA_pocket": 11.99,
+        "F108_D163_CA_Nterm": 25.29,
+        "auth_seq_id_note": "ICL3 flavodoxin fusion shifts TM6/TM7 auth_seq_id by +122 (corrected via CWGPLL/NPIIY alignment)."
+      }
+    },
+    {
+      "pdb_id": "5XRA",
+      "method": "X-RAY DIFFRACTION",
+      "resolution_angstrom": 2.8,
+      "release_or_pub_year": 2017,
+      "functional_state": "Active-like transducer-free crystal (TM6 outward & F200 flipped, BUT F155/F237 unflipped inward & Y294-Y397 incomplete; CLR wedged at F237)",
+      "bound_ligands_summary": "AM11542 (8D3, full agonist) + CLR",
+      "pdb_chem_components": [
+        {
+          "id": "CLR",
+          "name": "CHOLESTEROL"
+        },
+        {
+          "id": "PEG",
+          "name": "DI(HYDROXYETHYL)ETHER"
+        },
+        {
+          "id": "OLC",
+          "name": "(2R)-2,3-dihydroxypropyl (9Z)-octadec-9-enoate"
+        },
+        {
+          "id": "OLA",
+          "name": "OLEIC ACID"
+        },
+        {
+          "id": "8D3",
+          "name": "(6aR,10aR)-3-(8-bromanyl-2-methyl-octan-2-yl)-6,6,9-trimethyl-6a,7,10,10a-tetrahydrobenzo[c]chromen-1-ol"
+        },
+        {
+          "id": "FMN",
+          "name": "FLAVIN MONONUCLEOTIDE"
+        }
+      ],
+      "transducer_or_binder": null,
+      "construct_modifications": "ICL3 Flavodoxin + T210A,E273K,T283V,R340E",
+      "pmid": "28678776",
+      "doi": "10.1038/nature23272",
+      "title": "Crystal structure of the human CB1 in complex with agonist AM11542",
+      "caution_note": "Original 2017 Nature paper (PMID 28678776) retracted & replaced in Sep/Oct 2025 (Retraction PMID 40866714; peer-reviewed replacement PMID 40866700, DOI 10.1038/s41586-025-09454-5) due to mutant cAMP assay issues; crystal coordinates unchanged.",
+      "measured_structural_metrics": {
+        "chain": "A",
+        "mutations_90_430": "T210A,E273K,T283V,R340E",
+        "R214_D338_CA": 14.18,
+        "R214_A342_CA": 13.05,
+        "R214_K343_CA": 15.47,
+        "R214_Y397_CA": 13.24,
+        "Y294_Y397_OH": 5.1,
+        "I218_I297_CA_TM5": 7.26,
+        "F200_chi1": -79.4,
+        "W356_chi1": -72.0,
+        "W356_chi2": 109.6,
+        "F200_G166_sc_CA": 4.77,
+        "F155_chi1": 155.8,
+        "F237_chi1": -82.6,
+        "F155sc_N393CA": 9.2,
+        "F237sc_V204CA": 11.07,
+        "H154_R214_CA": 13.69,
+        "S173_S383_CA_pocket": 12.4,
+        "F108_D163_CA_Nterm": 25.23
+      }
+    },
+    {
+      "pdb_id": "6KPG",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.0,
+      "release_or_pub_year": 2020,
+      "functional_state": "Active Gi1-coupled signaling complex",
+      "bound_ligands_summary": "AM841 (8D0)",
+      "pdb_chem_components": [
+        {
+          "id": "8D0",
+          "name": "(6~{a}~{R},9~{R},10~{a}~{R})-9-(hydroxymethyl)-3-(8-isothiocyanato-2-methyl-octan-2-yl)-6,6-dimethyl-6~{a},7,8,9,10,10~{a}-hexahydrobenzo[c]chromen-1-ol"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer + scFv16",
+      "construct_modifications": "E273K,T283V,R340E",
+      "pmid": "32004463",
+      "doi": "10.1016/j.cell.2020.01.008",
+      "title": "Cryo-EM structure of CB1-G protein complex",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "R",
+        "mutations_90_430": "E273K,T283V,R340E",
+        "R214_D338_CA": 14.45,
+        "R214_A342_CA": 13.8,
+        "R214_K343_CA": 15.75,
+        "R214_Y397_CA": 12.12,
+        "Y294_Y397_OH": 3.41,
+        "I218_I297_CA_TM5": 6.27,
+        "F200_chi1": -78.4,
+        "W356_chi1": -86.8,
+        "W356_chi2": 103.5,
+        "F200_G166_sc_CA": 4.93,
+        "F155_chi1": -57.4,
+        "F237_chi1": 159.7,
+        "F155sc_N393CA": 15.08,
+        "F237sc_V204CA": 13.45,
+        "H154_R214_CA": 13.37,
+        "S173_S383_CA_pocket": 11.47,
+        "F108_D163_CA_Nterm": 28.09
+      }
+    },
+    {
+      "pdb_id": "6KQI",
+      "method": "X-RAY DIFFRACTION",
+      "resolution_angstrom": 3.245,
+      "release_or_pub_year": 2019,
+      "functional_state": "Allosterically trapped intermediate (orthosteric pocket contracted, intracellular TM6 & F155/F237/W356 locked inactive)",
+      "bound_ligands_summary": "CP55,940 (9GF, orthosteric agonist) + ORG27569 (9GL, NAM)",
+      "pdb_chem_components": [
+        {
+          "id": "PEG",
+          "name": "DI(HYDROXYETHYL)ETHER"
+        },
+        {
+          "id": "OLC",
+          "name": "(2R)-2,3-dihydroxypropyl (9Z)-octadec-9-enoate"
+        },
+        {
+          "id": "OLA",
+          "name": "OLEIC ACID"
+        },
+        {
+          "id": "9GL",
+          "name": "5-chloro-3-ethyl-N-{2-[4-(piperidin-1-yl)phenyl]ethyl}-1H-indole-2-carboxamide"
+        },
+        {
+          "id": "9GF",
+          "name": "2-[(1R,2R,5R)-5-hydroxy-2-(3-hydroxypropyl)cyclohexyl]-5-(2-methyloctan-2-yl)phenol"
+        }
+      ],
+      "transducer_or_binder": null,
+      "construct_modifications": "ICL3 PGS + S203K,T210A,E273K,T283V,R340E",
+      "pmid": "31659318",
+      "doi": "10.1038/s41589-019-0387-2",
+      "title": "Structure of an allosteric modulator bound to the CB1 cannabinoid receptor",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "A",
+        "mutations_90_430": "S203K,T210A,E273K,T283V,R340E",
+        "R214_D338_CA": 7.2,
+        "R214_A342_CA": 6.32,
+        "R214_K343_CA": 10.12,
+        "R214_Y397_CA": 16.78,
+        "Y294_Y397_OH": 11.75,
+        "I218_I297_CA_TM5": 7.97,
+        "F200_chi1": 162.2,
+        "W356_chi1": -83.2,
+        "W356_chi2": 84.1,
+        "F200_G166_sc_CA": 10.2,
+        "F155_chi1": 68.3,
+        "F237_chi1": -84.8,
+        "F155sc_N393CA": 10.78,
+        "F237sc_V204CA": 10.49,
+        "H154_R214_CA": 12.09,
+        "S173_S383_CA_pocket": 12.91,
+        "F108_D163_CA_Nterm": 25.42
+      }
+    },
+    {
+      "pdb_id": "6N4B",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.0,
+      "release_or_pub_year": 2019,
+      "functional_state": "Active Gi1-coupled signaling complex (all switches flipped including F155/F237 & Y294-Y397)",
+      "bound_ligands_summary": "MDMB-FUBINACA / FUB (KCA) + CLR",
+      "pdb_chem_components": [
+        {
+          "id": "CLR",
+          "name": "CHOLESTEROL"
+        },
+        {
+          "id": "KCA",
+          "name": "methyl N-{1-[(4-fluorophenyl)methyl]-1H-indazole-3-carbonyl}-3-methyl-L-valinate"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer (Galpha_i1, Gbeta1, Ggamma2) + scFv16",
+      "construct_modifications": "WT",
+      "pmid": "30639101",
+      "doi": "10.1016/j.cell.2018.11.040",
+      "title": "Cannabinoid Receptor 1-G Protein Complex",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "R",
+        "mutations_90_430": "WT",
+        "R214_D338_CA": 14.94,
+        "R214_A342_CA": 14.14,
+        "R214_K343_CA": 15.77,
+        "R214_Y397_CA": 12.39,
+        "Y294_Y397_OH": 3.52,
+        "I218_I297_CA_TM5": 6.98,
+        "F200_chi1": -64.0,
+        "W356_chi1": -59.0,
+        "W356_chi2": 78.4,
+        "F200_G166_sc_CA": 6.05,
+        "F155_chi1": -64.0,
+        "F237_chi1": 177.0,
+        "F155sc_N393CA": 14.8,
+        "F237sc_V204CA": 13.49,
+        "H154_R214_CA": 13.75,
+        "S173_S383_CA_pocket": 12.77,
+        "F108_D163_CA_Nterm": null
+      }
+    },
+    {
+      "pdb_id": "7FEE",
+      "method": "X-RAY DIFFRACTION",
+      "resolution_angstrom": 2.7,
+      "release_or_pub_year": 2022,
+      "functional_state": "Engineered inactive-like ternary crystal (agonist + PAM without G-protein; inactive-stabilizing S203K/T210A/N393D keep TM6 closed)",
+      "bound_ligands_summary": "CP55,940 (9GF, agonist) + ZCZ011 (7IC, PAM)",
+      "pdb_chem_components": [
+        {
+          "id": "OLA",
+          "name": "OLEIC ACID"
+        },
+        {
+          "id": "OLC",
+          "name": "(2R)-2,3-dihydroxypropyl (9Z)-octadec-9-enoate"
+        },
+        {
+          "id": "GOL",
+          "name": "GLYCEROL"
+        },
+        {
+          "id": "PEG",
+          "name": "DI(HYDROXYETHYL)ETHER"
+        },
+        {
+          "id": "7IC",
+          "name": "6-methyl-3-[(1S)-2-nitro-1-thiophen-2-yl-ethyl]-2-phenyl-1H-indole"
+        },
+        {
+          "id": "9GF",
+          "name": "2-[(1R,2R,5R)-5-hydroxy-2-(3-hydroxypropyl)cyclohexyl]-5-(2-methyloctan-2-yl)phenol"
+        },
+        {
+          "id": "CLR",
+          "name": "CHOLESTEROL"
+        }
+      ],
+      "transducer_or_binder": null,
+      "construct_modifications": "ICL3 PGS + S203K,T210A,E273K,T283V,R340E,N393D",
+      "pmid": "35637350",
+      "doi": "10.1038/s41589-022-01038-y",
+      "title": "Crystal structure of the allosteric modulator ZCZ011 binding to CP55940-bound cannabinoid receptor 1",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "A",
+        "mutations_90_430": "S203K,T210A,E273K,T283V,R340E,N393D",
+        "R214_D338_CA": 9.22,
+        "R214_A342_CA": 8.91,
+        "R214_K343_CA": 12.54,
+        "R214_Y397_CA": 18.1,
+        "Y294_Y397_OH": 10.77,
+        "I218_I297_CA_TM5": 7.97,
+        "F200_chi1": 176.9,
+        "W356_chi1": -82.3,
+        "W356_chi2": 83.0,
+        "F200_G166_sc_CA": 9.25,
+        "F155_chi1": 161.0,
+        "F237_chi1": -84.1,
+        "F155sc_N393CA": 11.26,
+        "F237sc_V204CA": 11.21,
+        "H154_R214_CA": 14.52,
+        "S173_S383_CA_pocket": 12.35,
+        "F108_D163_CA_Nterm": 25.03
+      }
+    },
+    {
+      "pdb_id": "7V3Z",
+      "method": "X-RAY DIFFRACTION",
+      "resolution_angstrom": 3.29,
+      "release_or_pub_year": 2021,
+      "functional_state": "Active-like transducer-free crystal (TM6 outward & F200 flipped, BUT F155 gauche+ / F237 inward & Y294-Y397 incomplete)",
+      "bound_ligands_summary": "CP55,940 (9GF, full agonist) + CLR",
+      "pdb_chem_components": [
+        {
+          "id": "FMN",
+          "name": "FLAVIN MONONUCLEOTIDE"
+        },
+        {
+          "id": "CLR",
+          "name": "CHOLESTEROL"
+        },
+        {
+          "id": "9GF",
+          "name": "2-[(1R,2R,5R)-5-hydroxy-2-(3-hydroxypropyl)cyclohexyl]-5-(2-methyloctan-2-yl)phenol"
+        }
+      ],
+      "transducer_or_binder": null,
+      "construct_modifications": "ICL3 Flavodoxin + H154L,T210A,E273K,T283V,R340E",
+      "pmid": "34596399",
+      "doi": "10.1021/jacs.1c06847",
+      "title": "Structure of cannabinoid receptor type 1(CB1)",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "A",
+        "mutations_90_430": "H154L,T210A,E273K,T283V,R340E",
+        "R214_D338_CA": 14.66,
+        "R214_A342_CA": 12.23,
+        "R214_K343_CA": 15.01,
+        "R214_Y397_CA": 12.49,
+        "Y294_Y397_OH": 5.45,
+        "I218_I297_CA_TM5": 6.6,
+        "F200_chi1": -82.4,
+        "W356_chi1": -65.4,
+        "W356_chi2": 100.4,
+        "F200_G166_sc_CA": 4.97,
+        "F155_chi1": 59.0,
+        "F237_chi1": -72.2,
+        "F155sc_N393CA": 12.29,
+        "F237sc_V204CA": 10.97,
+        "H154_R214_CA": 13.5,
+        "S173_S383_CA_pocket": 12.32,
+        "F108_D163_CA_Nterm": 25.21,
+        "auth_seq_id_note": "ICL3 flavodoxin fusion shifts TM6/TM7 auth_seq_id by +122 (corrected via CWGPLL/NPIIY alignment)."
+      }
+    },
+    {
+      "pdb_id": "7WV9",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.36,
+      "release_or_pub_year": 2022,
+      "functional_state": "Active Gi2-coupled PAM ternary signaling complex",
+      "bound_ligands_summary": "CP55,940 (9GF, agonist) + ZCZ011 (7IC, PAM)",
+      "pdb_chem_components": [
+        {
+          "id": "7IC",
+          "name": "6-methyl-3-[(1S)-2-nitro-1-thiophen-2-yl-ethyl]-2-phenyl-1H-indole"
+        },
+        {
+          "id": "9GF",
+          "name": "2-[(1R,2R,5R)-5-hydroxy-2-(3-hydroxypropyl)cyclohexyl]-5-(2-methyloctan-2-yl)phenol"
+        }
+      ],
+      "transducer_or_binder": "Gi2 heterotrimer + scFv16",
+      "construct_modifications": "WT",
+      "pmid": "35637350",
+      "doi": "10.1038/s41589-022-01038-y",
+      "title": "Allosteric modulator ZCZ011 binding to CP55940-bound cannabinoid receptor 1 in complex with Gi protein",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "R",
+        "mutations_90_430": "WT",
+        "R214_D338_CA": 14.99,
+        "R214_A342_CA": 14.21,
+        "R214_K343_CA": 16.07,
+        "R214_Y397_CA": 12.25,
+        "Y294_Y397_OH": 3.07,
+        "I218_I297_CA_TM5": 6.18,
+        "F200_chi1": -74.7,
+        "W356_chi1": -78.7,
+        "W356_chi2": 109.5,
+        "F200_G166_sc_CA": 6.86,
+        "F155_chi1": -59.9,
+        "F237_chi1": -176.0,
+        "F155sc_N393CA": 15.26,
+        "F237sc_V204CA": 12.5,
+        "H154_R214_CA": 13.37,
+        "S173_S383_CA_pocket": 13.08,
+        "F108_D163_CA_Nterm": 27.1
+      }
+    },
+    {
+      "pdb_id": "8GAG",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.3,
+      "release_or_pub_year": null,
+      "functional_state": "Active Gi1-coupled signaling complex",
+      "bound_ligands_summary": "YVF (synthetic agonist)",
+      "pdb_chem_components": [
+        {
+          "id": "YVF",
+          "name": "methyl (2R)-2-({(1M)-5-methyl-1-[3-(trifluoromethyl)phenyl]-1H-pyrazole-3-carbonyl}amino)-2-(thiophen-2-yl)propanoate"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer + scFv16",
+      "construct_modifications": "WT",
+      "pmid": null,
+      "doi": null,
+      "title": "Cannabinoid receptor 1-Gi complex with novel ligand",
+      "caution_note": null,
+      "measured_structural_metrics": null
+    },
+    {
+      "pdb_id": "8GHV",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 2.8,
+      "release_or_pub_year": 2023,
+      "functional_state": "Active Gi1-coupled endocannabinoid-analog complex",
+      "bound_ligands_summary": "AMG315 (ZI5, metabolically stable anandamide analog)",
+      "pdb_chem_components": [
+        {
+          "id": "ZI5",
+          "name": "(5Z,8Z,11Z,13S,14Z)-N-[(2R)-1-hydroxypropan-2-yl]-13-methylicosa-5,8,11,14-tetraenamide"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer + scFv16",
+      "construct_modifications": "WT",
+      "pmid": "37160876",
+      "doi": "10.1038/s41467-023-37864-4",
+      "title": "Cannabinoid Receptor 1-G Protein Complex",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "D",
+        "mutations_90_430": "WT",
+        "R214_D338_CA": 15.53,
+        "R214_A342_CA": 14.3,
+        "R214_K343_CA": 15.94,
+        "R214_Y397_CA": 12.26,
+        "Y294_Y397_OH": 3.92,
+        "I218_I297_CA_TM5": 6.59,
+        "F200_chi1": -81.4,
+        "W356_chi1": -81.3,
+        "W356_chi2": 116.5,
+        "F200_G166_sc_CA": 5.85,
+        "F155_chi1": -59.6,
+        "F237_chi1": 161.8,
+        "F155sc_N393CA": 14.67,
+        "F237sc_V204CA": 12.9,
+        "H154_R214_CA": 13.69,
+        "S173_S383_CA_pocket": 12.16,
+        "F108_D163_CA_Nterm": 26.87
+      }
+    },
+    {
+      "pdb_id": "8IKG",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.4,
+      "release_or_pub_year": 2024,
+      "functional_state": "Active Gi1-coupled G-protein-biased ago-PAM complex",
+      "bound_ligands_summary": "Q2B (indole ago-PAM)",
+      "pdb_chem_components": [
+        {
+          "id": "Q2B",
+          "name": "3-[(1S)-1-(furan-2-yl)-2-nitro-ethyl]-2-phenyl-1H-indole"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer + scFv16",
+      "construct_modifications": "WT",
+      "pmid": "38830102",
+      "doi": "10.1073/pnas.2321532121",
+      "title": "Cryo-EM structure of human receptor with G proteins",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "R",
+        "mutations_90_430": "WT",
+        "R214_D338_CA": 14.87,
+        "R214_A342_CA": 14.02,
+        "R214_K343_CA": 15.77,
+        "R214_Y397_CA": 12.51,
+        "Y294_Y397_OH": 2.96,
+        "I218_I297_CA_TM5": 7.07,
+        "F200_chi1": -71.6,
+        "W356_chi1": -81.4,
+        "W356_chi2": 125.2,
+        "F200_G166_sc_CA": 5.56,
+        "F155_chi1": -86.8,
+        "F237_chi1": -170.5,
+        "F155sc_N393CA": 15.65,
+        "F237sc_V204CA": 13.43,
+        "H154_R214_CA": 13.79,
+        "S173_S383_CA_pocket": 11.84,
+        "F108_D163_CA_Nterm": null
+      }
+    },
+    {
+      "pdb_id": "8IKH",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.3,
+      "release_or_pub_year": 2024,
+      "functional_state": "Active Gi1-coupled G-protein-biased ago-PAM complex",
+      "bound_ligands_summary": "Q2L (indole ago-PAM)",
+      "pdb_chem_components": [
+        {
+          "id": "Q2L",
+          "name": "3-[(1R)-1-(2-methoxyphenyl)-2-nitro-ethyl]-2-phenyl-1H-indole"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer + scFv16",
+      "construct_modifications": "WT",
+      "pmid": "38830102",
+      "doi": "10.1073/pnas.2321532121",
+      "title": "Cryo-EM structure of human receptor with G proteins",
+      "caution_note": null,
+      "measured_structural_metrics": null
+    },
+    {
+      "pdb_id": "8K8J",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 2.88,
+      "release_or_pub_year": 2024,
+      "functional_state": "Active miniGsq-coupled complex",
+      "bound_ligands_summary": "Fenofibrate (J3O)",
+      "pdb_chem_components": [
+        {
+          "id": "J3O",
+          "name": "Fenofibrate"
+        }
+      ],
+      "transducer_or_binder": "miniGsq heterotrimer + Nb35",
+      "construct_modifications": "N-term BRIL + engineered",
+      "pmid": "38298116",
+      "doi": "10.1002/advs.202306311",
+      "title": "Cannabinoid Receptor 1 bound to Fenofibrate coupling MiniGsq and Nb35 Complex",
+      "caution_note": null,
+      "measured_structural_metrics": null
+    },
+    {
+      "pdb_id": "8WRZ",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.6,
+      "release_or_pub_year": 2024,
+      "functional_state": "Active beta-arrestin-1-coupled signaling complex (GRK3-phosphorylated; ~3-5 A extra cytoplasmic TM5 outward shift vs 6KPG)",
+      "bound_ligands_summary": "AM841 (8D0)",
+      "pdb_chem_components": [
+        {
+          "id": "8D0",
+          "name": "(6~{a}~{R},9~{R},10~{a}~{R})-9-(hydroxymethyl)-3-(8-isothiocyanato-2-methyl-octan-2-yl)-6,6-dimethyl-6~{a},7,8,9,10,10~{a}-hexahydrobenzo[c]chromen-1-ol"
+        }
+      ],
+      "transducer_or_binder": "Beta-arrestin-1 + scFv30 (V2R C-tail, GRK3 co-expressed)",
+      "construct_modifications": "N-term BRIL + T210I,E273K,T283V,R340E + V2R C-tail",
+      "pmid": "38102480",
+      "doi": "10.1093/procel/pwad055",
+      "title": "Cry-EM structure of cannabinoid receptor-beta-arrestin-1 complex",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "R",
+        "mutations_90_430": "T210I,E273K,T283V,R340E",
+        "R214_D338_CA": 17.13,
+        "R214_A342_CA": 15.46,
+        "R214_K343_CA": 17.08,
+        "R214_Y397_CA": 12.37,
+        "Y294_Y397_OH": 3.83,
+        "I218_I297_CA_TM5": 7.95,
+        "F200_chi1": -68.3,
+        "W356_chi1": -68.6,
+        "W356_chi2": -88.6,
+        "F200_G166_sc_CA": 6.14,
+        "F155_chi1": -74.1,
+        "F237_chi1": 154.2,
+        "F155sc_N393CA": 16.72,
+        "F237sc_V204CA": 13.65,
+        "H154_R214_CA": 13.22,
+        "S173_S383_CA_pocket": 11.19,
+        "F108_D163_CA_Nterm": 29.75
+      }
+    },
+    {
+      "pdb_id": "8WU1",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.2,
+      "release_or_pub_year": 2023,
+      "functional_state": "Active beta-arrestin-1-coupled signaling complex (wider transducer cleft; W356^6.48 adopts distinct trans chi1 = -177.4 deg)",
+      "bound_ligands_summary": "MDMB-FUBINACA / FUB (KCA)",
+      "pdb_chem_components": [
+        {
+          "id": "KCA",
+          "name": "methyl N-{1-[(4-fluorophenyl)methyl]-1H-indazole-3-carbonyl}-3-methyl-L-valinate"
+        }
+      ],
+      "transducer_or_binder": "Beta-arrestin-1 + Fab30 (V2Rpp C-tail)",
+      "construct_modifications": "CB1-V2Rpp chimera (D428E,D430C)",
+      "pmid": "38101408",
+      "doi": "10.1016/j.cell.2023.11.017",
+      "title": "Cryo-EM structure of CB1-beta-arrestin1 complex",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "R",
+        "mutations_90_430": "D428E,D430C",
+        "R214_D338_CA": 15.19,
+        "R214_A342_CA": 12.94,
+        "R214_K343_CA": 15.73,
+        "R214_Y397_CA": 12.53,
+        "Y294_Y397_OH": 2.92,
+        "I218_I297_CA_TM5": 6.77,
+        "F200_chi1": -92.0,
+        "W356_chi1": -177.4,
+        "W356_chi2": -78.1,
+        "F200_G166_sc_CA": 6.0,
+        "F155_chi1": -66.0,
+        "F237_chi1": null,
+        "F155sc_N393CA": 15.24,
+        "F237sc_V204CA": 12.3,
+        "H154_R214_CA": 13.4,
+        "S173_S383_CA_pocket": 12.24,
+        "F108_D163_CA_Nterm": null
+      }
+    },
+    {
+      "pdb_id": "9B54",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 2.86,
+      "release_or_pub_year": 2025,
+      "functional_state": "Active Gi1-coupled G-protein-biased cryptic-pocket agonist complex",
+      "bound_ligands_summary": "VIP36 (A1AIW, positively charged peripheral biased agonist engaging D163^2.50 cryptic pocket)",
+      "pdb_chem_components": [
+        {
+          "id": "A1AIW",
+          "name": "methyl N-{6-(4-carbamimidamidobutoxy)-1-[(4-fluorophenyl)methyl]-1H-indazole-3-carbonyl}-3-methyl-L-valinate"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer + scFv16",
+      "construct_modifications": "WT",
+      "pmid": "40044849",
+      "doi": "10.1038/s41586-025-08618-7",
+      "title": "Biased agonist bound CB1-Gi structure",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "R",
+        "mutations_90_430": "WT",
+        "R214_D338_CA": 15.38,
+        "R214_A342_CA": 14.97,
+        "R214_K343_CA": 16.41,
+        "R214_Y397_CA": 12.81,
+        "Y294_Y397_OH": 4.17,
+        "I218_I297_CA_TM5": 6.66,
+        "F200_chi1": -79.6,
+        "W356_chi1": -69.0,
+        "W356_chi2": 87.0,
+        "F200_G166_sc_CA": 6.5,
+        "F155_chi1": -57.3,
+        "F237_chi1": 171.6,
+        "F155sc_N393CA": 14.79,
+        "F237sc_V204CA": 11.33,
+        "H154_R214_CA": 13.43,
+        "S173_S383_CA_pocket": 13.3,
+        "F108_D163_CA_Nterm": 26.22
+      }
+    },
+    {
+      "pdb_id": "9B65",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.03,
+      "release_or_pub_year": 2025,
+      "functional_state": "Active Gi1-coupled signaling complex",
+      "bound_ligands_summary": "MDMB-FUBINACA / FUB (KCA)",
+      "pdb_chem_components": [
+        {
+          "id": "KCA",
+          "name": "methyl N-{1-[(4-fluorophenyl)methyl]-1H-indazole-3-carbonyl}-3-methyl-L-valinate"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer + scFv16",
+      "construct_modifications": "WT",
+      "pmid": "40044849",
+      "doi": "10.1038/s41586-025-08618-7",
+      "title": "Biased agonist bound CB1-Gi structure",
+      "caution_note": null,
+      "measured_structural_metrics": null
+    },
+    {
+      "pdb_id": "9B9Y",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.5,
+      "release_or_pub_year": 2024,
+      "functional_state": "Inactive (inverse agonist-bound, nanobody-stabilized)",
+      "bound_ligands_summary": "Taranabant (7DY)",
+      "pdb_chem_components": [
+        {
+          "id": "7DY",
+          "name": "N-[(2S,3S)-4-(4-chlorophenyl)-3-(3-cyanophenyl)butan-2-yl]-2-methyl-2-{[5-(trifluoromethyl)pyridin-2-yl]oxy}propanamide"
+        }
+      ],
+      "transducer_or_binder": "CNb36 (inactive-state nanobody)",
+      "construct_modifications": "ICL3 PGS + S203K,T210A,E273K,T283V,R340E",
+      "pmid": "39695122",
+      "doi": "10.1038/s41467-024-54206-0",
+      "title": "Structural mechanism of CB1R binding to peripheral and biased inverse agonists",
+      "caution_note": null,
+      "measured_structural_metrics": null
+    },
+    {
+      "pdb_id": "9B9Z",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.3,
+      "release_or_pub_year": 2024,
+      "functional_state": "Inactive (peripherally restricted inverse agonist)",
+      "bound_ligands_summary": "MRI-1867 (A1AKO)",
+      "pdb_chem_components": [
+        {
+          "id": "A1AKO",
+          "name": "(4S)-3-(4-chlorophenyl)-N'-[(1E)-ethanimidoyl]-4-phenyl-N-[4-(trifluoromethyl)benzene-1-sulfonyl]-4,5-dihydro-1H-pyrazole-1-carboximidamide"
+        }
+      ],
+      "transducer_or_binder": "CNb36 (inactive-state nanobody)",
+      "construct_modifications": "ICL3 PGS + S203K,T210A,E273K,T283V,R340E",
+      "pmid": "39695122",
+      "doi": "10.1038/s41467-024-54206-0",
+      "title": "Structural mechanism of CB1R binding to peripheral and biased inverse agonists",
+      "caution_note": null,
+      "measured_structural_metrics": null
+    },
+    {
+      "pdb_id": "9BA0",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.13,
+      "release_or_pub_year": 2024,
+      "functional_state": "Inactive (peripheral/arrestin-biased inverse agonist)",
+      "bound_ligands_summary": "MRI-1891 / Monlunabant (A1AKN)",
+      "pdb_chem_components": [
+        {
+          "id": "A1AKN",
+          "name": "N-(N-{(E)-[(4S)-3-(4-chlorophenyl)-4-phenyl-4,5-dihydro-1H-pyrazol-1-yl][4-(trifluoromethyl)benzene-1-sulfonamido]methylidene}carbamimidoyl)acetamide"
+        }
+      ],
+      "transducer_or_binder": "CNb36 (inactive-state nanobody)",
+      "construct_modifications": "ICL3 PGS + S203K,T210A,E273K,T283V,R340E",
+      "pmid": "39695122",
+      "doi": "10.1038/s41467-024-54206-0",
+      "title": "Structural mechanism of CB1R binding to peripheral and biased inverse agonists",
+      "caution_note": null,
+      "measured_structural_metrics": {
+        "chain": "R",
+        "mutations_90_430": "S203K,T210A,E273K,T283V,R340E",
+        "R214_D338_CA": 7.03,
+        "R214_A342_CA": 6.29,
+        "R214_K343_CA": 10.06,
+        "R214_Y397_CA": 16.44,
+        "Y294_Y397_OH": 10.86,
+        "I218_I297_CA_TM5": 8.08,
+        "F200_chi1": -175.3,
+        "W356_chi1": -81.6,
+        "W356_chi2": 79.6,
+        "F200_G166_sc_CA": 10.45,
+        "F155_chi1": 74.4,
+        "F237_chi1": -86.2,
+        "F155sc_N393CA": 10.85,
+        "F237sc_V204CA": 10.86,
+        "H154_R214_CA": 11.83,
+        "S173_S383_CA_pocket": 13.52,
+        "F108_D163_CA_Nterm": 27.86
+      }
+    },
+    {
+      "pdb_id": "9DGI",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.35,
+      "release_or_pub_year": 2025,
+      "functional_state": "Active receptor-only submodel from Gi complex",
+      "bound_ligands_summary": "YVF (synthetic agonist)",
+      "pdb_chem_components": [
+        {
+          "id": "YVF",
+          "name": "methyl (2R)-2-({(1M)-5-methyl-1-[3-(trifluoromethyl)phenyl]-1H-pyrazole-3-carbonyl}amino)-2-(thiophen-2-yl)propanoate"
+        }
+      ],
+      "transducer_or_binder": "Modeled from Gi complex (paired with 9EGO)",
+      "construct_modifications": "WT",
+      "pmid": "40044644",
+      "doi": "10.1038/s41467-025-57136-7",
+      "title": "Cannabinoid receptor 1-Gi complex with novel ligand",
+      "caution_note": null,
+      "measured_structural_metrics": null
+    },
+    {
+      "pdb_id": "9EGO",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 3.2,
+      "release_or_pub_year": 2025,
+      "functional_state": "Active Gi1-coupled signaling complex",
+      "bound_ligands_summary": "YVF (synthetic agonist)",
+      "pdb_chem_components": [
+        {
+          "id": "YVF",
+          "name": "methyl (2R)-2-({(1M)-5-methyl-1-[3-(trifluoromethyl)phenyl]-1H-pyrazole-3-carbonyl}amino)-2-(thiophen-2-yl)propanoate"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer + scFv16",
+      "construct_modifications": "WT",
+      "pmid": "40044644",
+      "doi": "10.1038/s41467-025-57136-7",
+      "title": "Cannabinoid receptor 1-Gi complex with novel ligand",
+      "caution_note": null,
+      "measured_structural_metrics": null
+    },
+    {
+      "pdb_id": "9ERX",
+      "method": "ELECTRON MICROSCOPY",
+      "resolution_angstrom": 2.9,
+      "release_or_pub_year": 2024,
+      "functional_state": "Active Gi1-coupled THC-analog complex",
+      "bound_ligands_summary": "11-OH-Delta9-THC dimethylheptyl analog (A1H66)",
+      "pdb_chem_components": [
+        {
+          "id": "A1H66",
+          "name": "(6aR,10aR)-9-(hydroxymethyl)-6,6-dimethyl-3-(2-methyloctan-2-yl)-6a,7,10,10a-tetrahydrobenzo[c]chromen-1-ol"
+        }
+      ],
+      "transducer_or_binder": "Gi1 heterotrimer + scFv16",
+      "construct_modifications": "WT",
+      "pmid": "38826401",
+      "doi": "10.21203/rs.3.rs-4277209/v1",
+      "title": "Structural basis of D9-THC analog activity at the Cannabinoid 1 receptor",
+      "caution_note": null,
+      "measured_structural_metrics": null
+    }
+  ],
+  "solution_nmr_peptide_fragments": [
+    {
+      "pdb_id": "1LVQ",
+      "method": "SOLUTION NMR",
+      "year": 2002,
+      "pmid": "12237474",
+      "doi": "10.1110/ps.0218402",
+      "title": "IC3 of CB1 Bound to G(alpha)i",
+      "note": "Short isolated ICL3 / TM7-H8 / C-terminal peptide fragment in solution NMR (not a 7TM receptor structure)."
+    },
+    {
+      "pdb_id": "1LVR",
+      "method": "SOLUTION NMR",
+      "year": 2002,
+      "pmid": "12237474",
+      "doi": "10.1110/ps.0218402",
+      "title": "IC3 of CB1 (L431A,A432L) Bound to G(alpha)i",
+      "note": "Short isolated ICL3 / TM7-H8 / C-terminal peptide fragment in solution NMR (not a 7TM receptor structure)."
+    },
+    {
+      "pdb_id": "2B0Y",
+      "method": "SOLUTION NMR",
+      "year": 2007,
+      "pmid": "17524664",
+      "doi": "10.1016/j.jsb.2007.04.004",
+      "title": "Solution Structure of a peptide mimetic of the fourth cytoplasmic loop of the G-protein coupled CB1 cannabinoid receptor",
+      "note": "Short isolated ICL3 / TM7-H8 / C-terminal peptide fragment in solution NMR (not a 7TM receptor structure)."
+    },
+    {
+      "pdb_id": "2KOE",
+      "method": "SOLUTION NMR",
+      "year": 2009,
+      "pmid": "19766594",
+      "doi": "10.1016/j.bbrc.2009.09.053",
+      "title": "Human cannabinoid receptor 1 - helix 7/8 peptide",
+      "note": "Short isolated ICL3 / TM7-H8 / C-terminal peptide fragment in solution NMR (not a 7TM receptor structure)."
+    },
+    {
+      "pdb_id": "2MZ2",
+      "method": "SOLUTION NMR",
+      "year": null,
+      "pmid": null,
+      "doi": null,
+      "title": "Phosphorylation of CB1Cannabinoid Receptor Fourth Intracellular Loop Peptides: Effects on Structure and Function",
+      "note": "Short isolated ICL3 / TM7-H8 / C-terminal peptide fragment in solution NMR (not a 7TM receptor structure)."
+    },
+    {
+      "pdb_id": "2MZ3",
+      "method": "SOLUTION NMR",
+      "year": null,
+      "pmid": null,
+      "doi": null,
+      "title": "Phosphorylation of CB1Cannabinoid Receptor Fourth Intracellular Loop Pepducins: Effects on Structure and Function",
+      "note": "Short isolated ICL3 / TM7-H8 / C-terminal peptide fragment in solution NMR (not a 7TM receptor structure)."
+    },
+    {
+      "pdb_id": "2MZA",
+      "method": "SOLUTION NMR",
+      "year": null,
+      "pmid": null,
+      "doi": null,
+      "title": "Phosphorylation of CB1 Cannabinoid Receptor Fourth Intracellular Loop pepducins: Effects on Structure and Function",
+      "note": "Short isolated ICL3 / TM7-H8 / C-terminal peptide fragment in solution NMR (not a 7TM receptor structure)."
+    }
+  ],
+  "uniprot_xref_notes": "UniProt P21554 cross-references 34 PDB IDs: 25 X-ray/cryo-EM 7TM structures listed in experimental_7tm_structures, 7 solution-NMR peptide fragments in solution_nmr_peptide_fragments, and 2 extended/unreleased PDB entries (23IV, 23IW)."
+}

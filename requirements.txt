@@ -1,0 +1,13 @@
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+pyarrow>=14.0
+scikit-learn>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+mdtraj>=1.9.9
+networkx>=3.2
+pytest>=8.0
+jupyter>=1.0
+nbconvert>=7.14
+ipykernel>=6.29

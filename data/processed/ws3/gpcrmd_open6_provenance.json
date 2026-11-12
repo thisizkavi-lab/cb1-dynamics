@@ -1,0 +1,149 @@
+{
+  "encoding_documentation": {
+    "water_wire_conductance": "C_wire = 1.0 / (1.0 + L_hops) where L_hops=0 for direct polar contact <=3.5 A, L_hops>=1 for bridging waters (O-O <=3.5 A), and C_wire=0.0 (hops=-1) when disconnected. Zero NaNs.",
+    "ion_sentinel": "min_Na_D163_A = 99.0 (prox_Na_D163 = 0.0, coord_Na_D163_3p2 = 0) when has_na_ions == False (ID 1201 uses KCl buffer); min_K_D163_A = 99.0 when has_k_ions == False. min_cation_D163_A = min(Na+, K+) is finite across all 6 trajectories.",
+    "pbc_handling": "Exact minimum-image convention around CB1 7TM core C-alpha centroid (after aligning TER-split TM6-H8 chain to TM1-TM5 chain) applied on every frame prior to distance/KDTree calculations."
+  },
+  "trajectories": {
+    "22": {
+      "dataset_id": "gpcrmd_22_5u09_inactive_taranabant_rep1",
+      "pdb_id": "5U09",
+      "state_label": "Inactive_5U09_Taranabant_A",
+      "frames_extracted": 2500,
+      "dt_ns": 0.2,
+      "duration_ns": 500.0,
+      "xtc_download": {
+        "size_bytes": 639453028,
+        "head_1mb_sha256": "3a28a26434d56395c94fe3d6668fcf436bda71a49e4a9eb1a00a92578e2d0cb8"
+      },
+      "xtc_header": {
+        "magic": 1995,
+        "natoms": 69095,
+        "step0": 25000,
+        "t0_ps": 100000.0
+      },
+      "pos210_resname": "THR",
+      "n_water_O": 14603,
+      "n_na_ions": 42,
+      "n_k_ions": 0,
+      "n_popc_heavy": 7800
+    },
+    "164": {
+      "dataset_id": "gpcrmd_164_5u09_inactive_taranabant_rep1",
+      "pdb_id": "5U09",
+      "state_label": "Inactive_5U09_Taranabant_B",
+      "frames_extracted": 2500,
+      "dt_ns": 0.2,
+      "duration_ns": 500.0,
+      "xtc_download": {
+        "size_bytes": 639543056,
+        "head_1mb_sha256": "09c49aade12a9a00841edc8fc0eb1ca45fefa3e1f56709fd27147f05aa662a54"
+      },
+      "xtc_header": {
+        "magic": 1995,
+        "natoms": 69095,
+        "step0": 25000,
+        "t0_ps": 100000.0
+      },
+      "pos210_resname": "THR",
+      "n_water_O": 14603,
+      "n_na_ions": 42,
+      "n_k_ions": 0,
+      "n_popc_heavy": 7800
+    },
+    "162": {
+      "dataset_id": "gpcrmd_162_5tgz_inactive_apo_rep1",
+      "pdb_id": "5TGZ",
+      "state_label": "Inactive_5TGZ_Apo",
+      "frames_extracted": 2000,
+      "dt_ns": 0.2,
+      "duration_ns": 400.0,
+      "xtc_download": {
+        "size_bytes": 574074404,
+        "head_1mb_sha256": "34b5c3c14d7e28523516cb15fba59da453f3c47e69ce59a19f834774e148a2d5"
+      },
+      "xtc_header": {
+        "magic": 1995,
+        "natoms": 77514,
+        "step0": 25000,
+        "t0_ps": 100000.0
+      },
+      "pos210_resname": "THR",
+      "n_water_O": 16308,
+      "n_na_ions": 46,
+      "n_k_ions": 0,
+      "n_popc_heavy": 9100
+    },
+    "163": {
+      "dataset_id": "gpcrmd_163_5u09_inactive_apo_rep1",
+      "pdb_id": "5U09",
+      "state_label": "Inactive_5U09_Apo",
+      "frames_extracted": 2500,
+      "dt_ns": 0.2,
+      "duration_ns": 500.0,
+      "xtc_download": {
+        "size_bytes": 639350584,
+        "head_1mb_sha256": "acf7234156dc598f8fd775b83c96019459c6dfd03e32aff7a5a9b43d0b440efa"
+      },
+      "xtc_header": {
+        "magic": 1995,
+        "natoms": 69092,
+        "step0": 25000,
+        "t0_ps": 100000.0
+      },
+      "pos210_resname": "THR",
+      "n_water_O": 14623,
+      "n_na_ions": 41,
+      "n_k_ions": 0,
+      "n_popc_heavy": 7800
+    },
+    "2067": {
+      "dataset_id": "gpcrmd_2067_6n4b_active_gs_apo",
+      "pdb_id": "6N4B",
+      "state_label": "Active_Gs_Apo",
+      "frames_extracted": 6000,
+      "dt_ns": 1.0,
+      "duration_ns": 6000.0,
+      "xtc_download": {
+        "size_bytes": 2118682836,
+        "head_1mb_sha256": "824ad10e79e7adda2566165cfe1b1f50241ba01a8311cce581d3dd0e43a3e65c"
+      },
+      "xtc_header": {
+        "magic": 1995,
+        "natoms": 94976,
+        "step0": 0,
+        "t0_ps": 0.0
+      },
+      "pos210_resname": "THR",
+      "n_water_O": 19916,
+      "n_na_ions": 52,
+      "n_k_ions": 0,
+      "n_popc_heavy": 10452
+    },
+    "1201": {
+      "dataset_id": "gpcrmd_1201_6n4b_active_gi1_mdmb_fubinaca",
+      "pdb_id": "6N4B",
+      "state_label": "Active_Gi1_FUB",
+      "frames_extracted": 5001,
+      "dt_ns": 0.2,
+      "duration_ns": 1000.2,
+      "xtc_download": {
+        "size_bytes": 3796878084,
+        "head_1mb_sha256": "e0ce06a27874d280855493b7262dc5ff3924f589b6de2120d883fa3f398df7fb"
+      },
+      "xtc_header": {
+        "magic": 1995,
+        "natoms": 203557,
+        "step0": 0,
+        "t0_ps": 0.0
+      },
+      "pos210_resname": "THR",
+      "n_water_O": 47309,
+      "n_na_ions": 0,
+      "n_k_ions": 128,
+      "n_popc_heavy": 18304
+    }
+  },
+  "total_frames": 20501,
+  "parquet_size_bytes": 2339120
+}

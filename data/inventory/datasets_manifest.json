@@ -1,0 +1,937 @@
+{
+  "manifest_version": "1.0.0",
+  "audit_timestamp_utc": "2026-11-12T12:30:00Z",
+  "target_receptor": {
+    "gene_symbol": "CNR1",
+    "protein_name": "Cannabinoid receptor 1 (CB1)",
+    "organism": "Homo sapiens",
+    "uniprot_accession": "P21554",
+    "canonical_length_aa": 472
+  },
+  "environment_audit": {
+    "os": "macOS arm64 (darwin)",
+    "free_disk_gib": 671,
+    "system_python": "/usr/bin/python3 (3.9.6)",
+    "uv_binary": "/Users/kavi/.local/bin/uv (0.13.7)",
+    "uv_managed_pythons": [
+      "/Users/kavi/.local/share/uv/python/cpython-3.12-macos-aarch64-none/bin/python3.12",
+      "/Users/kavi/.local/share/uv/python/cpython-3.15-macos-aarch64-none/bin/python3.15"
+    ],
+    "recommended_isolated_execution_cmd": "/Users/kavi/.local/bin/uv run --python 3.12 --with mdtraj --with numpy --with scipy --with scikit-learn python <script.py>",
+    "local_inventory_root": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory",
+    "local_inventory_size_mb": 263.3
+  },
+  "immediately_downloadable_open_md_datasets": [
+    {
+      "dataset_id": "shukla_box_2025_cb1_anandamide",
+      "title": "Dynamic mechanism for subtype selectivity of endocannabinoids (CB1 anandamide adaptive-sampling MD + MSM)",
+      "authors": "Dutta S., Shukla D. (J Biol Chem 2026, 302:111434, doi:10.1016/j.jbc.2026.111434; bioRxiv doi:10.1101/2024.10.25.620304)",
+      "year": 2026,
+      "source_repository": "University of Illinois Box (ShuklaGroup)",
+      "access_status": "OPEN_UNAUTHENTICATED_HTTP_200_206",
+      "colab_compatible": true,
+      "landing_url": "https://uofi.box.com/s/q9w1f99mybxo6hrgo8sfr3sbm3l8xrmu",
+      "programmatic_download_template": "https://uofi.app.box.com/index.php?rm=box_download_shared_file&shared_name=q9w1f99mybxo6hrgo8sfr3sbm3l8xrmu&file_id=f_{FILE_ID}",
+      "github_code_repo": "https://github.com/ShuklaGroup/Dutta_Shukla_EndoCannabinoid_2025",
+      "local_github_clone": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/Dutta_Shukla_EndoCannabinoid_2025",
+      "local_verified_metadata_dir": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/box_endocannabinoid_2025",
+      "starting_pdb_state": "Pre-active / inactive-like CB1 (R214-D338 ~ 9.71-11.06 A; R214-K343 ~ 12.57-12.81 A; F200-W356 ~ 7.74-8.83 A)",
+      "functional_regime": "Endocannabinoid (anandamide / AEA) membrane-portal association (TM1-TM7) and orthosteric pocket binding; DOES NOT sample full intracellular TM6 outward opening (~15.5 A)",
+      "bound_ligands": [
+        "Anandamide (AEA, residue LIG)"
+      ],
+      "transducer_present": false,
+      "membrane_and_solvent_saved_in_stripped_dcd": {
+        "protein_residues": "CB1 UniProt 89-411 (323 residues, F89-M411; stripped PDB resSeq 1-323, exact uniform offset: UniProt = resSeq + 88; full ICL3 retained)",
+        "total_atoms": 7005,
+        "lipids_included": true,
+        "lipid_species": "Asymmetric neuronal membrane shell retained in strip: ER1, GAL, GLC, LPI, NE5, OSM, PPS",
+        "cholesterol_explicit": "Sterol/glycolipid shell components retained in 7005-atom strip",
+        "na_ion_included": false,
+        "bulk_water_included": false
+      },
+      "sampling": {
+        "ensemble_type": "Adaptive sampling (multi-round pr_<round>_frame_<idx> seeding) + 800-microstate / 6-macrostate Markov State Model",
+        "num_trajectories": 5000,
+        "frames_per_trajectory_typical": "800 or 1000 (mean 965.9 frames/traj)",
+        "frame_stride_ps": 100.0,
+        "typical_trajectory_length_ns": "80.0 to 100.0",
+        "total_frames": 4829682,
+        "aggregate_simulation_time_us": 482.97,
+        "single_dcd_size_bytes_800f": 67312196,
+        "single_dcd_size_bytes_1000f": 84140176,
+        "total_dcd_folder_size_gb": 406.37,
+        "time_ordered_preserved": true
+      },
+      "key_files": [
+        {
+          "filename": "CB1_assym-strip.pdb",
+          "box_file_id": "downloaded_locally",
+          "file_size_bytes": 567847,
+          "local_path": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/box_endocannabinoid_2025/CB1_assym-strip.pdb"
+        },
+        {
+          "filename": "CB1_assym-strip.prmtop",
+          "box_file_id": "downloaded_locally",
+          "file_size_bytes": 3661085,
+          "local_path": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/box_endocannabinoid_2025/CB1_assym-strip.prmtop"
+        },
+        {
+          "filename": "CB1_resid.csv",
+          "box_file_id": "downloaded_locally",
+          "file_size_bytes": 3611,
+          "local_path": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/box_endocannabinoid_2025/CB1_resid.csv"
+        },
+        {
+          "filename": "CB1_frame_cluster_indices.pkl",
+          "box_file_id": "f_1371314214130",
+          "file_size_bytes": 19491396,
+          "local_path": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/box_endocannabinoid_2025/CB1_frame_cluster_indices.pkl",
+          "description": "Time-ordered 800-microstate discrete trajectories for all 5,000 runs (4,829,682 frames)"
+        },
+        {
+          "filename": "CB1_micro_to_macro_index.pkl",
+          "box_file_id": "downloaded_locally",
+          "file_size_bytes": 6557,
+          "local_path": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/box_endocannabinoid_2025/CB1_micro_to_macro_index.pkl"
+        },
+        {
+          "filename": "CB1_assym_MSM.pkl",
+          "box_file_id": "f_1399682267779",
+          "file_size_bytes": 34846701,
+          "direct_url": "https://uofi.app.box.com/index.php?rm=box_download_shared_file&shared_name=q9w1f99mybxo6hrgo8sfr3sbm3l8xrmu&file_id=f_1399682267779"
+        },
+        {
+          "filename": "CB1_msm_weight.pkl",
+          "box_file_id": "f_1371313667747",
+          "file_size_bytes": 38812410,
+          "direct_url": "https://uofi.app.box.com/index.php?rm=box_download_shared_file&shared_name=q9w1f99mybxo6hrgo8sfr3sbm3l8xrmu&file_id=f_1371313667747"
+        },
+        {
+          "filename": "CB1_lig_com_cor.pkl",
+          "box_file_id": "f_1371313547127",
+          "file_size_bytes": 116106907,
+          "direct_url": "https://uofi.app.box.com/index.php?rm=box_download_shared_file&shared_name=q9w1f99mybxo6hrgo8sfr3sbm3l8xrmu&file_id=f_1371313547127",
+          "description": "3D Cartesian ligand center-of-mass trajectories across all 5,000 runs"
+        },
+        {
+          "filename": "CB1_assym_pr_9_frame_1-strip.dcd",
+          "box_file_id": "f_1371479495522",
+          "file_size_bytes": 67312196,
+          "direct_url": "https://uofi.app.box.com/index.php?rm=box_download_shared_file&shared_name=q9w1f99mybxo6hrgo8sfr3sbm3l8xrmu&file_id=f_1371479495522",
+          "verified_binary_header": "CHARMM/AMBER DCD CORD, n_frames=800; folder_id=236736306087 hosts all 5,000 .dcd files across 251 JSON listing pages"
+        }
+      ],
+      "caveats": [
+        "Folder macrostate_rep_dcd (241599702647) contains 1,000 randomly drawn snapshots per macrostate (NOT time-continuous); use CB1_anandamide_binding (236736306087) for true time-ordered trajectories.",
+        "Samples AEA binding & pre-activation pocket reorganization around pre-active CB1, NOT full TM6 outward opening."
+      ]
+    },
+    {
+      "dataset_id": "gpcrmd_1201_6n4b_active_gi1_mdmb_fubinaca",
+      "title": "GPCRmd ID 1201: Active human CB1 bound to agonist MDMB-FUBINACA and cognate Gi1 heterotrimer",
+      "authors": "Sandhu M., Cho A., Ma N., Mukhaleva E., Namkung Y. et al., Vaidehi N. (Nat Commun 2022, 13:7428, doi:10.1038/s41467-022-34055-5)",
+      "year": 2022,
+      "source_repository": "GPCRmd (www.gpcrmd.org)",
+      "access_status": "OPEN_UNAUTHENTICATED_HTTP_200_206",
+      "colab_compatible": true,
+      "landing_url": "https://www.gpcrmd.org/dynadb/dynamics/id/1201/",
+      "pdb_id": "6N4B",
+      "functional_state": "Active cognate Gi1-coupled + full agonist",
+      "bound_ligands": [
+        "MDMB-FUBINACA (KCA / FUB)"
+      ],
+      "transducer": "Gi1 heterotrimer (Galpha_i1 + Gbeta1 + Ggamma2)",
+      "environment_in_xtc": {
+        "total_atoms": 203557,
+        "membrane": "352 POPC lipids",
+        "cholesterol": false,
+        "ions": "131 K+ and 136 Cl- (NOTE: KCl buffer; NO Na+ ions)",
+        "water": "47,309 TIP3P water molecules",
+        "engine_and_ff": "GROMACS 2019.3, CHARMM36, 310 K"
+      },
+      "sampling": {
+        "open_replicates": 1,
+        "total_replicates": 1,
+        "duration_per_replicate_ns": 1000.2,
+        "frame_stride_ps": 200.0,
+        "frames_open": 5001,
+        "time_ordered_preserved": true,
+        "xtc_header_verified": "magic=1995, natoms=203557, step0=0, t0=0.0 ps"
+      },
+      "files": {
+        "pdb": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn1366/tmp_dyn_0_1366.pdb",
+          "file_size_bytes": 16488149
+        },
+        "top": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn1366/18984_dyn_1201.top",
+          "file_size_bytes": 831
+        },
+        "params_tar_gz": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn1366/18985_oth_1201.tar.gz",
+          "file_size_bytes": 640670
+        },
+        "xtc_rep1": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn1366/18986_trj_1201.xtc",
+          "file_size_bytes": 3796878084
+        }
+      }
+    },
+    {
+      "dataset_id": "gpcrmd_2067_6n4b_active_gs_apo",
+      "title": "GPCRmd ID 2067: Active human CB1 (apoform) coupled to non-cognate Gs complex (6.0 us)",
+      "authors": "Berghella et al. / Selent & Dainese Labs (Int J Mol Sci 2025, doi:10.3390/ijms262411905)",
+      "year": 2025,
+      "source_repository": "GPCRmd (www.gpcrmd.org)",
+      "access_status": "OPEN_UNAUTHENTICATED_HTTP_200_206",
+      "colab_compatible": true,
+      "landing_url": "https://www.gpcrmd.org/dynadb/dynamics/id/2067/",
+      "pdb_id": "6N4B",
+      "functional_state": "Active apoform + non-cognate / promiscuous Gs complex",
+      "bound_ligands": [],
+      "transducer": "Gs protein complex",
+      "environment_in_xtc": {
+        "total_atoms": 94976,
+        "membrane": "201 POPC lipids",
+        "cholesterol": false,
+        "ions": "52 Na+ and 74 Cl-",
+        "water": "19,916 TIP3P water molecules",
+        "engine_and_ff": "ACEMD 3.0, CHARMM36m, 310 K"
+      },
+      "sampling": {
+        "open_replicates": 1,
+        "total_replicates": 1,
+        "duration_per_replicate_ns": 6000.0,
+        "frame_stride_ps": 1000.0,
+        "frames_open": 6000,
+        "time_ordered_preserved": true,
+        "xtc_header_verified": "magic=1995, natoms=94976, step0=0, t0=0.0 ps"
+      },
+      "files": {
+        "pdb": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2336/tmp_dyn_0_2336.pdb",
+          "file_size_bytes": 7598157
+        },
+        "psf": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2336/24047_dyn_2067.psf",
+          "file_size_bytes": 18033557
+        },
+        "xtc_rep1": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2336/24048_trj_2067.xtc",
+          "file_size_bytes": 2118682836
+        }
+      }
+    },
+    {
+      "dataset_id": "gpcrmd_22_5u09_inactive_taranabant_rep1",
+      "title": "GPCRmd ID 22: Inactive human CB1 (5U09) bound to inverse agonist taranabant (Replicate 1 open)",
+      "authors": "Rodriguez-Espigares I. et al., GPCRmd Consortium (Nat Methods 2020, doi:10.1038/s41592-020-0884-y)",
+      "year": 2020,
+      "source_repository": "GPCRmd (www.gpcrmd.org)",
+      "access_status": "OPEN_UNAUTHENTICATED_HTTP_200_206_REP1_ONLY",
+      "colab_compatible": true,
+      "landing_url": "https://www.gpcrmd.org/dynadb/dynamics/id/22/",
+      "pdb_id": "5U09",
+      "functional_state": "Inactive inverse-agonist bound (contains T210A crystal mutation)",
+      "bound_ligands": [
+        "Taranabant (7DY)"
+      ],
+      "transducer": "None",
+      "environment_in_xtc": {
+        "total_atoms": 69095,
+        "membrane": "POPC bilayer",
+        "cholesterol": false,
+        "ions": "0.16 M Na+ / 0.213 M Cl-",
+        "water": "TIP3P explicit water",
+        "engine_and_ff": "ACEMD 3.0.0, CHARMM36m, 310 K"
+      },
+      "sampling": {
+        "open_replicates": 1,
+        "total_replicates": 3,
+        "duration_per_replicate_ns": 500.0,
+        "frame_stride_ps": 200.0,
+        "frames_open": 2500,
+        "time_ordered_preserved": true,
+        "xtc_header_verified": "magic=1995, natoms=69095, t0=100000.0 ps; WARNING: rep2 (10281) and rep3 (10282) redirect to HTML /accounts/login/"
+      },
+      "files": {
+        "pdb": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10276_dyn_22.pdb",
+          "file_size_bytes": 5596781
+        },
+        "psf": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10277_dyn_22.psf",
+          "file_size_bytes": 13058650
+        },
+        "xtc_rep1": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10280_trj_22.xtc",
+          "file_size_bytes": 639453028
+        }
+      }
+    },
+    {
+      "dataset_id": "gpcrmd_164_5u09_inactive_taranabant_rep1",
+      "title": "GPCRmd ID 164: Inactive human CB1 (5U09) bound to inverse agonist taranabant (Independent entry, Replicate 1 open)",
+      "authors": "Rodriguez-Espigares I. et al., GPCRmd Consortium (Nat Methods 2020)",
+      "year": 2020,
+      "source_repository": "GPCRmd (www.gpcrmd.org)",
+      "access_status": "OPEN_UNAUTHENTICATED_HTTP_200_206_REP1_ONLY",
+      "colab_compatible": true,
+      "landing_url": "https://www.gpcrmd.org/dynadb/dynamics/id/164/",
+      "pdb_id": "5U09",
+      "functional_state": "Inactive inverse-agonist bound (T210A crystal construct; bundled with ID 22 as 6 replicates in MDR00001124)",
+      "bound_ligands": [
+        "Taranabant (7DY)"
+      ],
+      "transducer": "None",
+      "environment_in_xtc": {
+        "total_atoms": 69095,
+        "membrane": "POPC bilayer",
+        "cholesterol": false,
+        "ions": "Na+ / Cl-",
+        "water": "TIP3P explicit water",
+        "engine_and_ff": "ACEMD 3.0.0, CHARMM36m, 310 K"
+      },
+      "sampling": {
+        "open_replicates": 1,
+        "total_replicates": 3,
+        "duration_per_replicate_ns": 500.0,
+        "frame_stride_ps": 200.0,
+        "frames_open": 2500,
+        "time_ordered_preserved": true,
+        "xtc_header_verified": "magic=1995, natoms=69095; WARNING: rep2 (11525) and rep3 (11526) redirect to HTML /accounts/login/"
+      },
+      "files": {
+        "pdb": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11529_dyn_164.pdb",
+          "file_size_bytes": 5596781
+        },
+        "psf": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11528_dyn_164.psf",
+          "file_size_bytes": 13058650
+        },
+        "xtc_rep1": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11524_trj_164.xtc",
+          "file_size_bytes": 639543056
+        }
+      }
+    },
+    {
+      "dataset_id": "gpcrmd_162_5tgz_inactive_apo_rep1",
+      "title": "GPCRmd ID 162: Inactive human CB1 (5TGZ) apoform sodium allosteric binding assay (Replicate 1 open)",
+      "authors": "Rodriguez-Espigares I. et al., GPCRmd Consortium (Nat Methods 2020)",
+      "year": 2020,
+      "source_repository": "GPCRmd (www.gpcrmd.org)",
+      "access_status": "OPEN_UNAUTHENTICATED_HTTP_200_206_REP1_ONLY",
+      "colab_compatible": true,
+      "landing_url": "https://www.gpcrmd.org/dynadb/dynamics/id/162/",
+      "pdb_id": "5TGZ",
+      "functional_state": "Inactive apoform (AM6538 removed; T210A construct)",
+      "bound_ligands": [],
+      "transducer": "None",
+      "environment_in_xtc": {
+        "total_atoms": 77514,
+        "membrane": "POPC bilayer",
+        "cholesterol": false,
+        "ions": "46 Na+ (0.157 M) and 60 Cl- (0.204 M)",
+        "water": "TIP3P explicit water",
+        "engine_and_ff": "ACEMD 3.0.0, CHARMM36m, 310 K"
+      },
+      "sampling": {
+        "open_replicates": 1,
+        "total_replicates": 3,
+        "duration_per_replicate_ns": 466.5,
+        "frame_stride_ps": 200.0,
+        "frames_open": 2000,
+        "time_ordered_preserved": true,
+        "xtc_header_verified": "magic=1995, natoms=77514; WARNING: rep2 (11509) and rep3 (11510) redirect to HTML /accounts/login/"
+      },
+      "files": {
+        "pdb": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11514_dyn_162.pdb",
+          "file_size_bytes": 6278712
+        },
+        "psf": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11512_dyn_162.psf",
+          "file_size_bytes": 11622801
+        },
+        "xtc_rep1": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11508_trj_162.xtc",
+          "file_size_bytes": 574074404
+        }
+      }
+    },
+    {
+      "dataset_id": "gpcrmd_163_5u09_inactive_apo_rep1",
+      "title": "GPCRmd ID 163: Inactive human CB1 (5U09) apoform sodium allosteric binding assay (Replicate 1 open)",
+      "authors": "Rodriguez-Espigares I. et al., GPCRmd Consortium (Nat Methods 2020)",
+      "year": 2020,
+      "source_repository": "GPCRmd (www.gpcrmd.org)",
+      "access_status": "OPEN_UNAUTHENTICATED_HTTP_200_206_REP1_ONLY",
+      "colab_compatible": true,
+      "landing_url": "https://www.gpcrmd.org/dynadb/dynamics/id/163/",
+      "pdb_id": "5U09",
+      "functional_state": "Inactive apoform (taranabant removed; T210A construct)",
+      "bound_ligands": [],
+      "transducer": "None",
+      "environment_in_xtc": {
+        "total_atoms": 69092,
+        "membrane": "POPC bilayer",
+        "cholesterol": false,
+        "ions": "41 Na+ (0.156 M) and 55 Cl- (0.209 M)",
+        "water": "TIP3P explicit water",
+        "engine_and_ff": "ACEMD 3.0.0, CHARMM36m, 310 K"
+      },
+      "sampling": {
+        "open_replicates": 1,
+        "total_replicates": 3,
+        "duration_per_replicate_ns": 500.0,
+        "frame_stride_ps": 200.0,
+        "frames_open": 2500,
+        "time_ordered_preserved": true,
+        "xtc_header_verified": "magic=1995, natoms=69092; WARNING: rep2 (11517) and rep3 (11518) redirect to HTML /accounts/login/"
+      },
+      "files": {
+        "pdb": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11520_dyn_163.pdb",
+          "file_size_bytes": 5596530
+        },
+        "psf": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11521_dyn_163.psf",
+          "file_size_bytes": 10331506
+        },
+        "xtc_rep1": {
+          "url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11516_trj_163.xtc",
+          "file_size_bytes": 639350584
+        }
+      }
+    },
+    {
+      "dataset_id": "shukla_github_thc_binding_fig8_featurized_npy",
+      "title": "THC_binding Figure 8: Featurized 3-coordinate toggle-switch / TM6 / NPxxY frames for full agonist vs THC partial agonist",
+      "authors": "Dutta S., Selvam B., Das A., Shukla D. (J Biol Chem 2022, 298:101764, doi:10.1016/j.jbc.2022.101764)",
+      "year": 2022,
+      "source_repository": "GitHub (ShuklaGroup/THC_binding)",
+      "access_status": "LOCAL_AND_OPEN_GITHUB_CLONE",
+      "colab_compatible": true,
+      "github_url": "https://github.com/ShuklaGroup/THC_binding",
+      "local_dir": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/THC_binding/Figure_8",
+      "functional_state": "Spans inactive-to-active CB1 transition range (TM6 R214-K343 ~ 0.7 to 2.0 nm) under full agonist vs partial agonist (delta-9-THC)",
+      "features_available": [
+        "d(W356^6.48 - D163^2.50) toggle-to-sodium-pocket distance (nm, shared exact column 0 across paired files)",
+        "d(R214^3.50 - K343^6.35) intracellular TM3-TM6 opening distance (nm)",
+        "NPxxY intracellular movement coordinate (nm)"
+      ],
+      "sampling": {
+        "agonist_frames": 173860,
+        "partial_agonist_thc_frames": 104336,
+        "total_frames": 278196,
+        "lag1_autocorrelation": "0.852 to 0.943 (confirms time-ordered trajectory chunks rather than i.i.d. shuffled frames)",
+        "time_ordered_preserved": true,
+        "critical_caveat": "Saved via np.concatenate without an explicit trajectory-boundary index array (~1,349 step jumps >0.15 nm in agonist; ~224 in partial agonist). Must segment at jump discontinuities and use contiguous block-CV, NEVER random frame splits."
+      },
+      "files": [
+        "agonist_toggle_switch_TM6_movement.npy (2,781,888 B)",
+        "agonist_toggle_switch_NPxxY_movement.npy (2,781,888 B)",
+        "partial_agonist_toggle_switch_TM6_movement.npy (1,669,504 B)",
+        "partial_agonist_toggle_switch_NPxxY_movement.npy (1,669,504 B)"
+      ]
+    }
+  ],
+  "human_orcid_signin_datasets_mdrepo": {
+    "repository": "MDRepo (https://mdrepo.org)",
+    "access_status": "METADATA_AND_RMSD_OPEN_JSON__TRAJECTORY_REQUIRES_HUMAN_ORCID_OAUTH",
+    "official_policy_source": "https://raw.githubusercontent.com/TravisWheelerLab/mdrepo-readthedocs/main/docs/src/ai_agents.md",
+    "local_metadata_cache": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/mdrepo_cb1_simulation_views.json",
+    "valid_bilayer_gpcrmd_collections": [
+      {
+        "mdrepo_id": "MDR00000029",
+        "sim_id": 29,
+        "gpcrmd_id": 896,
+        "pdb_id": "5XRA",
+        "state": "Active-like agonist crystal (apoform)",
+        "ligands": [],
+        "replicates": 3,
+        "total_duration_ns": 1499.4,
+        "stride_ns": 0.2,
+        "minimal_tar_mb": 138.1,
+        "full_tar_mb": 2080.3
+      },
+      {
+        "mdrepo_id": "MDR00000105",
+        "sim_id": 105,
+        "gpcrmd_id": 897,
+        "pdb_id": "5XRA",
+        "state": "Active-like agonist crystal + AM11542 + Cholesterol",
+        "ligands": [
+          "AM11542 (Chembl1683648)",
+          "Cholesterol"
+        ],
+        "replicates": 3,
+        "total_duration_ns": 1499.4,
+        "stride_ns": 0.2,
+        "minimal_tar_mb": 142.6,
+        "full_tar_mb": 2084.3
+      },
+      {
+        "mdrepo_id": "MDR00000476",
+        "sim_id": 476,
+        "gpcrmd_id": 852,
+        "pdb_id": "5XR8",
+        "state": "Active-like agonist crystal (apoform)",
+        "ligands": [],
+        "replicates": 3,
+        "total_duration_ns": 1499.4,
+        "stride_ns": 0.2,
+        "minimal_tar_mb": 139.4,
+        "full_tar_mb": 2054.4
+      },
+      {
+        "mdrepo_id": "MDR00001109",
+        "sim_id": 1109,
+        "gpcrmd_id": 1002,
+        "pdb_id": "6KQI",
+        "state": "NAM-locked inactive-like + CP55940 + ORG27569",
+        "ligands": [
+          "CP55940 (Chembl559612)",
+          "ORG27569 (Chembl1553629)"
+        ],
+        "replicates": 3,
+        "total_duration_ns": 1497.0,
+        "metadata_duration_note": "JSON duration field says 499.0 (single-rep duration); minimal.tar=143.7 MB confirms 3 x ~500 ns replicates",
+        "stride_ns": 0.2,
+        "minimal_tar_mb": 143.7,
+        "full_tar_mb": 1885.3
+      },
+      {
+        "mdrepo_id": "MDR00000239",
+        "sim_id": 239,
+        "gpcrmd_id": 162,
+        "pdb_id": "5TGZ",
+        "state": "Inactive apoform (all 3 replicates)",
+        "ligands": [],
+        "replicates": 3,
+        "total_duration_ns": 1399.4,
+        "stride_ns": 0.2,
+        "minimal_tar_mb": 134.1,
+        "full_tar_mb": 2008.3
+      },
+      {
+        "mdrepo_id": "MDR00001124",
+        "sim_id": 1124,
+        "gpcrmd_id": "22+164",
+        "pdb_id": "5U09",
+        "state": "Inactive + Taranabant (all 6 replicates)",
+        "ligands": [
+          "Taranabant"
+        ],
+        "replicates": 6,
+        "total_duration_ns": 2998.8,
+        "stride_ns": 0.2,
+        "minimal_tar_mb": 290.7,
+        "full_tar_mb": 3823.6
+      },
+      {
+        "mdrepo_id": "MDR00001146",
+        "sim_id": 1146,
+        "gpcrmd_id": 163,
+        "pdb_id": "5U09",
+        "state": "Inactive apoform (all 3 replicates)",
+        "ligands": [],
+        "replicates": 3,
+        "total_duration_ns": 1499.4,
+        "stride_ns": 0.2,
+        "minimal_tar_mb": 143.5,
+        "full_tar_mb": 1911.6
+      }
+    ],
+    "excluded_non_bilayer_automated_records": [
+      {
+        "mdrepo_id": "MDR00019886",
+        "collection": "MISATO (Zenodo 7711953)",
+        "pdb_id": "6KQI",
+        "duration_ns": 8.0,
+        "reason_excluded": "Simulated in pure TIP3P water WITHOUT a lipid membrane bilayer; retains archaeal fusion partner Q9V2J8"
+      },
+      {
+        "mdrepo_id": "MDR00020024",
+        "collection": "MISATO (Zenodo 7711953)",
+        "pdb_id": "6N4B",
+        "duration_ns": 8.0,
+        "reason_excluded": "Simulated in pure TIP3P water WITHOUT a lipid membrane bilayer or Gi heterotrimer"
+      },
+      {
+        "mdrepo_id": "MDR00090076",
+        "collection": "PLAS-20K",
+        "pdb_id": "6N4B",
+        "duration_ns": 19.5,
+        "reason_excluded": "5 x 3.9 ns (40 frames/rep) solvated in TIP3P water WITHOUT a lipid membrane bilayer or Gi heterotrimer"
+      },
+      {
+        "mdrepo_id": "MDR00104079",
+        "collection": "Dissociation Dynamic Database (DDD-03B)",
+        "pdb_id": "6KQI",
+        "duration_ns": 24.11,
+        "reason_excluded": "50 short metadynamics ligand-egress runs solvated in water + KCl WITHOUT a lipid membrane bilayer (unphysical aqueous egress for lipid-portal CB1)"
+      }
+    ]
+  },
+  "gated_dead_or_unsuitable_external_datasets": [
+    {
+      "id": "shukla_box_2022_2023_dead_links",
+      "source": "uofi.box.com links in Cannabinoid_activation, THC_binding, Sodium_binding, Dutta_Shukla_Cannabinoid_2023a",
+      "http_status": 404,
+      "count_tested": 24,
+      "notes": "All 24 shared Box links from 2022-2023 ShuklaGroup repos return HTTP 404 Not Found (expired/revoked Box shares). Only Initial_Coordinates (.pdb/.prmtop), 6 apo macrostate PDBs (Main_Figure_5), feature scripts, and THC_binding Figure 8 .npy arrays survive inside GitHub."
+    },
+    {
+      "id": "dryad_10.5061_dryad.4f4qrfjq5",
+      "source": "Dryad (Dutta & Shukla 2025 eLife, NPS vs classical cannabinoids)",
+      "landing_url": "https://datadryad.org/dataset/doi:10.5061/dryad.4f4qrfjq5",
+      "http_status": "200 metadata / 401 file download",
+      "total_size_gb": 218.32,
+      "files": [
+        "CB1_classical_Unbiased.tar.gz (89.12 GB, id 3964559)",
+        "CB1_nps_Unbiased.tar.gz (78.44 GB, id 3964558)",
+        "CB1_classical_Umbrella_sampling.tar.gz (22.89 GB, id 3964557)",
+        "CB1_nps_Umbrella_sampling.tar.gz (22.92 GB, id 3964556)",
+        "CB1_classical_Well-tempered_metadynamics.tar.gz (2.30 GB, id 3964555)",
+        "CB1_nps_Well-tempered_metadynamics.tar.gz (2.65 GB, id 3964554)"
+      ],
+      "notes": "Dryad v2 /api/v2/files/<id>/download returns HTTP 401 Unauthorized without a registered Dryad user API bearer token; monolithic 78-89 GB tarballs exceed standard Colab disk quotas."
+    },
+    {
+      "id": "illinois_databank_IDB-6705697",
+      "source": "Illinois Data Bank (doi:10.13012/B2IDB-6705697_V1)",
+      "http_status": 403,
+      "notes": "AWS WAF (awselb/2.0) blocks automated CLI/curl requests (HTTP 403). Not a blocker because its official companion Box share (q9w1f99mybxo6hrgo8sfr3sbm3l8xrmu) is 100% open to curl."
+    },
+    {
+      "id": "gpcrmd_login_gated_entries",
+      "source": "GPCRmd IDs 852, 896, 897, 1002, 1136 + Replicates 2 & 3 of IDs 22, 162, 163, 164",
+      "http_status": "302 -> 200 HTML /accounts/login/ (22.75 KB)",
+      "notes": "Login-gated on gpcrmd.org; IDs 852, 896, 897, 1002 and full replicates of 22, 162, 163, 164 are unembargoed on MDRepo (requiring human ORCID sign-in), while ID 1136 (6KQI apo) remains login-gated."
+    },
+    {
+      "id": "zenodo_19555568_champ_martini",
+      "source": "Zenodo (https://zenodo.org/records/19555568, CHAMP_trjs.zip, 30.25 GB)",
+      "http_status": 200,
+      "notes": "Coarse-grained Martini MD of CB1 in POPC:cholesterol with THC + ORG27569. Martini elastic network restrains tertiary helix conformation; unsuitable for all-atom CB1 activation/microswitch prediction."
+    },
+    {
+      "id": "zenodo_3242751_cbd_images_only",
+      "source": "Zenodo (https://zenodo.org/records/3242751)",
+      "http_status": 200,
+      "notes": "Misleading title ('MD simulation trajectory of cannabidiol in the cannabinoid type 1 receptor'): contains ONLY 6 rendered .tga images and 2 NAMD .conf files; zero coordinate trajectories."
+    },
+    {
+      "id": "other_queried_repositories_empty",
+      "source": "OSF, Figshare, MDDB (irb.mddbr.eu), Harvard Dataverse, MemProtMD, ATLAS (dsimb.inserm.fr)",
+      "http_status": 200,
+      "notes": "Empirically queried via official REST endpoints; zero all-atom CB1 MD trajectory datasets hosted (note: PDB 1CB1 in MDDB is calbindin D9k, NOT cannabinoid receptor 1)."
+    }
+  ],
+  "local_experimental_reference_structures": [
+    {
+      "pdb_id": "5TGZ",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/5TGZ.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/5TGZ.pdb",
+      "cb1_chain": "A",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "ALA (T210A)",
+      "method_res": "X-ray 2.80 A",
+      "functional_state": "Inactive (antagonist)",
+      "ligands": "ZDG (AM6538)",
+      "transducer": "None",
+      "ca_distances_A": {
+        "R214_D338": 8.69,
+        "R214_K343": 11.95,
+        "F200_W356": 8.46,
+        "D163_W356": 12.29,
+        "Y294_Y397": 17.67,
+        "F155_F237": 8.12
+      }
+    },
+    {
+      "pdb_id": "5U09",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/5U09.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/5U09.pdb",
+      "cb1_chain": "A",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "ALA (T210A)",
+      "method_res": "X-ray 2.60 A",
+      "functional_state": "Inactive (inverse agonist)",
+      "ligands": "7DY (taranabant)",
+      "transducer": "None",
+      "ca_distances_A": {
+        "R214_D338": 6.75,
+        "R214_K343": 10.05,
+        "F200_W356": 8.59,
+        "D163_W356": 13.1,
+        "Y294_Y397": 18.2,
+        "F155_F237": 8.37
+      }
+    },
+    {
+      "pdb_id": "6KQI",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/6KQI.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/6KQI.pdb",
+      "cb1_chain": "A",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "ALA (T210A)",
+      "method_res": "X-ray 3.25 A (3.245 A)",
+      "functional_state": "NAM-locked inactive-like (orthosteric agonist + allosteric NAM)",
+      "ligands": "9GF (CP55940) + 9GL (ORG27569)",
+      "transducer": "None",
+      "ca_distances_A": {
+        "R214_D338": 7.2,
+        "R214_K343": 10.12,
+        "F200_W356": 8.96,
+        "D163_W356": 12.77,
+        "Y294_Y397": 18.07,
+        "F155_F237": 8.33
+      }
+    },
+    {
+      "pdb_id": "7FEE",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/7FEE.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/7FEE.pdb",
+      "cb1_chain": "A",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "ALA (S203K,T210A,E273K,T283V,R340E,N393D)",
+      "method_res": "X-ray 2.70 A",
+      "functional_state": "Mutant-locked inactive-like + orthosteric agonist CP55940 + PAM ZCZ011 (no Gi)",
+      "ligands": "9GF (CP55940) + 7IC (ZCZ011)",
+      "transducer": "None",
+      "ca_distances_A": {
+        "R214_D338": 9.22,
+        "R214_K343": 12.54,
+        "F200_W356": 9.79,
+        "D163_W356": 12.83,
+        "Y294_Y397": 17.26,
+        "F155_F237": 8.07
+      }
+    },
+    {
+      "pdb_id": "5XRA",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/5XRA.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/5XRA.pdb",
+      "cb1_chain": "A",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "ALA (T210A)",
+      "method_res": "X-ray 2.80 A",
+      "functional_state": "Active-like agonist-bound (no transducer; note 2025 Nature crystallographic notice doi:10.1038/s41586-025-09454-5)",
+      "ligands": "8D3 (AM11542)",
+      "transducer": "None",
+      "ca_distances_A": {
+        "R214_D338": 14.18,
+        "R214_K343": 15.47,
+        "F200_W356": 10.86,
+        "D163_W356": 14.73,
+        "Y294_Y397": 14.69,
+        "F155_F237": 8.32
+      }
+    },
+    {
+      "pdb_id": "5XR8",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/5XR8.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/5XR8.pdb",
+      "cb1_chain": "A",
+      "tm67_auth_seq_offset": 122,
+      "pos210_residue": "ALA (T210A)",
+      "method_res": "X-ray 2.95 A",
+      "functional_state": "Active-like agonist-bound (WARNING: +122 auth_seq_id shift in TM6-H8!)",
+      "ligands": "8D0 (AM841)",
+      "transducer": "None",
+      "ca_distances_A": {
+        "R214_D338": 14.43,
+        "R214_K343": 15.22,
+        "F200_W356": 11.1,
+        "D163_W356": 14.94,
+        "Y294_Y397": 14.78,
+        "F155_F237": 8.31
+      }
+    },
+    {
+      "pdb_id": "7V3Z",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/7V3Z.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/7V3Z.pdb",
+      "cb1_chain": "A",
+      "tm67_auth_seq_offset": 122,
+      "pos210_residue": "ALA (H154L,T210A,E273K,T283V,R340E)",
+      "method_res": "X-ray 3.29 A",
+      "functional_state": "Active-like agonist-bound (WARNING: +122 auth_seq_id shift in TM6-H8!)",
+      "ligands": "9GF (CP55940) + CLR",
+      "transducer": "None",
+      "ca_distances_A": {
+        "R214_D338": 14.66,
+        "R214_K343": 15.01,
+        "F200_W356": 11.32,
+        "D163_W356": 15.03,
+        "Y294_Y397": 14.11,
+        "F155_F237": 8.17
+      }
+    },
+    {
+      "pdb_id": "6N4B",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/6N4B.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/6N4B.pdb",
+      "cb1_chain": "R",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "THR (WT)",
+      "method_res": "Cryo-EM 3.00 A",
+      "functional_state": "Active Gi1-coupled",
+      "ligands": "KCA (MDMB-FUBINACA)",
+      "transducer": "Gi1 heterotrimer + scFv16",
+      "ca_distances_A": {
+        "R214_D338": 14.94,
+        "R214_K343": 15.77,
+        "F200_W356": 11.29,
+        "D163_W356": 15.29,
+        "Y294_Y397": 13.36,
+        "F155_F237": 7.65
+      }
+    },
+    {
+      "pdb_id": "6KPG",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/6KPG.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/6KPG.pdb",
+      "cb1_chain": "R",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "THR (WT)",
+      "method_res": "Cryo-EM 3.00 A",
+      "functional_state": "Active Gi1-coupled",
+      "ligands": "8D0 (AM841)",
+      "transducer": "Gi1 heterotrimer + scFv16",
+      "ca_distances_A": {
+        "R214_D338": 14.45,
+        "R214_K343": 15.75,
+        "F200_W356": 10.62,
+        "D163_W356": 14.3,
+        "Y294_Y397": 13.61,
+        "F155_F237": 6.67
+      }
+    },
+    {
+      "pdb_id": "7WV9",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/7WV9.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/7WV9.pdb",
+      "cb1_chain": "R",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "THR (WT)",
+      "method_res": "Cryo-EM 3.36 A",
+      "functional_state": "Active Gi2-coupled + PAM",
+      "ligands": "9GF (CP55940) + 7IC (ZCZ011)",
+      "transducer": "Gi2 heterotrimer + scFv16",
+      "ca_distances_A": {
+        "R214_D338": 14.99,
+        "R214_K343": 16.07,
+        "F200_W356": 11.56,
+        "D163_W356": 15.21,
+        "Y294_Y397": 13.34,
+        "F155_F237": 7.88
+      }
+    },
+    {
+      "pdb_id": "8GHV",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/8GHV.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/8GHV.pdb",
+      "cb1_chain": "D",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "THR (WT)",
+      "method_res": "Cryo-EM 2.80 A",
+      "functional_state": "Active Gi1-coupled endocannabinoid mimic",
+      "ligands": "ZI5 (AMG315)",
+      "transducer": "Gi1 heterotrimer + scFv16",
+      "ca_distances_A": {
+        "R214_D338": 15.53,
+        "R214_K343": 15.94,
+        "F200_W356": 11.63,
+        "D163_W356": 14.87,
+        "Y294_Y397": 14.33,
+        "F155_F237": 7.8
+      }
+    },
+    {
+      "pdb_id": "9ERX",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/9ERX.cif",
+      "local_pdb": null,
+      "cb1_chain": "R",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "THR (WT)",
+      "method_res": "Cryo-EM 2.90 A",
+      "functional_state": "Active Gi1-coupled HU-210 agonist (mmCIF only; 5-char CCD A1H66)",
+      "ligands": "A1H66 (HU-210)",
+      "transducer": "Gi1 heterotrimer + scFv16",
+      "ca_distances_A": {
+        "R214_D338": 13.99,
+        "R214_K343": 15.28,
+        "F200_W356": 11.27,
+        "D163_W356": 14.57,
+        "Y294_Y397": 13.33,
+        "F155_F237": 7.07
+      }
+    },
+    {
+      "pdb_id": "8K8J",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/8K8J.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/8K8J.pdb",
+      "cb1_chain": "R",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "ILE (T210I constitutively active mutant)",
+      "method_res": "Cryo-EM 2.88 A",
+      "functional_state": "Active non-cognate MiniGsq-coupled",
+      "ligands": "J3O (Fenofibrate)",
+      "transducer": "MiniGsq + Nb35",
+      "ca_distances_A": {
+        "R214_D338": 16.12,
+        "R214_K343": 16.08,
+        "F200_W356": 10.53,
+        "D163_W356": 14.09,
+        "Y294_Y397": 13.25,
+        "F155_F237": 7.16
+      }
+    },
+    {
+      "pdb_id": "8WRZ",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/8WRZ.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/8WRZ.pdb",
+      "cb1_chain": "R",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "ILE (T210I constitutively active mutant)",
+      "method_res": "Cryo-EM 3.60 A",
+      "functional_state": "Active beta-arrestin-1-coupled",
+      "ligands": "8D0 (AM841)",
+      "transducer": "beta-arrestin-1 + scFv30",
+      "ca_distances_A": {
+        "R214_D338": 17.13,
+        "R214_K343": 17.08,
+        "F200_W356": 11.09,
+        "D163_W356": 15.02,
+        "Y294_Y397": 14.24,
+        "F155_F237": 7.94
+      }
+    },
+    {
+      "pdb_id": "8WU1",
+      "local_cif": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/8WU1.cif",
+      "local_pdb": "/Users/kavi/Documents/artico/cb1-dynamics/data/inventory/pdb_structures/8WU1.pdb",
+      "cb1_chain": "R",
+      "tm67_auth_seq_offset": 0,
+      "pos210_residue": "THR (WT)",
+      "method_res": "Cryo-EM 3.20 A",
+      "functional_state": "Active beta-arrestin-1-coupled (matched ligand KCA & WT T210 to 6N4B)",
+      "ligands": "KCA (MDMB-FUBINACA)",
+      "transducer": "beta-arrestin-1 + Fab30",
+      "ca_distances_A": {
+        "R214_D338": 15.19,
+        "R214_K343": 15.73,
+        "F200_W356": 10.82,
+        "D163_W356": 13.36,
+        "Y294_Y397": 13.5,
+        "F155_F237": 7.51
+      }
+    }
+  ]
+}

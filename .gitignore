@@ -1,0 +1,44 @@
+# Python & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments & test/notebook caches
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.ipynb_checkpoints/
+.ruff_cache/
+.mypy_cache/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Raw MD trajectory binaries & temporary streaming buffers (never committed)
+*.dcd
+*.xtc
+*.trr
+*.nc
+*.part
+*.tmp
+data/inventory/gpcrmd_temp/
+
+# External raw repository clones & bulky (>18 MB) MSM pickle archives in data/inventory/
+# (All compact <15 MB processed .parquet tables, JSON manifests, PDB/mmCIF structures,
+#  and reference topologies required for <3 min standalone execution & pytest ARE tracked.)
+data/inventory/Cannabinoid_activation/
+data/inventory/Dutta_Shukla_Cannabinoid_2023a/
+data/inventory/Dutta_Shukla_EndoCannabinoid_2025/
+data/inventory/THC_binding/
+data/inventory/box_endocannabinoid_2025/
+data/inventory/box_2025/CB1_assym_MSM.pkl
+data/inventory/box_2025/CB1_frame_cluster_indices.pkl
+data/inventory/box_2025/CB1_lig_com_cor.pkl
+data/inventory/box_2025/CB1_msm_weight.pkl
