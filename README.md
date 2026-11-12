@@ -4,7 +4,7 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
 [![Data Store: 50.38 MB](https://img.shields.io/badge/parquet_store-50.38_MB_(GitHub--native)-success.svg)](data/processed/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebooks/CB1_Activation_Committor_Discovery.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/CB1_Activation_Committor_Discovery.ipynb)
 
 ---
 
