@@ -53,14 +53,25 @@ def test_repository_config_and_readme_guardrails() -> None:
         "122",
         "8GHV",
         "KCl",
-        # Verified primary literature PMIDs
+        # Verified primary literature PMIDs & exact JSON parity guards
+        "+0.3066",
+        "128",
         "35227761",
+        "37147497",
         "41962866",
         "32661425",
         "40866700",
+        "38101408",
+        "38102480",
+        "33908762",
+        "38391020",
     ]
     for tok in required_tokens:
         assert tok in readme, f"README.md missing required token/guardrail: {tok!r}"
+
+    # Explicitly reject misattributed/fabricated PMIDs and stale values
+    for forbidden_tok in ("33887951", "37147420", "+0.0282", "0.0562"):
+        assert forbidden_tok not in readme, f"README.md contains forbidden/stale token: {forbidden_tok!r}"
 
 
 def test_executed_colab_notebook_structure_and_outputs() -> None:
@@ -121,8 +132,10 @@ def test_executed_colab_notebook_structure_and_outputs() -> None:
 
     # Verify mandatory negative controls & falsifications in conclusion/markdown narrative
     all_md_text = "\n".join("".join(cells[i].get("source", [])) for i in md_indices)
-    for guardrail_tok in ("0.9997", "-0.0175", "-0.0387", "14.95", "+0.1051", "+0.0049", "0.3187"):
+    for guardrail_tok in ("0.9997", "-0.0175", "-0.0387", "14.95", "+0.1051", "+0.0049", "0.3187", "0.0349"):
         assert guardrail_tok in all_md_text, f"Notebook markdown narrative missing guardrail {guardrail_tok!r}"
+    for forbidden_nb_tok in ("33887951", "37147420", "N2b < 0.07"):
+        assert forbidden_nb_tok not in all_md_text, f"Notebook markdown contains stale/wrong token {forbidden_nb_tok!r}"
 
 
 def test_processed_parquet_budget_and_zero_raw_trajectories() -> None:
