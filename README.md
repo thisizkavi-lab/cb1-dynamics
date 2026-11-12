@@ -4,7 +4,9 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
 [![Data Store: 50.38 MB](https://img.shields.io/badge/parquet_store-50.38_MB_(GitHub--native)-success.svg)](data/processed/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/CB1_Activation_Committor_Discovery.ipynb)
+[![Open In Colab: Core Discovery](https://img.shields.io/badge/Colab-01_Core_Discovery-F9AB00?logo=googlecolab)](https://colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/CB1_Activation_Committor_Discovery.ipynb)
+[![Open In Colab: WS4 Multi-GPCR Universality](https://img.shields.io/badge/Colab-02_Multi--GPCR_Universality-F9AB00?logo=googlecolab)](https://colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/02_Multi_GPCR_Universality_Colab.ipynb)
+[![Open In Colab: WS5 OpenMM Shooting Swarm](https://img.shields.io/badge/Colab-03_Prospective_OpenMM_Shooting-F9AB00?logo=googlecolab)](https://colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/03_Prospective_OpenMM_Shooting_Colab.ipynb)
 
 ---
 
@@ -67,7 +69,7 @@ Because all `7` processed `.parquet` tables (`50.382 MB` total, every file `< 14
 ### Option A: Zero-Setup Execution with `uv` (Recommended)
 
 ```bash
-# 1. Run the complete 5-module verification test suite (core DGA, WS1, WS2, WS3, and packaging/notebook checks)
+# 1. Run the complete 7-module verification test suite (core DGA, WS1-WS5, and packaging/notebook checks)
 uv run --python 3.12 --with-requirements requirements.txt pytest -v
 
 # 2. Re-execute the pedagogical discovery notebook end-to-end (< 1 minute)
@@ -87,9 +89,19 @@ pytest -v
 jupyter lab notebooks/CB1_Activation_Committor_Discovery.ipynb
 ```
 
-### Option C: Google Colab
+### Option C: Google Colab (Standalone Discovery + Phase 4 Cloud Campaigns)
 
-Open [`notebooks/CB1_Activation_Committor_Discovery.ipynb`](notebooks/CB1_Activation_Committor_Discovery.ipynb) directly in Google Colab. Cell 1 automatically detects `google.colab`, clones the repository if needed, verifies all `7` `.parquet` tables (`50.382 MB`), and includes an optional `RUN_LIVE_STREAMING_DEMO = False` toggle demonstrating live `HTTP 206` Range-request binary header verification (`GROMACS XTC 1995` and `CHARMM DCD 'CORD'`) against GPCRmd and Box.
+1. **Core Executed Discovery Walkthrough (`< 1 min`, CPU):**
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/CB1_Activation_Committor_Discovery.ipynb)
+   Open [`notebooks/CB1_Activation_Committor_Discovery.ipynb`](notebooks/CB1_Activation_Committor_Discovery.ipynb) directly in Google Colab. Cell 1 automatically detects `google.colab`, clones the repository if needed, verifies all `7` `.parquet` tables (`50.382 MB`), and includes an optional `RUN_LIVE_STREAMING_DEMO = False` toggle demonstrating live `HTTP 206` Range-request binary header verification (`GROMACS XTC 1995` and `CHARMM DCD 'CORD'`) against GPCRmd and Box.
+
+2. **Phase 4 Track A (`WS4`): Class A Multi-GPCR Superfamily Universality (`< 2 Compute Units`, CPU + Google Drive):**
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/02_Multi_GPCR_Universality_Colab.ipynb)
+   Open [`notebooks/02_Multi_GPCR_Universality_Colab.ipynb`](notebooks/02_Multi_GPCR_Universality_Colab.ipynb) to stream explicit-solvent `GPCRmd` bilayer ensembles across **6 Class A GPCRs** (`CB1`, `CB2`, `S1P1`, `B2AR`, `MOR`, `A2AR`), testing universal `D2.50–W6.48–NPxxY` water/cation memory closure (`U1`) vs. evolutionary specificity of $\text{CB}_1$'s `F155^2.42–F237^4.46` aromatic lock (`U2`, vs. $\text{CB}_2$ `L154^4.46`) with crash-safe Google Drive checkpointing (`/content/drive/MyDrive/cb1-dynamics-phase4/ws4_universality/`).
+
+3. **Phase 4 Track B (`WS5`): Prospective Single-Hamiltonian OpenMM Committor Shooting Swarm (`L4` / `A100` GPU + Multi-Tab Google Drive):**
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/03_Prospective_OpenMM_Shooting_Colab.ipynb)
+   Open [`notebooks/03_Prospective_OpenMM_Shooting_Colab.ipynb`](notebooks/03_Prospective_OpenMM_Shooting_Colab.ipynb) on 1–3 simultaneous Colab `L4` GPU tabs (`~110–170` Compute Units for `15 reps × 20 ns × 3 arms = 900 ns`, or `~50` Compute Units for the `rep01..rep05` `300 ns` balanced milestone). Launches unbiased `4 fs` HMR OpenMM trajectories (`amber14-all.xml` + `amber14/tip3pfb.xml`, `MonteCarloMembraneBarostat`) from matched $R_{\text{TM6}}(0) \approx 14.26\text{ \AA}$ seeds (`data/openmm_seeds/`, `5.64 MB`), testing **`Arm_A_Fake_Open_Trapped`** vs. **`Arm_B_Committed_Open`** under a **bitwise-identical WT Hamiltonian** alongside **`Arm_C_Mutant_F237L`**, with `2 ns` portable `State` XML checkpointing and `>25 min` stale-lock recovery on `/content/drive/MyDrive/cb1-dynamics-phase4/ws5_shooting/`.
 
 ---
 
@@ -98,7 +110,9 @@ Open [`notebooks/CB1_Activation_Committor_Discovery.ipynb`](notebooks/CB1_Activa
 ```text
 cb1-dynamics/
 ├── notebooks/
-│   └── CB1_Activation_Committor_Discovery.ipynb  # Executed pedagogical walkthrough (alternating Code + Analysis cells)
+│   ├── CB1_Activation_Committor_Discovery.ipynb   # Executed Phase 1-3 pedagogical walkthrough
+│   ├── 02_Multi_GPCR_Universality_Colab.ipynb     # Phase 4 (WS4): 6-GPCR superfamily universality on Colab
+│   └── 03_Prospective_OpenMM_Shooting_Colab.ipynb # Phase 4 (WS5): Single-Hamiltonian OpenMM GPU shooting swarm
 ├── src/
 │   ├── core/                                     # Shared operator & statistical-mechanics engine
 │   │   ├── splits.py                             # LineageGroupSplitter + autocorrelation seam buffers
@@ -108,9 +122,12 @@ cb1-dynamics/
 │   │   └── memory_tests.py                       # Two-step Mori-Zwanzig memory & within-cell N2a permutation
 │   ├── ws1_thc_activation/                       # Stage 2: 278,196-frame Full Agonist vs. Delta9-THC 3-CV DGA
 │   ├── ws2_box_msm/                              # Stage 1: 5,000-run (482.97 us) AEA MSM/TPT + 160 streamed DCDs
-│   └── ws3_gpcrmd_water/                         # Stage 2/3: 16-PDB benchmark + 8.90 us explicit-solvent GPCRmd
+│   ├── ws3_gpcrmd_water/                         # Stage 2/3: 16-PDB benchmark + 8.90 us explicit-solvent GPCRmd
+│   ├── ws4_gpcr_universality/                    # Phase 4A: 6-GPCR BW mapping, streaming featurizer & U1/U2 tests
+│   └── ws5_openmm_shooting/                      # Phase 4B: OpenMM seed builder, Drive queue & survival readout
 ├── data/
-│   ├── metadata/                                 # Canonical UniProt P21554 / Ballesteros-Weinstein lookup tables
+│   ├── metadata/                                 # Canonical UniProt P21554 & 6-GPCR Ballesteros-Weinstein manifests
+│   ├── openmm_seeds/                             # 3 matched R_TM6=14.3 A seeds & bitwise-identical WT System (5.64 MB)
 │   ├── inventory/                                # Dataset manifest, 16 RCSB structures, & stripped Box topologies
 │   └── processed/                                # 7 GitHub-safe Parquet archives (50.382 MB total, all < 14 MB)
 │       ├── ws1/                                  # ws1_featurized_segments.parquet, ws1_oof_predictions.parquet
@@ -131,6 +148,8 @@ cb1-dynamics/
     ├── test_ws1_integrity.py                     # WS1 zero-leakage, fold-isolation & metric reproducibility tests
     ├── test_ws2_integrity.py                     # WS2 TPT harmonicity, leave-round-out MSM, UniProt+88 & H1/H2 tests
     ├── test_ws3_integrity.py                     # WS3 16-PDB traps, PBC/ion sentinels & adversarial memory tests
+    ├── test_ws4_universality_setup.py            # Phase 4A live HTTP 206, 6-GPCR BW alignment & Drive resume tests
+    ├── test_ws5_openmm_shooting.py               # Phase 4B OpenMM Hamiltonian identity, 4fs HMR & queue tests
     └── test_packaging_and_notebook.py            # Phase 3 executed notebook structure, guardrails & <25 MB git checks
 ```
 

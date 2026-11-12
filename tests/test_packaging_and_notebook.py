@@ -32,8 +32,10 @@ def test_repository_config_and_readme_guardrails() -> None:
 
     readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
     required_tokens = [
-        # Core datasets, PDB benchmarks & quickstart
+        # Core datasets, Phase 4 Colab links, PDB benchmarks & quickstart
         "CB1_Activation_Committor_Discovery.ipynb",
+        "colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/02_Multi_GPCR_Universality_Colab.ipynb",
+        "colab.research.google.com/github/thisizkavi-lab/cb1-dynamics/blob/main/notebooks/03_Prospective_OpenMM_Shooting_Colab.ipynb",
         "uv run",
         "Colab",
         "5XRA",

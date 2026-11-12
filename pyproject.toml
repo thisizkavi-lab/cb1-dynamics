@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cb1-dynamics"
-version = "0.1.0"
-description = "Predicting human CB1 receptor activation commitment via Stopped Dynamical Galerkin Approximation, Transition Path Theory, and Mori-Zwanzig memory tests across 519 us of MD ensembles and 16 experimental PDB structures."
+version = "0.2.0"
+description = "Predicting human CB1 receptor activation commitment via Stopped Dynamical Galerkin Approximation, Transition Path Theory, Mori-Zwanzig memory tests, multi-GPCR universality, and single-Hamiltonian OpenMM committor shooting."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
@@ -19,6 +19,8 @@ dependencies = [
     "seaborn>=0.13",
     "mdtraj>=1.9.9",
     "networkx>=3.2",
+    "openmm>=8.1",
+    "nbformat>=5.9",
 ]
 
 [project.optional-dependencies]

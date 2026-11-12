@@ -1,0 +1,3129 @@
+{
+  "schema_version": "1.0",
+  "project": "CB1 Activation Committor & Class A GPCR Superfamily Universality (WS4)",
+  "generated_utc": "2026-11-12T20:50:13Z",
+  "colab_checkpoint_dir": "/content/drive/MyDrive/cb1-dynamics-phase4/ws4_universality",
+  "canonical_bw_positions": [
+    "1.35",
+    "2.42",
+    "2.50",
+    "3.36",
+    "3.50",
+    "4.46",
+    "5.58",
+    "6.30",
+    "6.48",
+    "7.35",
+    "7.49",
+    "7.53"
+  ],
+  "hypotheses": {
+    "U1_universal_water_na_closure": "Conserved Class A D2.50-W6.48-NPxxY internal water-wire conductance, core pore hydration, and D2.50 Na+/cation coordination collapse buried microswitch non-Markovian memory (rho_mem > 0) and improve out-of-block committor prediction across diverse Class A GPCRs.",
+    "U2_evolutionary_242_446_specificity": "While 2.42 is aromatic (Phe/Tyr) across all 6 Class A GPCRs, 4.46 is uniquely Phe in CB1 (F155^2.42 - F237^4.46), creating a bimodal rotamer-gated aromatic lock coupled to lipid cleft wedging that is absent in CB2 (F72^2.42 - L154^4.46) and non-aromatic 4.46 Class A controls."
+  },
+  "receptors": {
+    "CB1": {
+      "receptor_key": "CB1",
+      "display_name": "Human Cannabinoid Receptor 1 (CB1)",
+      "gpcrdb_entry": "cnr1_human",
+      "uniprot_id": "P21554",
+      "gpcr_class": "Class A (Rhodopsin)",
+      "subfamily": "Cannabinoid (Lipid)",
+      "u2_cleft_type": "Phe2.42-Phe4.46_aromatic_lock",
+      "bw_canonical_wt": {
+        "1.35": {
+          "canonical_resseq": 119,
+          "wt_aa1": "I",
+          "wt_resname": "ILE",
+          "gpcrdb_generic": "1.35x35"
+        },
+        "2.42": {
+          "canonical_resseq": 155,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "2.42x42"
+        },
+        "2.50": {
+          "canonical_resseq": 163,
+          "wt_aa1": "D",
+          "wt_resname": "ASP",
+          "gpcrdb_generic": "2.50x50"
+        },
+        "3.36": {
+          "canonical_resseq": 200,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "3.36x36"
+        },
+        "3.50": {
+          "canonical_resseq": 214,
+          "wt_aa1": "R",
+          "wt_resname": "ARG",
+          "gpcrdb_generic": "3.50x50"
+        },
+        "4.46": {
+          "canonical_resseq": 237,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "4.46x46"
+        },
+        "5.58": {
+          "canonical_resseq": 294,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "5.58x58"
+        },
+        "6.30": {
+          "canonical_resseq": 338,
+          "wt_aa1": "D",
+          "wt_resname": "ASP",
+          "gpcrdb_generic": "6.30x30"
+        },
+        "6.48": {
+          "canonical_resseq": 356,
+          "wt_aa1": "W",
+          "wt_resname": "TRP",
+          "gpcrdb_generic": "6.48x48"
+        },
+        "7.35": {
+          "canonical_resseq": 379,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "7.35x34"
+        },
+        "7.49": {
+          "canonical_resseq": 393,
+          "wt_aa1": "N",
+          "wt_resname": "ASN",
+          "gpcrdb_generic": "7.49x49"
+        },
+        "7.53": {
+          "canonical_resseq": 397,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "7.53x53"
+        }
+      },
+      "notes": "",
+      "n_trajectories": 6,
+      "approx_aggregate_us": 8.9,
+      "aggregate_xtc_gb": 8.408,
+      "trajectories": [
+        {
+          "traj_id": "CB1_gpcrmd_1201",
+          "gpcrmd_dyn_id": 1201,
+          "pdb_id": "6N4B",
+          "state_class": "Active",
+          "state_detail": "Active Gi1 + MDMB-FUBINACA",
+          "bound_ligand": "MDMB-FUBINACA",
+          "transducer": "Gi1",
+          "construct_gpcrdb_entry": "cnr1_human",
+          "construct_uniprot_id": "P21554",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 1000.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn1366/tmp_dyn_0_1366.pdb",
+          "pdb_size_bytes": 16488149,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn1366/18986_trj_1201.xtc",
+          "xtc_size_bytes": 3796878084,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 203557,
+            "step0": 0,
+            "t0_ps": 0.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 203557,
+            "n_water_O": 47309,
+            "n_na_ions": 0,
+            "n_k_ions": 128,
+            "n_lipid_heavy": 18304,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            3
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 3,
+              "resSeq": 119,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 3,
+              "resSeq": 155,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 3,
+              "resSeq": 163,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 3,
+              "resSeq": 200,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 3,
+              "resSeq": 214,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 3,
+              "resSeq": 237,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 3,
+              "resSeq": 294,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 3,
+              "resSeq": 338,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 3,
+              "resSeq": 356,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 3,
+              "resSeq": 379,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 3,
+              "resSeq": 393,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 3,
+              "resSeq": 397,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "CB1_gpcrmd_2067",
+          "gpcrmd_dyn_id": 2067,
+          "pdb_id": "6N4B",
+          "state_class": "Active",
+          "state_detail": "Active Gs + Apo",
+          "bound_ligand": "Apo",
+          "transducer": "Gs",
+          "construct_gpcrdb_entry": "cnr1_human",
+          "construct_uniprot_id": "P21554",
+          "dt_ns": 1.0,
+          "approx_duration_ns": 6000.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2336/tmp_dyn_0_2336.pdb",
+          "pdb_size_bytes": 7598157,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2336/24048_trj_2067.xtc",
+          "xtc_size_bytes": 2118682836,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 94976,
+            "step0": 0,
+            "t0_ps": 0.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 94976,
+            "n_water_O": 19916,
+            "n_na_ions": 52,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 10452,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 119,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 155,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 163,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 200,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 214,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 237,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 294,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 338,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 356,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 379,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 393,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 397,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "CB1_gpcrmd_22",
+          "gpcrmd_dyn_id": 22,
+          "pdb_id": "5U09",
+          "state_class": "Inactive",
+          "state_detail": "Inactive Taranabant rep A",
+          "bound_ligand": "Taranabant",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "cnr1_human",
+          "construct_uniprot_id": "P21554",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10276_dyn_22.pdb",
+          "pdb_size_bytes": 5596781,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10280_trj_22.xtc",
+          "xtc_size_bytes": 639453028,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 69095,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 69095,
+            "n_water_O": 14603,
+            "n_na_ions": 42,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 7800,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0,
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 119,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 155,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 163,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 200,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 214,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 237,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 294,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 338,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 356,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 379,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 393,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 397,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "CB1_gpcrmd_164",
+          "gpcrmd_dyn_id": 164,
+          "pdb_id": "5U09",
+          "state_class": "Inactive",
+          "state_detail": "Inactive Taranabant rep B",
+          "bound_ligand": "Taranabant",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "cnr1_human",
+          "construct_uniprot_id": "P21554",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11529_dyn_164.pdb",
+          "pdb_size_bytes": 5596781,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11524_trj_164.xtc",
+          "xtc_size_bytes": 639543056,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 69095,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 69095,
+            "n_water_O": 14603,
+            "n_na_ions": 42,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 7800,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0,
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 119,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 155,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 163,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 200,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 214,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 237,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 294,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 338,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 356,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 379,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 393,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 397,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "CB1_gpcrmd_162",
+          "gpcrmd_dyn_id": 162,
+          "pdb_id": "5TGZ",
+          "state_class": "Inactive",
+          "state_detail": "Inactive Apo 5TGZ",
+          "bound_ligand": "Apo",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "cnr1_human",
+          "construct_uniprot_id": "P21554",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 400.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11514_dyn_162.pdb",
+          "pdb_size_bytes": 6278712,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11508_trj_162.xtc",
+          "xtc_size_bytes": 574074404,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 77514,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 77514,
+            "n_water_O": 16308,
+            "n_na_ions": 46,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 9100,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0,
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 119,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 155,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 163,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 200,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 214,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 237,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 294,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 338,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 356,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 379,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 393,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 397,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "CB1_gpcrmd_163",
+          "gpcrmd_dyn_id": 163,
+          "pdb_id": "5U09",
+          "state_class": "Inactive",
+          "state_detail": "Inactive Apo 5U09",
+          "bound_ligand": "Apo",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "cnr1_human",
+          "construct_uniprot_id": "P21554",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11520_dyn_163.pdb",
+          "pdb_size_bytes": 5596530,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11516_trj_163.xtc",
+          "xtc_size_bytes": 639350584,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 69092,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 69092,
+            "n_water_O": 14623,
+            "n_na_ions": 41,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 7800,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0,
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 119,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 155,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 163,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 200,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 214,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 237,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 294,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 338,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 356,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 379,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 393,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 397,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        }
+      ]
+    },
+    "CB2": {
+      "receptor_key": "CB2",
+      "display_name": "Human Cannabinoid Receptor 2 (CB2)",
+      "gpcrdb_entry": "cnr2_human",
+      "uniprot_id": "P34972",
+      "gpcr_class": "Class A (Rhodopsin)",
+      "subfamily": "Cannabinoid (Lipid)",
+      "u2_cleft_type": "Phe2.42-Leu4.46_aliphatic_control",
+      "bw_canonical_wt": {
+        "1.35": {
+          "canonical_resseq": 36,
+          "wt_aa1": "V",
+          "wt_resname": "VAL",
+          "gpcrdb_generic": "1.35x35"
+        },
+        "2.42": {
+          "canonical_resseq": 72,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "2.42x42"
+        },
+        "2.50": {
+          "canonical_resseq": 80,
+          "wt_aa1": "D",
+          "wt_resname": "ASP",
+          "gpcrdb_generic": "2.50x50"
+        },
+        "3.36": {
+          "canonical_resseq": 117,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "3.36x36"
+        },
+        "3.50": {
+          "canonical_resseq": 131,
+          "wt_aa1": "R",
+          "wt_resname": "ARG",
+          "gpcrdb_generic": "3.50x50"
+        },
+        "4.46": {
+          "canonical_resseq": 154,
+          "wt_aa1": "L",
+          "wt_resname": "LEU",
+          "gpcrdb_generic": "4.46x46"
+        },
+        "5.58": {
+          "canonical_resseq": 209,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "5.58x58"
+        },
+        "6.30": {
+          "canonical_resseq": 240,
+          "wt_aa1": "D",
+          "wt_resname": "ASP",
+          "gpcrdb_generic": "6.30x30"
+        },
+        "6.48": {
+          "canonical_resseq": 258,
+          "wt_aa1": "W",
+          "wt_resname": "TRP",
+          "gpcrdb_generic": "6.48x48"
+        },
+        "7.35": {
+          "canonical_resseq": 281,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "7.35x34"
+        },
+        "7.49": {
+          "canonical_resseq": 295,
+          "wt_aa1": "N",
+          "wt_resname": "ASN",
+          "gpcrdb_generic": "7.49x49"
+        },
+        "7.53": {
+          "canonical_resseq": 299,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "7.53x53"
+        }
+      },
+      "notes": "",
+      "n_trajectories": 4,
+      "approx_aggregate_us": 1.59,
+      "aggregate_xtc_gb": 0.311,
+      "trajectories": [
+        {
+          "traj_id": "CB2_gpcrmd_2126_r1",
+          "gpcrmd_dyn_id": 2126,
+          "pdb_id": "6KPF",
+          "state_class": "Active",
+          "state_detail": "Active AM12033 rep 1",
+          "bound_ligand": "AM12033",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "cnr2_human",
+          "construct_uniprot_id": "P34972",
+          "dt_ns": 1.0,
+          "approx_duration_ns": 398.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2417/tmp_dyn_0_2417.pdb",
+          "pdb_size_bytes": 5417685,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2417/24307_trj_2126.xtc",
+          "xtc_size_bytes": 77700544,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 52619,
+            "step0": 0,
+            "t0_ps": 0.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 52619,
+            "n_water_O": 10175,
+            "n_na_ions": 63,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 6791,
+            "lipid_resnames": [
+              "CHL1",
+              "POPC",
+              "POPG"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 36,
+              "resName": "VAL",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 72,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 80,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 117,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 131,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 154,
+              "resName": "LEU",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 209,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 240,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 258,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 281,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 295,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 299,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "CB2_gpcrmd_2126_r2",
+          "gpcrmd_dyn_id": 2126,
+          "pdb_id": "6KPF",
+          "state_class": "Active",
+          "state_detail": "Active AM12033 rep 2",
+          "bound_ligand": "AM12033",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "cnr2_human",
+          "construct_uniprot_id": "P34972",
+          "dt_ns": 1.0,
+          "approx_duration_ns": 398.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2417/tmp_dyn_0_2417.pdb",
+          "pdb_size_bytes": 5417685,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2417/24308_trj_2126.xtc",
+          "xtc_size_bytes": 77697176,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 52619,
+            "step0": 0,
+            "t0_ps": 0.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 52619,
+            "n_water_O": 10175,
+            "n_na_ions": 63,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 6791,
+            "lipid_resnames": [
+              "CHL1",
+              "POPC",
+              "POPG"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 36,
+              "resName": "VAL",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 72,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 80,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 117,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 131,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 154,
+              "resName": "LEU",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 209,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 240,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 258,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 281,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 295,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 299,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "CB2_gpcrmd_2126_r3",
+          "gpcrmd_dyn_id": 2126,
+          "pdb_id": "6KPF",
+          "state_class": "Active",
+          "state_detail": "Active AM12033 rep 3",
+          "bound_ligand": "AM12033",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "cnr2_human",
+          "construct_uniprot_id": "P34972",
+          "dt_ns": 1.0,
+          "approx_duration_ns": 398.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2417/tmp_dyn_0_2417.pdb",
+          "pdb_size_bytes": 5417685,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2417/24309_trj_2126.xtc",
+          "xtc_size_bytes": 77595656,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 52619,
+            "step0": 0,
+            "t0_ps": 0.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 52619,
+            "n_water_O": 10175,
+            "n_na_ions": 63,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 6791,
+            "lipid_resnames": [
+              "CHL1",
+              "POPC",
+              "POPG"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 36,
+              "resName": "VAL",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 72,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 80,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 117,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 131,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 154,
+              "resName": "LEU",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 209,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 240,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 258,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 281,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 295,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 299,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "CB2_gpcrmd_2126_r4",
+          "gpcrmd_dyn_id": 2126,
+          "pdb_id": "6KPF",
+          "state_class": "Active",
+          "state_detail": "Active AM12033 rep 4",
+          "bound_ligand": "AM12033",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "cnr2_human",
+          "construct_uniprot_id": "P34972",
+          "dt_ns": 1.0,
+          "approx_duration_ns": 398.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2417/tmp_dyn_0_2417.pdb",
+          "pdb_size_bytes": 5417685,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/dyn2417/24310_trj_2126.xtc",
+          "xtc_size_bytes": 77726792,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 52619,
+            "step0": 0,
+            "t0_ps": 0.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 52619,
+            "n_water_O": 10175,
+            "n_na_ions": 63,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 6791,
+            "lipid_resnames": [
+              "CHL1",
+              "POPC",
+              "POPG"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 36,
+              "resName": "VAL",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 72,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 80,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 117,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 131,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 154,
+              "resName": "LEU",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 209,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 240,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 258,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 281,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 295,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 299,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        }
+      ]
+    },
+    "S1P1": {
+      "receptor_key": "S1P1",
+      "display_name": "Human Sphingosine 1-Phosphate Receptor 1 (S1P1)",
+      "gpcrdb_entry": "s1pr1_human",
+      "uniprot_id": "P21453",
+      "gpcr_class": "Class A (Rhodopsin)",
+      "subfamily": "Lysophospholipid (Lipid)",
+      "u2_cleft_type": "Phe2.42-Ile4.46_aliphatic_control",
+      "bw_canonical_wt": {
+        "1.35": {
+          "canonical_resseq": 48,
+          "wt_aa1": "T",
+          "wt_resname": "THR",
+          "gpcrdb_generic": "1.35x35"
+        },
+        "2.42": {
+          "canonical_resseq": 83,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "2.42x42"
+        },
+        "2.50": {
+          "canonical_resseq": 91,
+          "wt_aa1": "D",
+          "wt_resname": "ASP",
+          "gpcrdb_generic": "2.50x50"
+        },
+        "3.36": {
+          "canonical_resseq": 128,
+          "wt_aa1": "L",
+          "wt_resname": "LEU",
+          "gpcrdb_generic": "3.36x36"
+        },
+        "3.50": {
+          "canonical_resseq": 142,
+          "wt_aa1": "R",
+          "wt_resname": "ARG",
+          "gpcrdb_generic": "3.50x50"
+        },
+        "4.46": {
+          "canonical_resseq": 164,
+          "wt_aa1": "I",
+          "wt_resname": "ILE",
+          "gpcrdb_generic": "4.46x46"
+        },
+        "5.58": {
+          "canonical_resseq": 221,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "5.58x58"
+        },
+        "6.30": {
+          "canonical_resseq": 251,
+          "wt_aa1": "S",
+          "wt_resname": "SER",
+          "gpcrdb_generic": "6.30x30"
+        },
+        "6.48": {
+          "canonical_resseq": 269,
+          "wt_aa1": "W",
+          "wt_resname": "TRP",
+          "gpcrdb_generic": "6.48x48"
+        },
+        "7.35": {
+          "canonical_resseq": 293,
+          "wt_aa1": "A",
+          "wt_resname": "ALA",
+          "gpcrdb_generic": "7.35x34"
+        },
+        "7.49": {
+          "canonical_resseq": 307,
+          "wt_aa1": "N",
+          "wt_resname": "ASN",
+          "gpcrdb_generic": "7.49x49"
+        },
+        "7.53": {
+          "canonical_resseq": 311,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "7.53x53"
+        }
+      },
+      "notes": "",
+      "n_trajectories": 2,
+      "approx_aggregate_us": 1.0,
+      "aggregate_xtc_gb": 1.495,
+      "trajectories": [
+        {
+          "traj_id": "S1P1_gpcrmd_63",
+          "gpcrmd_dyn_id": 63,
+          "pdb_id": "3V2Y",
+          "state_class": "Inactive",
+          "state_detail": "Inactive 3V2Y Apo",
+          "bound_ligand": "Apo",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "s1pr1_human",
+          "construct_uniprot_id": "P21453",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10633_dyn_63.pdb",
+          "pdb_size_bytes": 6541958,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10627_trj_63.xtc",
+          "xtc_size_bytes": 747153520,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 80764,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 80764,
+            "n_water_O": 17612,
+            "n_na_ions": 50,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 8788,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 48,
+              "resName": "THR",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 83,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 91,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 128,
+              "resName": "LEU",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 142,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 164,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 221,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 251,
+              "resName": "SER",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 269,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 293,
+              "resName": "ALA",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 307,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 311,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "S1P1_gpcrmd_127",
+          "gpcrmd_dyn_id": 127,
+          "pdb_id": "3V2Y",
+          "state_class": "Inactive",
+          "state_detail": "Inactive 3V2Y + W146",
+          "bound_ligand": "W146",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "s1pr1_human",
+          "construct_uniprot_id": "P21453",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11226_dyn_127.pdb",
+          "pdb_size_bytes": 6541804,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11221_trj_127.xtc",
+          "xtc_size_bytes": 747452608,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 80762,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 80762,
+            "n_water_O": 17594,
+            "n_na_ions": 51,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 8788,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 48,
+              "resName": "THR",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 83,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 91,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 128,
+              "resName": "LEU",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 142,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 164,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 221,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 251,
+              "resName": "SER",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 269,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 293,
+              "resName": "ALA",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 307,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 311,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        }
+      ]
+    },
+    "B2AR": {
+      "receptor_key": "B2AR",
+      "display_name": "Human Beta-2 Adrenergic Receptor (B2AR)",
+      "gpcrdb_entry": "adrb2_human",
+      "uniprot_id": "P07550",
+      "gpcr_class": "Class A (Rhodopsin)",
+      "subfamily": "Adrenergic (Aminergic)",
+      "u2_cleft_type": "Phe2.42-Ile4.46_aliphatic_control",
+      "bw_canonical_wt": {
+        "1.35": {
+          "canonical_resseq": 36,
+          "wt_aa1": "M",
+          "wt_resname": "MET",
+          "gpcrdb_generic": "1.35x35"
+        },
+        "2.42": {
+          "canonical_resseq": 71,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "2.42x42"
+        },
+        "2.50": {
+          "canonical_resseq": 79,
+          "wt_aa1": "D",
+          "wt_resname": "ASP",
+          "gpcrdb_generic": "2.50x50"
+        },
+        "3.36": {
+          "canonical_resseq": 117,
+          "wt_aa1": "V",
+          "wt_resname": "VAL",
+          "gpcrdb_generic": "3.36x36"
+        },
+        "3.50": {
+          "canonical_resseq": 131,
+          "wt_aa1": "R",
+          "wt_resname": "ARG",
+          "gpcrdb_generic": "3.50x50"
+        },
+        "4.46": {
+          "canonical_resseq": 154,
+          "wt_aa1": "I",
+          "wt_resname": "ILE",
+          "gpcrdb_generic": "4.46x46"
+        },
+        "5.58": {
+          "canonical_resseq": 219,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "5.58x58"
+        },
+        "6.30": {
+          "canonical_resseq": 268,
+          "wt_aa1": "E",
+          "wt_resname": "GLU",
+          "gpcrdb_generic": "6.30x30"
+        },
+        "6.48": {
+          "canonical_resseq": 286,
+          "wt_aa1": "W",
+          "wt_resname": "TRP",
+          "gpcrdb_generic": "6.48x48"
+        },
+        "7.35": {
+          "canonical_resseq": 308,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "7.35x34"
+        },
+        "7.49": {
+          "canonical_resseq": 322,
+          "wt_aa1": "N",
+          "wt_resname": "ASN",
+          "gpcrdb_generic": "7.49x49"
+        },
+        "7.53": {
+          "canonical_resseq": 326,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "7.53x53"
+        }
+      },
+      "notes": "",
+      "n_trajectories": 4,
+      "approx_aggregate_us": 2.0,
+      "aggregate_xtc_gb": 3.238,
+      "trajectories": [
+        {
+          "traj_id": "B2AR_gpcrmd_11",
+          "gpcrmd_dyn_id": 11,
+          "pdb_id": "2RH1",
+          "state_class": "Inactive",
+          "state_detail": "Inactive 2RH1 Apo",
+          "bound_ligand": "Apo",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "adrb2_human",
+          "construct_uniprot_id": "P07550",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10189_dyn_11.pdb",
+          "pdb_size_bytes": 6729639,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10185_trj_11.xtc",
+          "xtc_size_bytes": 769213296,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 83081,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 83081,
+            "n_water_O": 18436,
+            "n_na_ions": 52,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 8788,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0,
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 36,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 71,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 79,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 117,
+              "resName": "VAL",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 131,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 154,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 219,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 268,
+              "resName": "GLU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 286,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 308,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 322,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 326,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "B2AR_gpcrmd_160",
+          "gpcrmd_dyn_id": 160,
+          "pdb_id": "5JQH",
+          "state_class": "Inactive",
+          "state_detail": "Inactive 5JQH + Carazolol",
+          "bound_ligand": "Carazolol",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "adrb2_human",
+          "construct_uniprot_id": "P07550",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11503_dyn_160.pdb",
+          "pdb_size_bytes": 6965357,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11498_trj_160.xtc",
+          "xtc_size_bytes": 795564132,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 85991,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 85991,
+            "n_water_O": 18816,
+            "n_na_ions": 54,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 9464,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0,
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 36,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 71,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 79,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 117,
+              "resName": "VAL",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 131,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 154,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 219,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 268,
+              "resName": "GLU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 286,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 308,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 322,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 326,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "B2AR_gpcrmd_113",
+          "gpcrmd_dyn_id": 113,
+          "pdb_id": "4LDE",
+          "state_class": "Active",
+          "state_detail": "Active 4LDE Apo",
+          "bound_ligand": "Apo",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "adrb2_human",
+          "construct_uniprot_id": "P07550",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11077_dyn_113.pdb",
+          "pdb_size_bytes": 7376343,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11073_trj_113.xtc",
+          "xtc_size_bytes": 844497880,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 91065,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 91065,
+            "n_water_O": 19815,
+            "n_na_ions": 56,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 10296,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0,
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 36,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 71,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 79,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 117,
+              "resName": "VAL",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 131,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 154,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 219,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 268,
+              "resName": "GLU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 286,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 308,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 322,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 326,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "B2AR_gpcrmd_117",
+          "gpcrmd_dyn_id": 117,
+          "pdb_id": "4LDO",
+          "state_class": "Active",
+          "state_detail": "Active 4LDO + Epinephrine",
+          "bound_ligand": "Epinephrine",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "adrb2_human",
+          "construct_uniprot_id": "P07550",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11159_dyn_117.pdb",
+          "pdb_size_bytes": 7238809,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11156_trj_117.xtc",
+          "xtc_size_bytes": 828507208,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 89367,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 89367,
+            "n_water_O": 19329,
+            "n_na_ions": 55,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 10192,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0,
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 36,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 71,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 79,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 117,
+              "resName": "VAL",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 131,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 154,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 219,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 268,
+              "resName": "GLU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 286,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 308,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 322,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 326,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        }
+      ]
+    },
+    "MOR": {
+      "receptor_key": "MOR",
+      "display_name": "Mu-Type Opioid Receptor (MOR)",
+      "gpcrdb_entry": "oprm_human",
+      "uniprot_id": "P35372",
+      "gpcr_class": "Class A (Rhodopsin)",
+      "subfamily": "Opioid (Peptide)",
+      "u2_cleft_type": "Tyr2.42-Asn4.46_polar_control",
+      "bw_canonical_wt": {
+        "1.35": {
+          "canonical_resseq": 73,
+          "wt_aa1": "I",
+          "wt_resname": "ILE",
+          "gpcrdb_generic": "1.35x35"
+        },
+        "2.42": {
+          "canonical_resseq": 108,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "2.42x42"
+        },
+        "2.50": {
+          "canonical_resseq": 116,
+          "wt_aa1": "D",
+          "wt_resname": "ASP",
+          "gpcrdb_generic": "2.50x50"
+        },
+        "3.36": {
+          "canonical_resseq": 153,
+          "wt_aa1": "M",
+          "wt_resname": "MET",
+          "gpcrdb_generic": "3.36x36"
+        },
+        "3.50": {
+          "canonical_resseq": 167,
+          "wt_aa1": "R",
+          "wt_resname": "ARG",
+          "gpcrdb_generic": "3.50x50"
+        },
+        "4.46": {
+          "canonical_resseq": 190,
+          "wt_aa1": "N",
+          "wt_resname": "ASN",
+          "gpcrdb_generic": "4.46x46"
+        },
+        "5.58": {
+          "canonical_resseq": 254,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "5.58x58"
+        },
+        "6.30": {
+          "canonical_resseq": 277,
+          "wt_aa1": "L",
+          "wt_resname": "LEU",
+          "gpcrdb_generic": "6.30x30"
+        },
+        "6.48": {
+          "canonical_resseq": 295,
+          "wt_aa1": "W",
+          "wt_resname": "TRP",
+          "gpcrdb_generic": "6.48x48"
+        },
+        "7.35": {
+          "canonical_resseq": 320,
+          "wt_aa1": "W",
+          "wt_resname": "TRP",
+          "gpcrdb_generic": "7.35x34"
+        },
+        "7.49": {
+          "canonical_resseq": 334,
+          "wt_aa1": "N",
+          "wt_resname": "ASN",
+          "gpcrdb_generic": "7.49x49"
+        },
+        "7.53": {
+          "canonical_resseq": 338,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "7.53x53"
+        }
+      },
+      "notes": "GPCRmd open bilayer X-ray trajectories (IDs 61, 151, 169; PDBs 4DKL, 5C1M) use the crystallized oprm_mouse (P42866) 7TM construct, which shares 100% amino-acid identity with human oprm_human (P35372) across all 12 canonical Ballesteros-Weinstein positions (I1.35, Y2.42, D2.50, M3.36, R3.50, N4.46, Y5.58, L6.30, W6.48, W7.35, N7.49, Y7.53; sequence offset -2).",
+      "n_trajectories": 3,
+      "approx_aggregate_us": 1.25,
+      "aggregate_xtc_gb": 1.661,
+      "trajectories": [
+        {
+          "traj_id": "MOR_gpcrmd_61",
+          "gpcrmd_dyn_id": 61,
+          "pdb_id": "4DKL",
+          "state_class": "Inactive",
+          "state_detail": "Inactive 4DKL Apo",
+          "bound_ligand": "Apo",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "oprm_mouse",
+          "construct_uniprot_id": "P42866",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10616_dyn_61.pdb",
+          "pdb_size_bytes": 5955842,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10612_trj_61.xtc",
+          "xtc_size_bytes": 682019540,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 73528,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 73528,
+            "n_water_O": 15393,
+            "n_na_ions": 43,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 8736,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 71,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 106,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 114,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 151,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 165,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 188,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 252,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 275,
+              "resName": "LEU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 293,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 318,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 332,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 336,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "MOR_gpcrmd_151",
+          "gpcrmd_dyn_id": 151,
+          "pdb_id": "5C1M",
+          "state_class": "Active",
+          "state_detail": "Active 5C1M Apo",
+          "bound_ligand": "Apo",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "oprm_mouse",
+          "construct_uniprot_id": "P42866",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11426_dyn_151.pdb",
+          "pdb_size_bytes": 5704904,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11423_trj_151.xtc",
+          "xtc_size_bytes": 652289476,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 70430,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 70430,
+            "n_water_O": 13961,
+            "n_na_ions": 39,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 9204,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 71,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 106,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 114,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 151,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 165,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 188,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 252,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 275,
+              "resName": "LEU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 293,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 318,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 332,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 336,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "MOR_gpcrmd_169",
+          "gpcrmd_dyn_id": 169,
+          "pdb_id": "5C1M",
+          "state_class": "Active",
+          "state_detail": "Active 5C1M + BU72",
+          "bound_ligand": "BU72",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "oprm_mouse",
+          "construct_uniprot_id": "P42866",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 250.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11579_dyn_169.pdb",
+          "pdb_size_bytes": 5707417,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/11576_trj_169.xtc",
+          "xtc_size_bytes": 326283464,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 70461,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 70461,
+            "n_water_O": 13948,
+            "n_na_ions": 39,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 9204,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 71,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 106,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 114,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 151,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 165,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 188,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 252,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 275,
+              "resName": "LEU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 293,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 318,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 332,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 336,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        }
+      ]
+    },
+    "A2AR": {
+      "receptor_key": "A2AR",
+      "display_name": "Human Adenosine A2A Receptor (A2AR)",
+      "gpcrdb_entry": "aa2ar_human",
+      "uniprot_id": "P29274",
+      "gpcr_class": "Class A (Rhodopsin)",
+      "subfamily": "Adenosine (Purinergic)",
+      "u2_cleft_type": "Phe2.42-Ile4.46_aliphatic_control",
+      "bw_canonical_wt": {
+        "1.35": {
+          "canonical_resseq": 9,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "1.35x35"
+        },
+        "2.42": {
+          "canonical_resseq": 44,
+          "wt_aa1": "F",
+          "wt_resname": "PHE",
+          "gpcrdb_generic": "2.42x42"
+        },
+        "2.50": {
+          "canonical_resseq": 52,
+          "wt_aa1": "D",
+          "wt_resname": "ASP",
+          "gpcrdb_generic": "2.50x50"
+        },
+        "3.36": {
+          "canonical_resseq": 88,
+          "wt_aa1": "T",
+          "wt_resname": "THR",
+          "gpcrdb_generic": "3.36x36"
+        },
+        "3.50": {
+          "canonical_resseq": 102,
+          "wt_aa1": "R",
+          "wt_resname": "ARG",
+          "gpcrdb_generic": "3.50x50"
+        },
+        "4.46": {
+          "canonical_resseq": 125,
+          "wt_aa1": "I",
+          "wt_resname": "ILE",
+          "gpcrdb_generic": "4.46x46"
+        },
+        "5.58": {
+          "canonical_resseq": 197,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "5.58x58"
+        },
+        "6.30": {
+          "canonical_resseq": 228,
+          "wt_aa1": "E",
+          "wt_resname": "GLU",
+          "gpcrdb_generic": "6.30x30"
+        },
+        "6.48": {
+          "canonical_resseq": 246,
+          "wt_aa1": "W",
+          "wt_resname": "TRP",
+          "gpcrdb_generic": "6.48x48"
+        },
+        "7.35": {
+          "canonical_resseq": 270,
+          "wt_aa1": "M",
+          "wt_resname": "MET",
+          "gpcrdb_generic": "7.35x34"
+        },
+        "7.49": {
+          "canonical_resseq": 284,
+          "wt_aa1": "N",
+          "wt_resname": "ASN",
+          "gpcrdb_generic": "7.49x49"
+        },
+        "7.53": {
+          "canonical_resseq": 288,
+          "wt_aa1": "Y",
+          "wt_resname": "TYR",
+          "gpcrdb_generic": "7.53x53"
+        }
+      },
+      "notes": "",
+      "n_trajectories": 4,
+      "approx_aggregate_us": 1.7,
+      "aggregate_xtc_gb": 2.571,
+      "trajectories": [
+        {
+          "traj_id": "A2AR_gpcrmd_43",
+          "gpcrmd_dyn_id": 43,
+          "pdb_id": "4EIY",
+          "state_class": "Inactive",
+          "state_detail": "Inactive 4EIY Apo",
+          "bound_ligand": "Apo",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "aa2ar_human",
+          "construct_uniprot_id": "P29274",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10454_dyn_43.pdb",
+          "pdb_size_bytes": 6416489,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10457_trj_43.xtc",
+          "xtc_size_bytes": 735306512,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 79215,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 79215,
+            "n_water_O": 16403,
+            "n_na_ions": 46,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 9724,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 1,
+              "resSeq": 9,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 1,
+              "resSeq": 44,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 1,
+              "resSeq": 52,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 1,
+              "resSeq": 88,
+              "resName": "THR",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 1,
+              "resSeq": 102,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 1,
+              "resSeq": 125,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 1,
+              "resSeq": 197,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 228,
+              "resName": "GLU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 246,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 270,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 284,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 288,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "A2AR_gpcrmd_44",
+          "gpcrmd_dyn_id": 44,
+          "pdb_id": "4EIY",
+          "state_class": "Inactive",
+          "state_detail": "Inactive 4EIY + ZM241385",
+          "bound_ligand": "ZM241385",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "aa2ar_human",
+          "construct_uniprot_id": "P29274",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10468_dyn_44.pdb",
+          "pdb_size_bytes": 6416983,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10462_trj_44.xtc",
+          "xtc_size_bytes": 733791316,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 79221,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 79221,
+            "n_water_O": 16391,
+            "n_na_ions": 47,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 9724,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            1
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 1,
+              "resSeq": 9,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 1,
+              "resSeq": 44,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 1,
+              "resSeq": 52,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 1,
+              "resSeq": 88,
+              "resName": "THR",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 1,
+              "resSeq": 102,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 1,
+              "resSeq": 125,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 1,
+              "resSeq": 197,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 1,
+              "resSeq": 228,
+              "resName": "GLU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 1,
+              "resSeq": 246,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 1,
+              "resSeq": 270,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 1,
+              "resSeq": 284,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 1,
+              "resSeq": 288,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "A2AR_gpcrmd_45",
+          "gpcrmd_dyn_id": 45,
+          "pdb_id": "4UHR",
+          "state_class": "Active",
+          "state_detail": "Active 4UHR Apo",
+          "bound_ligand": "Apo",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "aa2ar_human",
+          "construct_uniprot_id": "P29274",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 500.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10476_dyn_45.pdb",
+          "pdb_size_bytes": 6886856,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10470_trj_45.xtc",
+          "xtc_size_bytes": 787533680,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 85022,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 85022,
+            "n_water_O": 18070,
+            "n_na_ions": 51,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 9984,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 9,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 44,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 52,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 88,
+              "resName": "THR",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 102,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 125,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 197,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 228,
+              "resName": "GLU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 246,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 270,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 284,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 288,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        },
+        {
+          "traj_id": "A2AR_gpcrmd_46",
+          "gpcrmd_dyn_id": 46,
+          "pdb_id": "4UHR",
+          "state_class": "Active",
+          "state_detail": "Active 4UHR + CGS21680",
+          "bound_ligand": "CGS21680",
+          "transducer": "None",
+          "construct_gpcrdb_entry": "aa2ar_human",
+          "construct_uniprot_id": "P29274",
+          "dt_ns": 0.2,
+          "approx_duration_ns": 200.0,
+          "pdb_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10483_dyn_46.pdb",
+          "pdb_size_bytes": 6887994,
+          "xtc_url": "https://www.gpcrmd.org/dynadb/files/Dynamics/10484_trj_46.xtc",
+          "xtc_size_bytes": 314796960,
+          "xtc_probe": {
+            "http_status": 206,
+            "magic": 1995,
+            "natoms": 85036,
+            "step0": 25000,
+            "t0_ps": 100000.0
+          },
+          "topology_summary": {
+            "pdb_natoms": 85036,
+            "n_water_O": 18053,
+            "n_na_ions": 51,
+            "n_k_ions": 0,
+            "n_lipid_heavy": 9984,
+            "lipid_resnames": [
+              "POPC"
+            ]
+          },
+          "receptor_chains": [
+            0
+          ],
+          "bw_residue_map": {
+            "1.35": {
+              "chain_idx": 0,
+              "resSeq": 9,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "2.42": {
+              "chain_idx": 0,
+              "resSeq": 44,
+              "resName": "PHE",
+              "is_wt_identity": true
+            },
+            "2.50": {
+              "chain_idx": 0,
+              "resSeq": 52,
+              "resName": "ASP",
+              "is_wt_identity": true
+            },
+            "3.36": {
+              "chain_idx": 0,
+              "resSeq": 88,
+              "resName": "THR",
+              "is_wt_identity": true
+            },
+            "3.50": {
+              "chain_idx": 0,
+              "resSeq": 102,
+              "resName": "ARG",
+              "is_wt_identity": true
+            },
+            "4.46": {
+              "chain_idx": 0,
+              "resSeq": 125,
+              "resName": "ILE",
+              "is_wt_identity": true
+            },
+            "5.58": {
+              "chain_idx": 0,
+              "resSeq": 197,
+              "resName": "TYR",
+              "is_wt_identity": true
+            },
+            "6.30": {
+              "chain_idx": 0,
+              "resSeq": 228,
+              "resName": "GLU",
+              "is_wt_identity": true
+            },
+            "6.48": {
+              "chain_idx": 0,
+              "resSeq": 246,
+              "resName": "TRP",
+              "is_wt_identity": true
+            },
+            "7.35": {
+              "chain_idx": 0,
+              "resSeq": 270,
+              "resName": "MET",
+              "is_wt_identity": true
+            },
+            "7.49": {
+              "chain_idx": 0,
+              "resSeq": 284,
+              "resName": "ASN",
+              "is_wt_identity": true
+            },
+            "7.53": {
+              "chain_idx": 0,
+              "resSeq": 288,
+              "resName": "TYR",
+              "is_wt_identity": true
+            }
+          }
+        }
+      ]
+    }
+  }
+}
